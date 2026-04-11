@@ -1,0 +1,1382 @@
+{
+  "exam_title": "CVS Final Combined - Full Source Extraction",
+  "total_entries": 99,
+  "questions": [
+    {
+      "source_file": "CVS final.pdf",
+      "original_number": "Q1",
+      "section": "Radiology/Anatomy",
+      "question_type": "mcq",
+      "prompt": "What is indicated by the arrow?",
+      "options": [
+        "Aortic knuckle"
+      ],
+      "answer": "Aortic knuckle",
+      "complete_in_source": false,
+      "notes": "Only one visible option in source."
+    },
+    {
+      "source_file": "CVS final.pdf",
+      "original_number": "Q2",
+      "section": "Anatomy",
+      "question_type": "mcq",
+      "prompt": "A 25-year-old man suffers a gunshot wound to the calf that severs the posterior tibial artery at its origin. Which of the following vessels will not receive blood flow immediately following the injury?",
+      "options": [
+        "Anterior tibial artery",
+        "Inferior medial genicular artery",
+        "Dorsalis pedis artery",
+        "Popliteal artery",
+        "Fibular artery"
+      ],
+      "answer": null,
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final.pdf",
+      "original_number": "Q3",
+      "section": "Anatomy",
+      "question_type": "mcq",
+      "prompt": "A 56-year-old construction worker complains of pain in the neck and shoulder, numbness and tingling in the right fingers, and a weak grip in his right hand. Symptoms worsen when carrying heavy objects on the right shoulder. X-ray shows a right cervical rib close to the proximal first rib. What structure is most likely impinged by the cervical rib?",
+      "options": [
+        "Right common carotid artery",
+        "Brachiocephalic trunk",
+        "Right subclavian artery",
+        "Vertebral artery",
+        "Right brachiocephalic vein"
+      ],
+      "answer": "Right subclavian artery",
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final.pdf",
+      "original_number": "Q4",
+      "section": "Anatomy/Embryology",
+      "question_type": "mcq",
+      "prompt": "During a newborn examination, no pulse is detected in the groin or legs, the lower extremities are cold, and upper-limb pulse and blood pressure are elevated. MRI shows the anomaly indicated by the arrowhead. What is the anomaly?",
+      "options": [
+        "Coarctation of the aorta (descending)",
+        "Tetralogy of Fallot",
+        "Ventricular septal defect (VSD)",
+        "Atrial septal defect (ASD)",
+        "Transposition of the great vessels"
+      ],
+      "answer": "Coarctation of the aorta (descending)",
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final.pdf",
+      "original_number": "Q5",
+      "section": "Embryology",
+      "question_type": "short_answer",
+      "prompt": "A 22-year-old woman gives birth to an infant with an abnormally small coronary sinus that limits cardiac venous drainage. The coronary sinus is derived from which labeled structure in the primitive heart diagram?",
+      "options": [],
+      "answer": null,
+      "complete_in_source": false,
+      "notes": "Diagram/label details missing in source."
+    },
+    {
+      "source_file": "CVS final.pdf",
+      "original_number": "Q6",
+      "section": "Physiology",
+      "question_type": "mcq",
+      "prompt": "In an adult human in the upright position, if mean arterial pressure (MAP) at heart level = 100 mmHg, what will be the MAP in an artery at the head?",
+      "options": [
+        "60 mmHg"
+      ],
+      "answer": "60 mmHg",
+      "complete_in_source": false,
+      "notes": "Only one visible option in source."
+    },
+    {
+      "source_file": "CVS final.pdf",
+      "original_number": "Q7",
+      "section": "Physiology",
+      "question_type": "mcq",
+      "prompt": "What does '6' represent in the illustrated graph?",
+      "options": [
+        "Aortic stenosis",
+        "Atherosclerosis",
+        "Patent ductus arteriosus",
+        "Aortic regurgitation"
+      ],
+      "answer": null,
+      "complete_in_source": false,
+      "notes": "Graph missing in source."
+    },
+    {
+      "source_file": "CVS final.pdf",
+      "original_number": "Q8",
+      "section": "Physiology",
+      "question_type": "mcq",
+      "prompt": "Harbi had a road traffic accident causing severe bleeding and decreased MAP. Which arteries maintain relatively constant blood flow with only slight elevation in resistance or no change?",
+      "options": [
+        "Hepatic arteries",
+        "Cerebral arteries"
+      ],
+      "answer": "Cerebral arteries",
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final.pdf",
+      "original_number": "Q9",
+      "section": "Radiology",
+      "question_type": "mcq",
+      "prompt": "What is indicated by this picture?",
+      "options": [
+        "Ascending aortic dissection"
+      ],
+      "answer": "Ascending aortic dissection",
+      "complete_in_source": false,
+      "notes": "Only one visible option in source."
+    },
+    {
+      "source_file": "CVS final.pdf",
+      "original_number": "Q10",
+      "section": "Histology",
+      "question_type": "mcq",
+      "prompt": "Where are fenestrated capillaries present?",
+      "options": [
+        "Lung",
+        "Brain",
+        "Kidney",
+        "Skeletal muscles"
+      ],
+      "answer": "Kidney",
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final.pdf",
+      "original_number": "Q11",
+      "section": "Physiology",
+      "question_type": "mcq",
+      "prompt": "What is indicated by the arrow?",
+      "options": [
+        "Aldosterone"
+      ],
+      "answer": "Aldosterone",
+      "complete_in_source": false,
+      "notes": "Only one visible option in source."
+    },
+    {
+      "source_file": "CVS final.pdf",
+      "original_number": "Q12",
+      "section": "Physiology",
+      "question_type": "mcq",
+      "prompt": "Patient on hypotensive drugs. Calculate the pulse pressure (PP).",
+      "options": [
+        "40",
+        "50",
+        "60",
+        "70",
+        "110"
+      ],
+      "answer": null,
+      "complete_in_source": false,
+      "notes": "Values needed to calculate PP are missing in source."
+    },
+    {
+      "source_file": "CVS final.pdf",
+      "original_number": "Q13",
+      "section": "Anatomy",
+      "question_type": "mcq",
+      "prompt": "During surgery, a student is asked to explain what 'left coronary dominance' means. Which explanation is correct?",
+      "options": [
+        "It gives rise to the anterior interventricular artery",
+        "It is derived from the left 6th aortic arch",
+        "It supplies the right border of the heart",
+        "It gives rise to the posterior interventricular artery",
+        "It supplies the margin of the heart"
+      ],
+      "answer": "It gives rise to the posterior interventricular artery",
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final.pdf",
+      "original_number": "Q14",
+      "section": "Physiology",
+      "question_type": "mcq",
+      "prompt": "What is the main determinant of pulse pressure (PP)?",
+      "options": [
+        "Compliance of systemic arteries",
+        "Elasticity of systemic veins",
+        "Pulmonary vascular resistance",
+        "Systemic vascular resistance"
+      ],
+      "answer": "Compliance of systemic arteries",
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final.pdf",
+      "original_number": "Q15",
+      "section": "Embryology",
+      "question_type": "mcq",
+      "prompt": "Long case: patient has double SVC. What maldevelopment causes this anomaly?",
+      "options": [
+        "Persistence of the left anterior cardinal vein"
+      ],
+      "answer": "Persistence of the left anterior cardinal vein",
+      "complete_in_source": false,
+      "notes": "Only one visible option in source."
+    },
+    {
+      "source_file": "CVS final.pdf",
+      "original_number": "Q16",
+      "section": "Physiology",
+      "question_type": "mcq",
+      "prompt": "In upright position, MAP at heart level is 100 mmHg. What is approximately the MAP in the head (50 cm above the heart)?",
+      "options": [
+        "100 mmHg",
+        "120 mmHg",
+        "62 mmHg"
+      ],
+      "answer": "62 mmHg",
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final.pdf",
+      "original_number": "Q17",
+      "section": "Physiology",
+      "question_type": "mcq",
+      "prompt": "What can cause edema?",
+      "options": [
+        "Decreased plasma proteins"
+      ],
+      "answer": "Decreased plasma proteins",
+      "complete_in_source": false,
+      "notes": "Only one visible option in source."
+    },
+    {
+      "source_file": "CVS final.pdf",
+      "original_number": "Q18",
+      "section": "Anatomy",
+      "question_type": "mcq",
+      "prompt": "During surgery, an artery arising from the anterior surface just above the superior thyroid artery at the level of the hyoid bone, deep to the hypoglossal nerve, is injured. What artery is it?",
+      "options": [
+        "Lingual artery"
+      ],
+      "answer": "Lingual artery",
+      "complete_in_source": false,
+      "notes": "Only one visible option in source."
+    },
+    {
+      "source_file": "CVS final.pdf",
+      "original_number": "Q19",
+      "section": "Anatomy",
+      "question_type": "mcq",
+      "prompt": "How is the external jugular vein formed?",
+      "options": [
+        "By union of the posterior division of the retromandibular vein and posterior auricular vein"
+      ],
+      "answer": "By union of the posterior division of the retromandibular vein and posterior auricular vein",
+      "complete_in_source": false,
+      "notes": "Only one visible option in source."
+    },
+    {
+      "source_file": "CVS final.pdf",
+      "original_number": "Q20",
+      "section": "Physiology",
+      "question_type": "mcq",
+      "prompt": "When a person moves from a supine position to a standing position, which compensatory change occurs?",
+      "options": [
+        "Decreased heart rate",
+        "Increased contractility",
+        "Decreased total peripheral resistance",
+        "Decreased cardiac output",
+        "Increased PR intervals"
+      ],
+      "answer": "Increased contractility",
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final.pdf",
+      "original_number": "Q21",
+      "section": "Anatomy",
+      "question_type": "mcq",
+      "prompt": "A 70-year-old with hypercholesterolemia has severe cramps in the gluteal region due to insufficient perfusion. Which artery is most likely occluded?",
+      "options": [
+        "External iliac",
+        "Internal iliac",
+        "Femoral",
+        "Internal pudendal",
+        "Abdominal aorta"
+      ],
+      "answer": "Internal iliac",
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final.pdf",
+      "original_number": "Q22",
+      "section": "Physiology",
+      "question_type": "mcq",
+      "prompt": "A CT scan shows the abdominal aorta constricted to one-half of its resting diameter. Resistance to blood flow would be:",
+      "options": [
+        "Decreased in half",
+        "Decreased 16-fold",
+        "Increased by 50%",
+        "Doubled",
+        "Increased 16-fold"
+      ],
+      "answer": "Increased 16-fold",
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final.pdf",
+      "original_number": "Q23",
+      "section": "Physiology",
+      "question_type": "mcq",
+      "prompt": "A 24-year-old woman with severe diarrhea has BP 90/60 mm Hg supine and HR 100/min. On standing, HR rises to 120/min. What accounts for the further increase in heart rate?",
+      "options": [
+        "Decreased total peripheral resistance",
+        "Increased venoconstriction",
+        "Increased contractility",
+        "Increased afterload",
+        "Decreased venous return"
+      ],
+      "answer": "Decreased venous return",
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final.pdf",
+      "original_number": "Q24",
+      "section": "Physiology",
+      "question_type": "mcq",
+      "prompt": "Secretion of which hormone is stimulated by extracellular fluid volume expansion?",
+      "options": [
+        "Antidiuretic hormone (ADH)",
+        "Aldosterone",
+        "Atrial natriuretic peptide (ANP)",
+        "1,25-Dihydroxycholecalciferol",
+        "Parathyroid hormone (PTH)"
+      ],
+      "answer": "Atrial natriuretic peptide (ANP)",
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final.pdf",
+      "original_number": "Q25",
+      "section": "Physiology",
+      "question_type": "mcq",
+      "prompt": "Why can cardiac muscle not reach titanic contraction?",
+      "options": [
+        "A long duration of effective refractory period"
+      ],
+      "answer": "A long duration of effective refractory period",
+      "complete_in_source": false,
+      "notes": "Only one visible option in source."
+    },
+    {
+      "source_file": "CVS final.pdf",
+      "original_number": "Q26",
+      "section": "Physiology",
+      "question_type": "short_answer",
+      "prompt": "In the patient, what is the most likely value of central venous pressure (CVP)?",
+      "options": [],
+      "answer": ">5 mmHg",
+      "complete_in_source": false,
+      "notes": "Source shows answer only, no full stem/options."
+    },
+    {
+      "source_file": "CVS final.pdf",
+      "original_number": "Q28",
+      "section": "Physiology",
+      "question_type": "mcq",
+      "prompt": "A 30-year-old pregnant woman is losing blood. Which change will be noticed when detecting her radial pulse?",
+      "options": [
+        "Tachycardia"
+      ],
+      "answer": "Tachycardia",
+      "complete_in_source": false,
+      "notes": "Only one visible option in source."
+    },
+    {
+      "source_file": "CVS final.pdf",
+      "original_number": "Q29",
+      "section": "Community",
+      "question_type": "mcq",
+      "prompt": "Which of the following has higher risk for developing CVD?",
+      "options": [
+        "Obese diabetic man",
+        "Middle aged female with diabetes",
+        "Pregnant with twins",
+        "Vegetarian"
+      ],
+      "answer": "Obese diabetic man",
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final.pdf",
+      "original_number": "Q30",
+      "section": "Community",
+      "question_type": "mcq",
+      "prompt": "As an epidemiologist screening for hypertension in KSA, which statement would support your research?",
+      "options": [
+        "70% of hypertensive patients do not take medications",
+        "Old, obese and diabetic male are at greater risk than female",
+        "Highest incidence is among people who are 55-65 years old",
+        "Rural population show higher prevalence than urban"
+      ],
+      "answer": null,
+      "complete_in_source": false,
+      "notes": "Source does not clearly mark the final answer."
+    },
+    {
+      "source_file": "CVS final.pdf",
+      "original_number": "Q31",
+      "section": "Community/Cardiology prevention",
+      "question_type": "mcq",
+      "prompt": "A male smoker has 17% CAD risk. After doing CAC, the score is zero. What step should he take?",
+      "options": [
+        "Start statin"
+      ],
+      "answer": "Start statin",
+      "complete_in_source": false,
+      "notes": "Only one visible option in source."
+    },
+    {
+      "source_file": "CVS final.pdf",
+      "original_number": "Q32",
+      "section": "Physiology",
+      "question_type": "image_based",
+      "prompt": "Which of the following ECGs is AV block?",
+      "options": [],
+      "answer": "The second tracing",
+      "complete_in_source": false,
+      "notes": "Image-based; options are tracings rather than text."
+    },
+    {
+      "source_file": "CVS final.pdf",
+      "original_number": "Q33",
+      "section": "Physiology",
+      "question_type": "image_based",
+      "prompt": "Write the pressure at points 1-5 in the capillary fluid exchange diagram.",
+      "options": [],
+      "answer": null,
+      "complete_in_source": false,
+      "notes": "Image-based values only."
+    },
+    {
+      "source_file": "CVS final.pdf",
+      "original_number": "Q34",
+      "section": "Embryology",
+      "question_type": "mcq",
+      "prompt": "Patient appears to have constriction at the esophagus and trachea. What could be the reason?",
+      "options": [
+        "Lower part of the right dorsal aorta persists"
+      ],
+      "answer": "Lower part of the right dorsal aorta persists",
+      "complete_in_source": false,
+      "notes": "Only one visible option in source."
+    },
+    {
+      "source_file": "CVS final.pdf",
+      "original_number": "Q35",
+      "section": "Cardiology",
+      "question_type": "mcq",
+      "prompt": "Harsh holosystolic murmur at the left lower sternal border indicates:",
+      "options": [
+        "VSD"
+      ],
+      "answer": "VSD",
+      "complete_in_source": false,
+      "notes": "Only one visible option in source."
+    },
+    {
+      "source_file": "CVS final.pdf",
+      "original_number": "Q36",
+      "section": "Anatomy",
+      "question_type": "mcq",
+      "prompt": "A 7-year-old boy with Down syndrome undergoes VSD repair and develops heart block due to injury of the artery supplying the SA and AV nodes. Which artery was most likely damaged?",
+      "options": [
+        "Anterior interventricular",
+        "Left marginal",
+        "Left coronary",
+        "Right coronary",
+        "Circumflex branch"
+      ],
+      "answer": "Right coronary",
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final.pdf",
+      "original_number": "Q37",
+      "section": "Cardiology",
+      "question_type": "mcq",
+      "prompt": "Machine-like murmur heard infraclavicular. Diagnosis?",
+      "options": [
+        "PDA"
+      ],
+      "answer": "PDA",
+      "complete_in_source": false,
+      "notes": "Only one visible option in source."
+    },
+    {
+      "source_file": "CVS final.pdf",
+      "original_number": "Q38",
+      "section": "Physiology",
+      "question_type": "mcq",
+      "prompt": "The smallest difference in pressure during ejection period is between which structures?",
+      "options": [
+        "Left ventricle and aorta"
+      ],
+      "answer": "Left ventricle and aorta",
+      "complete_in_source": false,
+      "notes": "Only one visible option in source."
+    },
+    {
+      "source_file": "CVS final.pdf",
+      "original_number": "Q39",
+      "section": "Physiology",
+      "question_type": "mcq",
+      "prompt": "Maximal systemic arterial pressure occurs during which phase of the cardiac cycle?",
+      "options": [
+        "Rapid ejection phase"
+      ],
+      "answer": "Rapid ejection phase",
+      "complete_in_source": false,
+      "notes": "Only one visible option in source."
+    },
+    {
+      "source_file": "CVS final.pdf",
+      "original_number": "Q40",
+      "section": "Anatomy",
+      "question_type": "mcq",
+      "prompt": "The lateral thoracic artery is injured. What is its origin?",
+      "options": [
+        "First part of axillary artery",
+        "Second part of axillary artery",
+        "Third part of axillary artery",
+        "First part of brachial artery",
+        "Second part of brachial artery"
+      ],
+      "answer": "Second part of axillary artery",
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final.pdf",
+      "original_number": "Q41",
+      "section": "Cardiology",
+      "question_type": "mcq",
+      "prompt": "A patient has pulmonary stenosis. Where can the murmur be heard?",
+      "options": [
+        "Left 2nd intercostal space"
+      ],
+      "answer": "Left 2nd intercostal space",
+      "complete_in_source": false,
+      "notes": "Only one visible option in source."
+    },
+    {
+      "source_file": "CVS final.pdf",
+      "original_number": "Q42",
+      "section": "Embryology",
+      "question_type": "mcq",
+      "prompt": "A clinically significant atrial septal defect usually results from incomplete closure of which structure?",
+      "options": [
+        "Foramen ovale",
+        "Ligamentum arteriosum",
+        "Ductus arteriosus",
+        "Sinus venarum",
+        "Coronary sinus"
+      ],
+      "answer": "Foramen ovale",
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final.pdf",
+      "original_number": "Q43",
+      "section": "Physiology",
+      "question_type": "mcq",
+      "prompt": "What mechanism returns elevated blood pressure to normal within a few moments?",
+      "options": [
+        "Decrease the action potentials of the parasympathetic neuron",
+        "Decrease the action potentials in the sympathetic neuron",
+        "Decrease the baroreceptor frequency",
+        "Increase the action potentials in sympathetic neurons"
+      ],
+      "answer": "Decrease the action potentials in the sympathetic neuron",
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final.pdf",
+      "original_number": "Q44",
+      "section": "Embryology",
+      "question_type": "mcq",
+      "prompt": "A complete atrioventricular canal defect includes a primum ASD and posterior inlet VSD. What embryonic structures normally fuse to close the foramen primum?",
+      "options": [
+        "Septum secundum and septum primum",
+        "Septum secundum and the fused endocardial cushions",
+        "Septum primum and the fused endocardial cushions",
+        "Septum primum and the septum spurium",
+        "Left inferior and right superior truncus swellings"
+      ],
+      "answer": "Septum primum and the fused endocardial cushions",
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final.pdf",
+      "original_number": "Q45",
+      "section": "Anatomy",
+      "question_type": "mcq",
+      "prompt": "Long case about descending rectal bleeding: which artery gives off a direct branch to the affected structure?",
+      "options": [
+        "Abdominal aorta",
+        "External iliac",
+        "Superior mesenteric artery",
+        "Inferior mesenteric artery"
+      ],
+      "answer": "Inferior mesenteric artery",
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q1",
+      "section": "Physiology",
+      "question_type": "mcq",
+      "prompt": "A 50-year-old male has heart rate 90 bpm, EDV 130 ml, and ESV 60 ml. Calculate cardiac output.",
+      "options": [
+        "4.2 L/min",
+        "2.4 L/min",
+        "3.6 L/min"
+      ],
+      "answer": "2.4 L/min",
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q2",
+      "section": "Physiology",
+      "question_type": "mcq",
+      "prompt": "A 39-year-old woman has breast cancer and undergoes mastectomy. Afterwards she develops edema. What is the most likely cause?",
+      "options": [
+        "Decreased colloid osmotic pressure",
+        "Increased interstitial fluid pressure",
+        "Impaired lymphatic drainage"
+      ],
+      "answer": "Impaired lymphatic drainage",
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q3",
+      "section": "Physiology",
+      "question_type": "mcq",
+      "prompt": "A patient presents with generalized edema, hypoalbuminemia, and proteinuria. What is the most likely cause?",
+      "options": [
+        "Decreased colloid osmotic pressure",
+        "Increased interstitial fluid pressure"
+      ],
+      "answer": "Decreased colloid osmotic pressure",
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q4",
+      "section": "Physiology",
+      "question_type": "mcq",
+      "prompt": "Which condition can lead to an increase in EDV and a wide pulse pressure?",
+      "options": [
+        "Aortic regurgitation",
+        "Mitral regurgitation",
+        "Mitral stenosis",
+        "Standing",
+        "Systemic vasodilation"
+      ],
+      "answer": "Aortic regurgitation",
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q5",
+      "section": "Physiology",
+      "question_type": "image_based",
+      "prompt": "Graph of ECG recording of an elderly man asking about the arrhythmia.",
+      "options": [],
+      "answer": null,
+      "complete_in_source": false,
+      "notes": "Graph missing from source text."
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q6",
+      "section": "Physiology",
+      "question_type": "image_based",
+      "prompt": "Pressure-volume graph asking about MAP or PP of a hypertensive man under treatment.",
+      "options": [],
+      "answer": null,
+      "complete_in_source": false,
+      "notes": "Graphs missing in source; source explicitly says to skip."
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q7",
+      "section": "Physiology",
+      "question_type": "mcq",
+      "prompt": "What is the effect of a decrease in afterload?",
+      "options": [
+        "Increase in SV resulting in reduction in ESV",
+        "Increase in SV resulting in reduction in EDV",
+        "Decrease in SV resulting in increase in ESV"
+      ],
+      "answer": "Increase in SV resulting in reduction in ESV",
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q8",
+      "section": "Physiology",
+      "question_type": "mcq",
+      "prompt": "What happens if preload increases?",
+      "options": [
+        "EDV and stroke volume increase equally",
+        "EDV increases more than stroke volume",
+        "EDV increases less than stroke volume"
+      ],
+      "answer": "EDV and stroke volume increase equally",
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q9",
+      "section": "Physiology",
+      "question_type": "mcq",
+      "prompt": "A 24-year-old woman with severe diarrhea has BP 90/60 mm Hg supine and HR 100/min. On standing, HR rises to 120/min. Which of the following accounts for the further increase in heart rate upon standing?",
+      "options": [
+        "Decreased total peripheral resistance",
+        "Increased venoconstriction",
+        "Increased contractility",
+        "Increased afterload",
+        "Decreased venous return"
+      ],
+      "answer": "Decreased venous return",
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q10",
+      "section": "Physiology",
+      "question_type": "mcq",
+      "prompt": "Cause of atrial fibrillation:",
+      "options": [
+        "Micro-reentry and multiple ectopic foci"
+      ],
+      "answer": "Micro-reentry and multiple ectopic foci",
+      "complete_in_source": false,
+      "notes": "Only one visible option in source."
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q11",
+      "section": "Anatomy/Physiology",
+      "question_type": "mcq",
+      "prompt": "Which of the following is a difference between the left and right coronary arteries?",
+      "options": [
+        "Systolic crunch affects the left more than the right"
+      ],
+      "answer": "Systolic crunch affects the left more than the right",
+      "complete_in_source": false,
+      "notes": "Only one visible option in source."
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q12",
+      "section": "Physiology",
+      "question_type": "mcq",
+      "prompt": "Which of the following causes vasoconstriction?",
+      "options": [
+        "Increase PCO2",
+        "Increase K+",
+        "Increase H+",
+        "Increase O2"
+      ],
+      "answer": "Increase O2",
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q13",
+      "section": "Physiology",
+      "question_type": "mcq",
+      "prompt": "Loss of 30% of blood volume will activate which of the following?",
+      "options": [
+        "Angiotensin II",
+        "Aldosterone",
+        "Norepinephrine"
+      ],
+      "answer": "Norepinephrine",
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q14",
+      "section": "Physiology",
+      "question_type": "mcq",
+      "prompt": "Why from A to B?",
+      "options": [
+        "Increased venous return",
+        "Increased aortic pressure",
+        "Sympathetic stimulation"
+      ],
+      "answer": "Increased aortic pressure",
+      "complete_in_source": false,
+      "notes": "Graph/context missing; source notes uncertainty about option A."
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q15",
+      "section": "Physiology",
+      "question_type": "mcq",
+      "prompt": "Harbi had a road traffic accident causing severe bleeding and decreased MAP. Which arteries maintain relatively constant blood flow?",
+      "options": [
+        "Renal vessels",
+        "Cerebral vessels",
+        "Abdominal vessels",
+        "Hepatic arteries"
+      ],
+      "answer": "Cerebral vessels",
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q16",
+      "section": "Physiology",
+      "question_type": "mcq",
+      "prompt": "In an adult man, RAP is zero. Cardiac output equals?",
+      "options": [
+        "10 L",
+        "5 L",
+        "3 L",
+        "15 L"
+      ],
+      "answer": "5 L",
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q17",
+      "section": "Physiology",
+      "question_type": "mcq",
+      "prompt": "In varicose veins, blood pools in the veins because:",
+      "options": [
+        "Incompetence of valves"
+      ],
+      "answer": "Incompetence of valves",
+      "complete_in_source": false,
+      "notes": "Only one visible option in source."
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q18",
+      "section": "Physiology",
+      "question_type": "mcq",
+      "prompt": "What is the role of skeletal muscle in venous return?",
+      "options": [
+        "External venous compression leading to decreased venous capacity"
+      ],
+      "answer": "External venous compression leading to decreased venous capacity",
+      "complete_in_source": false,
+      "notes": "Only one visible option in source."
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q19",
+      "section": "Physiology",
+      "question_type": "mcq",
+      "prompt": "Which hemodynamic change is expected in mitral stenosis?",
+      "options": [
+        "Decreased left atrial volume",
+        "Decreased left ventricle EDV",
+        "Decreased pulmonary venous pressure",
+        "Increased aortic pressure",
+        "Increased left atrial pressure"
+      ],
+      "answer": "Increased left atrial pressure",
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q20",
+      "section": "Physiology",
+      "question_type": "short_answer",
+      "prompt": "The difference between resting cardiac output and the maximum volume of blood the heart can pump per minute is known as what?",
+      "options": [],
+      "answer": "Cardiac reserve",
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q21",
+      "section": "Physiology",
+      "question_type": "mcq",
+      "prompt": "A 37-year-old woman has the abdominal aorta constricted to one-half of its resting diameter. Resistance to blood flow through the vessel would be:",
+      "options": [
+        "Decreased in half",
+        "Decreased 16-fold",
+        "Increased by 50%",
+        "Doubled",
+        "Increased 16-fold"
+      ],
+      "answer": "Increased 16-fold",
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q22",
+      "section": "Physiology",
+      "question_type": "image_based",
+      "prompt": "Which of the following ECG tracings is AV block?",
+      "options": [],
+      "answer": "The second tracing",
+      "complete_in_source": false,
+      "notes": "Image-based tracing options."
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q23",
+      "section": "Physiology",
+      "question_type": "image_based",
+      "prompt": "Question based on image note: decrease arterial compliance.",
+      "options": [],
+      "answer": null,
+      "complete_in_source": false,
+      "notes": "Only image annotation available."
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q24",
+      "section": "Physiology",
+      "question_type": "image_based",
+      "prompt": "Question based on graph about sympathetic stimulation with SA node pacemaker activity.",
+      "options": [],
+      "answer": null,
+      "complete_in_source": false,
+      "notes": "Image-based; full stem not present in text."
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q25",
+      "section": "Physiology",
+      "question_type": "image_based",
+      "prompt": "Question based on slide about stroke volume regulation: afterload.",
+      "options": [],
+      "answer": null,
+      "complete_in_source": false,
+      "notes": "Image-based; full stem not present in text."
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q26",
+      "section": "Physiology",
+      "question_type": "image_based",
+      "prompt": "Write the pressure at points 1-5 in the capillary fluid exchange diagram.",
+      "options": [],
+      "answer": null,
+      "complete_in_source": false,
+      "notes": "Image-based values."
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q27",
+      "section": "Anatomy",
+      "question_type": "mcq",
+      "prompt": "Long case about descending rectal bleeding with no history of hematemesis: which artery gives off a direct branch to the affected structure?",
+      "options": [
+        "Abdominal aorta",
+        "External iliac",
+        "Superior mesenteric artery",
+        "Inferior mesenteric artery"
+      ],
+      "answer": "Inferior mesenteric artery",
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q28",
+      "section": "Embryology",
+      "question_type": "mcq",
+      "prompt": "A male baby with Down syndrome has ASD and a common atrium (cor trioculare biventriculare). What embryonic structures normally fuse to form this septum?",
+      "options": [
+        "Septum secundum and septum primum",
+        "Septum secundum and the fused endocardial cushions",
+        "Septum primum and the fused endocardial cushions",
+        "Septum primum and the septum spurium",
+        "Left inferior and right superior truncus swellings"
+      ],
+      "answer": "Septum secundum and septum primum",
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q29",
+      "section": "Embryology",
+      "question_type": "mcq",
+      "prompt": "Heart tube origin?",
+      "options": [
+        "Splanchnic mesoderm",
+        "Paraxial somites",
+        "Splanchnic endoderm"
+      ],
+      "answer": "Splanchnic mesoderm",
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q30",
+      "section": "Embryology",
+      "question_type": "short_answer",
+      "prompt": "The smooth part of the left atrium is originated from what?",
+      "options": [],
+      "answer": "Pulmonary veins",
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q34",
+      "section": "Embryology",
+      "question_type": "mcq",
+      "prompt": "The smooth part of both ventricles?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "D",
+      "complete_in_source": false,
+      "notes": "Options are placeholders in source; actual labels/diagram missing."
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q35",
+      "section": "Embryology",
+      "question_type": "short_answer",
+      "prompt": "Case of Fallot tube?",
+      "options": [],
+      "answer": "IV septal defect",
+      "complete_in_source": false,
+      "notes": "Stem wording preserved as in source."
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q36",
+      "section": "Anatomy",
+      "question_type": "short_answer",
+      "prompt": "A man suffers injury to his medial thigh. Which artery is most likely injured?",
+      "options": [],
+      "answer": "Obturator artery",
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q37",
+      "section": "Anatomy",
+      "question_type": "mcq",
+      "prompt": "A 30-year-old has a mass tumor in her pelvis. The mass can spread through which artery?",
+      "options": [
+        "Lateral sacral artery"
+      ],
+      "answer": "Lateral sacral artery",
+      "complete_in_source": false,
+      "notes": "Only one visible option in source."
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q38",
+      "section": "Embryology",
+      "question_type": "mcq",
+      "prompt": "A fetus has preductal coarctation of the aorta. Which of the following can aggravate this case after birth?",
+      "options": [
+        "Closure of ductus arteriosus",
+        "Patent ductus arteriosus"
+      ],
+      "answer": "Closure of ductus arteriosus",
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q39",
+      "section": "Embryology",
+      "question_type": "mcq",
+      "prompt": "Double IVC anomaly is due to:",
+      "options": [
+        "Persistence of left anterior cardinal vein",
+        "Persistence of left sacrocardinal vein",
+        "Disappearance......"
+      ],
+      "answer": "Persistence of left sacrocardinal vein",
+      "complete_in_source": false,
+      "notes": "Option C incomplete in source."
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q40",
+      "section": "Embryology",
+      "question_type": "mcq",
+      "prompt": "A neonate has abnormal origin of the right subclavian artery. Which abnormality is the cause?",
+      "options": [
+        "Regression of right 4th aortic arch",
+        "Regression of left 4th aortic arch"
+      ],
+      "answer": "Regression of right 4th aortic arch",
+      "complete_in_source": false,
+      "notes": "Other options missing in source."
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q41",
+      "section": "Community",
+      "question_type": "mcq",
+      "prompt": "DASH diet includes:",
+      "options": [
+        "Decrease fatty meals whereas no reduction in sodium",
+        "Increase fruits and grains"
+      ],
+      "answer": "Increase fruits and grains",
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q42",
+      "section": "Community",
+      "question_type": "mcq",
+      "prompt": "Who is prioritized in screening for hyperlipidemia?",
+      "options": [
+        "A 20-year-old male with family history of hyperlipidemia with no symptom",
+        "A smoker male with family history of MI / obese older male (source unclear)",
+        "A female",
+        "A female"
+      ],
+      "answer": "A smoker male with family history of MI / obese older male (source unclear)",
+      "complete_in_source": false,
+      "notes": "Option B wording is ambiguous in source."
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q43",
+      "section": "Community",
+      "question_type": "mcq",
+      "prompt": "Which of the following is considered a primary strategy for cholesterol evaluation?",
+      "options": [
+        "Prevalence of .....",
+        "Get all the elderly persons vaccination",
+        "Encourage the society to start healthy life style",
+        "Prescribe cholesterol medications"
+      ],
+      "answer": "Encourage the society to start healthy life style",
+      "complete_in_source": false,
+      "notes": "Stem and option A truncated in source."
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q44",
+      "section": "Community",
+      "question_type": "short_answer",
+      "prompt": "Community question 44 is missing in source.",
+      "options": [],
+      "answer": null,
+      "complete_in_source": false,
+      "notes": "Source explicitly says question missing."
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q45",
+      "section": "Radiology",
+      "question_type": "mcq",
+      "prompt": "The circle indicates:",
+      "options": [
+        "Right cardiophrenic angle",
+        "Right costocardiac angle"
+      ],
+      "answer": "Right cardiophrenic angle",
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q46",
+      "section": "Radiology",
+      "question_type": "mcq",
+      "prompt": "Which number indicates the right ventricle?",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": "2",
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q47",
+      "section": "Radiology",
+      "question_type": "identify",
+      "prompt": "Identify the radiology image.",
+      "options": [],
+      "answer": "Pulmonary edema",
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q48",
+      "section": "Radiology",
+      "question_type": "identify",
+      "prompt": "According to the image, what is the most likely diagnosis?",
+      "options": [],
+      "answer": "Aortic aneurysm",
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q49",
+      "section": "SAQ",
+      "question_type": "saq",
+      "prompt": "Mention the fate of anterior cardinal vein.",
+      "options": [],
+      "answer": null,
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q50",
+      "section": "SAQ",
+      "question_type": "saq",
+      "prompt": "Case about a patient who has ulcer in his stomach: A) the origin of the affected artery. B) mention its vertebral level.",
+      "options": [],
+      "answer": null,
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q51",
+      "section": "SAQ",
+      "question_type": "saq",
+      "prompt": "Mention the structure supplied by right coronary artery.",
+      "options": [],
+      "answer": null,
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q52",
+      "section": "SAQ",
+      "question_type": "saq",
+      "prompt": "Mention branches of descending thoracic aorta.",
+      "options": [],
+      "answer": null,
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q53",
+      "section": "SAQ",
+      "question_type": "saq",
+      "prompt": "Histo: Mention one criterion about tunica media in bending area.",
+      "options": [],
+      "answer": null,
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q54",
+      "section": "SAQ",
+      "question_type": "saq",
+      "prompt": "Histo: Mention one criterion about tunica media in the roots of great vessels.",
+      "options": [],
+      "answer": null,
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q55",
+      "section": "SAQ",
+      "question_type": "saq",
+      "prompt": "Physio: Mention the changes that happened during the rapid filling phase: AV valves, volume of ventricle, heart sound, ECG.",
+      "options": [],
+      "answer": null,
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q56",
+      "section": "SAQ",
+      "question_type": "saq",
+      "prompt": "Briefly discuss why the endocardium is the first/most suspected part for myocardial ischemia.",
+      "options": [],
+      "answer": null,
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q57",
+      "section": "SAQ",
+      "question_type": "saq",
+      "prompt": "Case of aortic stenosis: what type of murmur can be heard during auscultation?",
+      "options": [],
+      "answer": null,
+      "complete_in_source": true,
+      "notes": null
+    },
+    {
+      "source_file": "CVS final (2).pdf",
+      "original_number": "Q58",
+      "section": "SAQ",
+      "question_type": "saq",
+      "prompt": "Case about a patient with blood loss: discuss the distribution of blood flow to body organs.",
+      "options": [],
+      "answer": null,
+      "complete_in_source": true,
+      "notes": null
+    }
+  ]
+}
