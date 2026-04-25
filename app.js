@@ -20,15 +20,25 @@ async function initApp() {
         if (!response.ok) {
             throw new Error(`Failed to load exam.json: ${response.status}`);
         }
-        examData = await response.json();
-        
-        // Initialize user answers array
+        const loadedData = await response.json();
+
+        if (Array.isArray(loadedData)) {
+            examData = {
+                exam_title: "PBT Mid Exam",
+                questions: loadedData
+            };
+        } else {
+            examData = loadedData;
+        }
+
         state.userAnswers = new Array(examData.questions.length).fill(null);
-        
+
+
+
         render();
     } catch (error) {
         console.error('Error loading exam data (likely CORS due to running statically):', error);
-        
+
         // Provide a fallback local-file uploader (FileReader) bypasses CORS.
         appDiv.innerHTML = `
             <div class="start-screen" style="max-width: 500px; text-align: center;">
@@ -44,7 +54,7 @@ async function initApp() {
                 </label>
             </div>
         `;
-        
+
         const fileInput = document.getElementById('local-file-upload');
         fileInput.addEventListener('change', (event) => {
             const file = event.target.files[0];
@@ -70,9 +80,9 @@ function render() {
     if (!examData) return;
 
     appDiv.innerHTML = '';
-    
+
     appDiv.classList.remove('animate-fade-in');
-    void appDiv.offsetWidth; 
+    void appDiv.offsetWidth;
     appDiv.classList.add('animate-fade-in');
 
     if (state.currentScreen === 'start') {
@@ -109,7 +119,7 @@ function renderExamScreen() {
     const userAnswerData = state.userAnswers[state.currentQuestionIndex];
 
     const container = document.createElement('div');
-    
+
     const header = document.createElement('div');
     header.className = 'exam-header';
     header.innerHTML = `
@@ -137,7 +147,7 @@ function renderExamScreen() {
     footer.className = 'mt-6';
     footer.style.display = 'flex';
     footer.style.justifyContent = 'space-between';
-    
+
     // Add "End Exam" Button
     const endExamBtn = document.createElement('button');
     endExamBtn.className = 'btn-primary';
@@ -149,7 +159,7 @@ function renderExamScreen() {
     const nextBtn = document.createElement('button');
     nextBtn.className = 'btn-primary';
     nextBtn.style.display = isAnswered ? 'block' : 'none'; // Only show when answered
-    
+
     if (state.currentQuestionIndex < examData.questions.length - 1) {
         nextBtn.textContent = 'Next Question &rarr;';
         nextBtn.onclick = () => {
@@ -175,10 +185,10 @@ function renderExamScreen() {
         question.options.forEach((opt, index) => {
             const btn = document.createElement('button');
             btn.className = 'option-btn';
-            
+
             if (isAnswered) {
                 btn.disabled = true;
-                
+
                 if (opt === question.answer || opt === question.correct_answer) {
                     btn.classList.add('correct');
                 } else if (userAnswerData && opt === userAnswerData.answer && !userAnswerData.isCorrect) {
@@ -195,7 +205,7 @@ function renderExamScreen() {
                 </span>
                 <span>${opt}</span>
             `;
-            
+
             btn.onclick = () => handleAnswerSelect(opt, question);
             optionsContainer.appendChild(btn);
         });
@@ -210,18 +220,18 @@ function renderExamScreen() {
         textInput.type = 'text';
         textInput.className = 'text-input';
         textInput.placeholder = 'Type your answer here...';
-        
+
         if (isAnswered) {
             textInput.disabled = true;
             textInput.value = userAnswerData ? userAnswerData.answer : '';
-            
+
             if (userAnswerData && userAnswerData.isCorrect) {
                 textInput.classList.add('correct-input');
             } else {
                 textInput.classList.add('incorrect-input');
             }
         }
-        
+
         inputDiv.appendChild(textInput);
 
         if (!isAnswered) {
@@ -235,7 +245,7 @@ function renderExamScreen() {
                 }
             };
             inputDiv.appendChild(submitBtn);
-            
+
             // Allow pressing Enter
             textInput.addEventListener('keypress', (e) => {
                 if (e.key === 'Enter' && textInput.value.trim() !== '') {
@@ -246,14 +256,14 @@ function renderExamScreen() {
 
         optionsContainer.appendChild(inputDiv);
     }
-    
+
     // Feedback Message
     if (isAnswered) {
         const feedback = document.createElement('div');
         feedback.className = 'feedback-message fade-in';
-        
+
         const correctAnswer = question.answer || question.correct_answer || 'No specific answer provided';
-        
+
         if (userAnswerData && userAnswerData.isCorrect) {
             feedback.innerHTML = `<span style="color: var(--success-color); font-weight: bold;">✓ Correct!</span>`;
         } else {
@@ -272,7 +282,7 @@ function renderExamScreen() {
 function renderResultsScreen() {
     let answeredQuestions = 0;
     let correctCount = 0;
-    
+
     state.userAnswers.forEach(ans => {
         if (ans !== null) {
             answeredQuestions++;
@@ -281,7 +291,7 @@ function renderResultsScreen() {
     });
 
     const percentage = answeredQuestions > 0 ? Math.round((correctCount / answeredQuestions) * 100) : 0;
-    
+
     const container = document.createElement('div');
     container.className = 'results-screen';
 
@@ -337,16 +347,16 @@ function handleAnswerSelect(selectedAnswer, questionObj) {
         isCorrect = selectedAnswer.toString().toLowerCase().trim() === correctAnswer.toString().toLowerCase().trim();
     } else {
         // If there's no answer key, we might count it as correct or incorrect. Let's assume text questions without answers are just marked correct for participation
-        isCorrect = true;     
+        isCorrect = true;
     }
 
     state.userAnswers[state.currentQuestionIndex] = {
         answer: selectedAnswer,
         isCorrect: isCorrect
     };
-    
+
     state.hasAnsweredCurrent = true;
-    render(); 
+    render();
 }
 
 function finishExam() {
@@ -359,7 +369,7 @@ function finishExam() {
 function startTimer() {
     state.timerInterval = setInterval(() => {
         state.timeLeft--;
-        
+
         const timerDisplay = document.querySelector('#timer-display span');
         if (timerDisplay) {
             timerDisplay.textContent = formatTime(state.timeLeft);
