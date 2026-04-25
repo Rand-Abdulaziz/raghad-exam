@@ -1,1382 +1,1718 @@
-{
-  "exam_title": "CVS Final Combined - Full Source Extraction",
-  "total_entries": 99,
-  "questions": [
-    {
-      "source_file": "CVS final.pdf",
-      "original_number": "Q1",
-      "section": "Radiology/Anatomy",
-      "question_type": "mcq",
-      "prompt": "What is indicated by the arrow?",
-      "options": [
-        "Aortic knuckle"
-      ],
-      "answer": "Aortic knuckle",
-      "complete_in_source": false,
-      "notes": "Only one visible option in source."
-    },
-    {
-      "source_file": "CVS final.pdf",
-      "original_number": "Q2",
-      "section": "Anatomy",
-      "question_type": "mcq",
-      "prompt": "A 25-year-old man suffers a gunshot wound to the calf that severs the posterior tibial artery at its origin. Which of the following vessels will not receive blood flow immediately following the injury?",
-      "options": [
-        "Anterior tibial artery",
-        "Inferior medial genicular artery",
-        "Dorsalis pedis artery",
-        "Popliteal artery",
-        "Fibular artery"
-      ],
-      "answer": null,
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final.pdf",
-      "original_number": "Q3",
-      "section": "Anatomy",
-      "question_type": "mcq",
-      "prompt": "A 56-year-old construction worker complains of pain in the neck and shoulder, numbness and tingling in the right fingers, and a weak grip in his right hand. Symptoms worsen when carrying heavy objects on the right shoulder. X-ray shows a right cervical rib close to the proximal first rib. What structure is most likely impinged by the cervical rib?",
-      "options": [
-        "Right common carotid artery",
-        "Brachiocephalic trunk",
-        "Right subclavian artery",
-        "Vertebral artery",
-        "Right brachiocephalic vein"
-      ],
-      "answer": "Right subclavian artery",
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final.pdf",
-      "original_number": "Q4",
-      "section": "Anatomy/Embryology",
-      "question_type": "mcq",
-      "prompt": "During a newborn examination, no pulse is detected in the groin or legs, the lower extremities are cold, and upper-limb pulse and blood pressure are elevated. MRI shows the anomaly indicated by the arrowhead. What is the anomaly?",
-      "options": [
-        "Coarctation of the aorta (descending)",
-        "Tetralogy of Fallot",
-        "Ventricular septal defect (VSD)",
-        "Atrial septal defect (ASD)",
-        "Transposition of the great vessels"
-      ],
-      "answer": "Coarctation of the aorta (descending)",
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final.pdf",
-      "original_number": "Q5",
-      "section": "Embryology",
-      "question_type": "short_answer",
-      "prompt": "A 22-year-old woman gives birth to an infant with an abnormally small coronary sinus that limits cardiac venous drainage. The coronary sinus is derived from which labeled structure in the primitive heart diagram?",
-      "options": [],
-      "answer": null,
-      "complete_in_source": false,
-      "notes": "Diagram/label details missing in source."
-    },
-    {
-      "source_file": "CVS final.pdf",
-      "original_number": "Q6",
-      "section": "Physiology",
-      "question_type": "mcq",
-      "prompt": "In an adult human in the upright position, if mean arterial pressure (MAP) at heart level = 100 mmHg, what will be the MAP in an artery at the head?",
-      "options": [
-        "60 mmHg"
-      ],
-      "answer": "60 mmHg",
-      "complete_in_source": false,
-      "notes": "Only one visible option in source."
-    },
-    {
-      "source_file": "CVS final.pdf",
-      "original_number": "Q7",
-      "section": "Physiology",
-      "question_type": "mcq",
-      "prompt": "What does '6' represent in the illustrated graph?",
-      "options": [
-        "Aortic stenosis",
-        "Atherosclerosis",
-        "Patent ductus arteriosus",
-        "Aortic regurgitation"
-      ],
-      "answer": null,
-      "complete_in_source": false,
-      "notes": "Graph missing in source."
-    },
-    {
-      "source_file": "CVS final.pdf",
-      "original_number": "Q8",
-      "section": "Physiology",
-      "question_type": "mcq",
-      "prompt": "Harbi had a road traffic accident causing severe bleeding and decreased MAP. Which arteries maintain relatively constant blood flow with only slight elevation in resistance or no change?",
-      "options": [
-        "Hepatic arteries",
-        "Cerebral arteries"
-      ],
-      "answer": "Cerebral arteries",
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final.pdf",
-      "original_number": "Q9",
-      "section": "Radiology",
-      "question_type": "mcq",
-      "prompt": "What is indicated by this picture?",
-      "options": [
-        "Ascending aortic dissection"
-      ],
-      "answer": "Ascending aortic dissection",
-      "complete_in_source": false,
-      "notes": "Only one visible option in source."
-    },
-    {
-      "source_file": "CVS final.pdf",
-      "original_number": "Q10",
-      "section": "Histology",
-      "question_type": "mcq",
-      "prompt": "Where are fenestrated capillaries present?",
-      "options": [
-        "Lung",
-        "Brain",
-        "Kidney",
-        "Skeletal muscles"
-      ],
-      "answer": "Kidney",
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final.pdf",
-      "original_number": "Q11",
-      "section": "Physiology",
-      "question_type": "mcq",
-      "prompt": "What is indicated by the arrow?",
-      "options": [
-        "Aldosterone"
-      ],
-      "answer": "Aldosterone",
-      "complete_in_source": false,
-      "notes": "Only one visible option in source."
-    },
-    {
-      "source_file": "CVS final.pdf",
-      "original_number": "Q12",
-      "section": "Physiology",
-      "question_type": "mcq",
-      "prompt": "Patient on hypotensive drugs. Calculate the pulse pressure (PP).",
-      "options": [
-        "40",
-        "50",
-        "60",
-        "70",
-        "110"
-      ],
-      "answer": null,
-      "complete_in_source": false,
-      "notes": "Values needed to calculate PP are missing in source."
-    },
-    {
-      "source_file": "CVS final.pdf",
-      "original_number": "Q13",
-      "section": "Anatomy",
-      "question_type": "mcq",
-      "prompt": "During surgery, a student is asked to explain what 'left coronary dominance' means. Which explanation is correct?",
-      "options": [
-        "It gives rise to the anterior interventricular artery",
-        "It is derived from the left 6th aortic arch",
-        "It supplies the right border of the heart",
-        "It gives rise to the posterior interventricular artery",
-        "It supplies the margin of the heart"
-      ],
-      "answer": "It gives rise to the posterior interventricular artery",
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final.pdf",
-      "original_number": "Q14",
-      "section": "Physiology",
-      "question_type": "mcq",
-      "prompt": "What is the main determinant of pulse pressure (PP)?",
-      "options": [
-        "Compliance of systemic arteries",
-        "Elasticity of systemic veins",
-        "Pulmonary vascular resistance",
-        "Systemic vascular resistance"
-      ],
-      "answer": "Compliance of systemic arteries",
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final.pdf",
-      "original_number": "Q15",
-      "section": "Embryology",
-      "question_type": "mcq",
-      "prompt": "Long case: patient has double SVC. What maldevelopment causes this anomaly?",
-      "options": [
-        "Persistence of the left anterior cardinal vein"
-      ],
-      "answer": "Persistence of the left anterior cardinal vein",
-      "complete_in_source": false,
-      "notes": "Only one visible option in source."
-    },
-    {
-      "source_file": "CVS final.pdf",
-      "original_number": "Q16",
-      "section": "Physiology",
-      "question_type": "mcq",
-      "prompt": "In upright position, MAP at heart level is 100 mmHg. What is approximately the MAP in the head (50 cm above the heart)?",
-      "options": [
-        "100 mmHg",
-        "120 mmHg",
-        "62 mmHg"
-      ],
-      "answer": "62 mmHg",
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final.pdf",
-      "original_number": "Q17",
-      "section": "Physiology",
-      "question_type": "mcq",
-      "prompt": "What can cause edema?",
-      "options": [
-        "Decreased plasma proteins"
-      ],
-      "answer": "Decreased plasma proteins",
-      "complete_in_source": false,
-      "notes": "Only one visible option in source."
-    },
-    {
-      "source_file": "CVS final.pdf",
-      "original_number": "Q18",
-      "section": "Anatomy",
-      "question_type": "mcq",
-      "prompt": "During surgery, an artery arising from the anterior surface just above the superior thyroid artery at the level of the hyoid bone, deep to the hypoglossal nerve, is injured. What artery is it?",
-      "options": [
-        "Lingual artery"
-      ],
-      "answer": "Lingual artery",
-      "complete_in_source": false,
-      "notes": "Only one visible option in source."
-    },
-    {
-      "source_file": "CVS final.pdf",
-      "original_number": "Q19",
-      "section": "Anatomy",
-      "question_type": "mcq",
-      "prompt": "How is the external jugular vein formed?",
-      "options": [
-        "By union of the posterior division of the retromandibular vein and posterior auricular vein"
-      ],
-      "answer": "By union of the posterior division of the retromandibular vein and posterior auricular vein",
-      "complete_in_source": false,
-      "notes": "Only one visible option in source."
-    },
-    {
-      "source_file": "CVS final.pdf",
-      "original_number": "Q20",
-      "section": "Physiology",
-      "question_type": "mcq",
-      "prompt": "When a person moves from a supine position to a standing position, which compensatory change occurs?",
-      "options": [
-        "Decreased heart rate",
-        "Increased contractility",
-        "Decreased total peripheral resistance",
-        "Decreased cardiac output",
-        "Increased PR intervals"
-      ],
-      "answer": "Increased contractility",
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final.pdf",
-      "original_number": "Q21",
-      "section": "Anatomy",
-      "question_type": "mcq",
-      "prompt": "A 70-year-old with hypercholesterolemia has severe cramps in the gluteal region due to insufficient perfusion. Which artery is most likely occluded?",
-      "options": [
-        "External iliac",
-        "Internal iliac",
-        "Femoral",
-        "Internal pudendal",
-        "Abdominal aorta"
-      ],
-      "answer": "Internal iliac",
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final.pdf",
-      "original_number": "Q22",
-      "section": "Physiology",
-      "question_type": "mcq",
-      "prompt": "A CT scan shows the abdominal aorta constricted to one-half of its resting diameter. Resistance to blood flow would be:",
-      "options": [
-        "Decreased in half",
-        "Decreased 16-fold",
-        "Increased by 50%",
-        "Doubled",
-        "Increased 16-fold"
-      ],
-      "answer": "Increased 16-fold",
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final.pdf",
-      "original_number": "Q23",
-      "section": "Physiology",
-      "question_type": "mcq",
-      "prompt": "A 24-year-old woman with severe diarrhea has BP 90/60 mm Hg supine and HR 100/min. On standing, HR rises to 120/min. What accounts for the further increase in heart rate?",
-      "options": [
-        "Decreased total peripheral resistance",
-        "Increased venoconstriction",
-        "Increased contractility",
-        "Increased afterload",
-        "Decreased venous return"
-      ],
-      "answer": "Decreased venous return",
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final.pdf",
-      "original_number": "Q24",
-      "section": "Physiology",
-      "question_type": "mcq",
-      "prompt": "Secretion of which hormone is stimulated by extracellular fluid volume expansion?",
-      "options": [
-        "Antidiuretic hormone (ADH)",
-        "Aldosterone",
-        "Atrial natriuretic peptide (ANP)",
-        "1,25-Dihydroxycholecalciferol",
-        "Parathyroid hormone (PTH)"
-      ],
-      "answer": "Atrial natriuretic peptide (ANP)",
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final.pdf",
-      "original_number": "Q25",
-      "section": "Physiology",
-      "question_type": "mcq",
-      "prompt": "Why can cardiac muscle not reach titanic contraction?",
-      "options": [
-        "A long duration of effective refractory period"
-      ],
-      "answer": "A long duration of effective refractory period",
-      "complete_in_source": false,
-      "notes": "Only one visible option in source."
-    },
-    {
-      "source_file": "CVS final.pdf",
-      "original_number": "Q26",
-      "section": "Physiology",
-      "question_type": "short_answer",
-      "prompt": "In the patient, what is the most likely value of central venous pressure (CVP)?",
-      "options": [],
-      "answer": ">5 mmHg",
-      "complete_in_source": false,
-      "notes": "Source shows answer only, no full stem/options."
-    },
-    {
-      "source_file": "CVS final.pdf",
-      "original_number": "Q28",
-      "section": "Physiology",
-      "question_type": "mcq",
-      "prompt": "A 30-year-old pregnant woman is losing blood. Which change will be noticed when detecting her radial pulse?",
-      "options": [
-        "Tachycardia"
-      ],
-      "answer": "Tachycardia",
-      "complete_in_source": false,
-      "notes": "Only one visible option in source."
-    },
-    {
-      "source_file": "CVS final.pdf",
-      "original_number": "Q29",
-      "section": "Community",
-      "question_type": "mcq",
-      "prompt": "Which of the following has higher risk for developing CVD?",
-      "options": [
-        "Obese diabetic man",
-        "Middle aged female with diabetes",
-        "Pregnant with twins",
-        "Vegetarian"
-      ],
-      "answer": "Obese diabetic man",
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final.pdf",
-      "original_number": "Q30",
-      "section": "Community",
-      "question_type": "mcq",
-      "prompt": "As an epidemiologist screening for hypertension in KSA, which statement would support your research?",
-      "options": [
-        "70% of hypertensive patients do not take medications",
-        "Old, obese and diabetic male are at greater risk than female",
-        "Highest incidence is among people who are 55-65 years old",
-        "Rural population show higher prevalence than urban"
-      ],
-      "answer": null,
-      "complete_in_source": false,
-      "notes": "Source does not clearly mark the final answer."
-    },
-    {
-      "source_file": "CVS final.pdf",
-      "original_number": "Q31",
-      "section": "Community/Cardiology prevention",
-      "question_type": "mcq",
-      "prompt": "A male smoker has 17% CAD risk. After doing CAC, the score is zero. What step should he take?",
-      "options": [
-        "Start statin"
-      ],
-      "answer": "Start statin",
-      "complete_in_source": false,
-      "notes": "Only one visible option in source."
-    },
-    {
-      "source_file": "CVS final.pdf",
-      "original_number": "Q32",
-      "section": "Physiology",
-      "question_type": "image_based",
-      "prompt": "Which of the following ECGs is AV block?",
-      "options": [],
-      "answer": "The second tracing",
-      "complete_in_source": false,
-      "notes": "Image-based; options are tracings rather than text."
-    },
-    {
-      "source_file": "CVS final.pdf",
-      "original_number": "Q33",
-      "section": "Physiology",
-      "question_type": "image_based",
-      "prompt": "Write the pressure at points 1-5 in the capillary fluid exchange diagram.",
-      "options": [],
-      "answer": null,
-      "complete_in_source": false,
-      "notes": "Image-based values only."
-    },
-    {
-      "source_file": "CVS final.pdf",
-      "original_number": "Q34",
-      "section": "Embryology",
-      "question_type": "mcq",
-      "prompt": "Patient appears to have constriction at the esophagus and trachea. What could be the reason?",
-      "options": [
-        "Lower part of the right dorsal aorta persists"
-      ],
-      "answer": "Lower part of the right dorsal aorta persists",
-      "complete_in_source": false,
-      "notes": "Only one visible option in source."
-    },
-    {
-      "source_file": "CVS final.pdf",
-      "original_number": "Q35",
-      "section": "Cardiology",
-      "question_type": "mcq",
-      "prompt": "Harsh holosystolic murmur at the left lower sternal border indicates:",
-      "options": [
-        "VSD"
-      ],
-      "answer": "VSD",
-      "complete_in_source": false,
-      "notes": "Only one visible option in source."
-    },
-    {
-      "source_file": "CVS final.pdf",
-      "original_number": "Q36",
-      "section": "Anatomy",
-      "question_type": "mcq",
-      "prompt": "A 7-year-old boy with Down syndrome undergoes VSD repair and develops heart block due to injury of the artery supplying the SA and AV nodes. Which artery was most likely damaged?",
-      "options": [
-        "Anterior interventricular",
-        "Left marginal",
-        "Left coronary",
-        "Right coronary",
-        "Circumflex branch"
-      ],
-      "answer": "Right coronary",
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final.pdf",
-      "original_number": "Q37",
-      "section": "Cardiology",
-      "question_type": "mcq",
-      "prompt": "Machine-like murmur heard infraclavicular. Diagnosis?",
-      "options": [
-        "PDA"
-      ],
-      "answer": "PDA",
-      "complete_in_source": false,
-      "notes": "Only one visible option in source."
-    },
-    {
-      "source_file": "CVS final.pdf",
-      "original_number": "Q38",
-      "section": "Physiology",
-      "question_type": "mcq",
-      "prompt": "The smallest difference in pressure during ejection period is between which structures?",
-      "options": [
-        "Left ventricle and aorta"
-      ],
-      "answer": "Left ventricle and aorta",
-      "complete_in_source": false,
-      "notes": "Only one visible option in source."
-    },
-    {
-      "source_file": "CVS final.pdf",
-      "original_number": "Q39",
-      "section": "Physiology",
-      "question_type": "mcq",
-      "prompt": "Maximal systemic arterial pressure occurs during which phase of the cardiac cycle?",
-      "options": [
-        "Rapid ejection phase"
-      ],
-      "answer": "Rapid ejection phase",
-      "complete_in_source": false,
-      "notes": "Only one visible option in source."
-    },
-    {
-      "source_file": "CVS final.pdf",
-      "original_number": "Q40",
-      "section": "Anatomy",
-      "question_type": "mcq",
-      "prompt": "The lateral thoracic artery is injured. What is its origin?",
-      "options": [
-        "First part of axillary artery",
-        "Second part of axillary artery",
-        "Third part of axillary artery",
-        "First part of brachial artery",
-        "Second part of brachial artery"
-      ],
-      "answer": "Second part of axillary artery",
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final.pdf",
-      "original_number": "Q41",
-      "section": "Cardiology",
-      "question_type": "mcq",
-      "prompt": "A patient has pulmonary stenosis. Where can the murmur be heard?",
-      "options": [
-        "Left 2nd intercostal space"
-      ],
-      "answer": "Left 2nd intercostal space",
-      "complete_in_source": false,
-      "notes": "Only one visible option in source."
-    },
-    {
-      "source_file": "CVS final.pdf",
-      "original_number": "Q42",
-      "section": "Embryology",
-      "question_type": "mcq",
-      "prompt": "A clinically significant atrial septal defect usually results from incomplete closure of which structure?",
-      "options": [
-        "Foramen ovale",
-        "Ligamentum arteriosum",
-        "Ductus arteriosus",
-        "Sinus venarum",
-        "Coronary sinus"
-      ],
-      "answer": "Foramen ovale",
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final.pdf",
-      "original_number": "Q43",
-      "section": "Physiology",
-      "question_type": "mcq",
-      "prompt": "What mechanism returns elevated blood pressure to normal within a few moments?",
-      "options": [
-        "Decrease the action potentials of the parasympathetic neuron",
-        "Decrease the action potentials in the sympathetic neuron",
-        "Decrease the baroreceptor frequency",
-        "Increase the action potentials in sympathetic neurons"
-      ],
-      "answer": "Decrease the action potentials in the sympathetic neuron",
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final.pdf",
-      "original_number": "Q44",
-      "section": "Embryology",
-      "question_type": "mcq",
-      "prompt": "A complete atrioventricular canal defect includes a primum ASD and posterior inlet VSD. What embryonic structures normally fuse to close the foramen primum?",
-      "options": [
-        "Septum secundum and septum primum",
-        "Septum secundum and the fused endocardial cushions",
-        "Septum primum and the fused endocardial cushions",
-        "Septum primum and the septum spurium",
-        "Left inferior and right superior truncus swellings"
-      ],
-      "answer": "Septum primum and the fused endocardial cushions",
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final.pdf",
-      "original_number": "Q45",
-      "section": "Anatomy",
-      "question_type": "mcq",
-      "prompt": "Long case about descending rectal bleeding: which artery gives off a direct branch to the affected structure?",
-      "options": [
-        "Abdominal aorta",
-        "External iliac",
-        "Superior mesenteric artery",
-        "Inferior mesenteric artery"
-      ],
-      "answer": "Inferior mesenteric artery",
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q1",
-      "section": "Physiology",
-      "question_type": "mcq",
-      "prompt": "A 50-year-old male has heart rate 90 bpm, EDV 130 ml, and ESV 60 ml. Calculate cardiac output.",
-      "options": [
-        "4.2 L/min",
-        "2.4 L/min",
-        "3.6 L/min"
-      ],
-      "answer": "2.4 L/min",
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q2",
-      "section": "Physiology",
-      "question_type": "mcq",
-      "prompt": "A 39-year-old woman has breast cancer and undergoes mastectomy. Afterwards she develops edema. What is the most likely cause?",
-      "options": [
-        "Decreased colloid osmotic pressure",
-        "Increased interstitial fluid pressure",
-        "Impaired lymphatic drainage"
-      ],
-      "answer": "Impaired lymphatic drainage",
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q3",
-      "section": "Physiology",
-      "question_type": "mcq",
-      "prompt": "A patient presents with generalized edema, hypoalbuminemia, and proteinuria. What is the most likely cause?",
-      "options": [
-        "Decreased colloid osmotic pressure",
-        "Increased interstitial fluid pressure"
-      ],
-      "answer": "Decreased colloid osmotic pressure",
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q4",
-      "section": "Physiology",
-      "question_type": "mcq",
-      "prompt": "Which condition can lead to an increase in EDV and a wide pulse pressure?",
-      "options": [
-        "Aortic regurgitation",
-        "Mitral regurgitation",
-        "Mitral stenosis",
-        "Standing",
-        "Systemic vasodilation"
-      ],
-      "answer": "Aortic regurgitation",
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q5",
-      "section": "Physiology",
-      "question_type": "image_based",
-      "prompt": "Graph of ECG recording of an elderly man asking about the arrhythmia.",
-      "options": [],
-      "answer": null,
-      "complete_in_source": false,
-      "notes": "Graph missing from source text."
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q6",
-      "section": "Physiology",
-      "question_type": "image_based",
-      "prompt": "Pressure-volume graph asking about MAP or PP of a hypertensive man under treatment.",
-      "options": [],
-      "answer": null,
-      "complete_in_source": false,
-      "notes": "Graphs missing in source; source explicitly says to skip."
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q7",
-      "section": "Physiology",
-      "question_type": "mcq",
-      "prompt": "What is the effect of a decrease in afterload?",
-      "options": [
-        "Increase in SV resulting in reduction in ESV",
-        "Increase in SV resulting in reduction in EDV",
-        "Decrease in SV resulting in increase in ESV"
-      ],
-      "answer": "Increase in SV resulting in reduction in ESV",
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q8",
-      "section": "Physiology",
-      "question_type": "mcq",
-      "prompt": "What happens if preload increases?",
-      "options": [
-        "EDV and stroke volume increase equally",
-        "EDV increases more than stroke volume",
-        "EDV increases less than stroke volume"
-      ],
-      "answer": "EDV and stroke volume increase equally",
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q9",
-      "section": "Physiology",
-      "question_type": "mcq",
-      "prompt": "A 24-year-old woman with severe diarrhea has BP 90/60 mm Hg supine and HR 100/min. On standing, HR rises to 120/min. Which of the following accounts for the further increase in heart rate upon standing?",
-      "options": [
-        "Decreased total peripheral resistance",
-        "Increased venoconstriction",
-        "Increased contractility",
-        "Increased afterload",
-        "Decreased venous return"
-      ],
-      "answer": "Decreased venous return",
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q10",
-      "section": "Physiology",
-      "question_type": "mcq",
-      "prompt": "Cause of atrial fibrillation:",
-      "options": [
-        "Micro-reentry and multiple ectopic foci"
-      ],
-      "answer": "Micro-reentry and multiple ectopic foci",
-      "complete_in_source": false,
-      "notes": "Only one visible option in source."
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q11",
-      "section": "Anatomy/Physiology",
-      "question_type": "mcq",
-      "prompt": "Which of the following is a difference between the left and right coronary arteries?",
-      "options": [
-        "Systolic crunch affects the left more than the right"
-      ],
-      "answer": "Systolic crunch affects the left more than the right",
-      "complete_in_source": false,
-      "notes": "Only one visible option in source."
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q12",
-      "section": "Physiology",
-      "question_type": "mcq",
-      "prompt": "Which of the following causes vasoconstriction?",
-      "options": [
-        "Increase PCO2",
-        "Increase K+",
-        "Increase H+",
-        "Increase O2"
-      ],
-      "answer": "Increase O2",
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q13",
-      "section": "Physiology",
-      "question_type": "mcq",
-      "prompt": "Loss of 30% of blood volume will activate which of the following?",
-      "options": [
-        "Angiotensin II",
-        "Aldosterone",
-        "Norepinephrine"
-      ],
-      "answer": "Norepinephrine",
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q14",
-      "section": "Physiology",
-      "question_type": "mcq",
-      "prompt": "Why from A to B?",
-      "options": [
-        "Increased venous return",
-        "Increased aortic pressure",
-        "Sympathetic stimulation"
-      ],
-      "answer": "Increased aortic pressure",
-      "complete_in_source": false,
-      "notes": "Graph/context missing; source notes uncertainty about option A."
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q15",
-      "section": "Physiology",
-      "question_type": "mcq",
-      "prompt": "Harbi had a road traffic accident causing severe bleeding and decreased MAP. Which arteries maintain relatively constant blood flow?",
-      "options": [
-        "Renal vessels",
-        "Cerebral vessels",
-        "Abdominal vessels",
-        "Hepatic arteries"
-      ],
-      "answer": "Cerebral vessels",
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q16",
-      "section": "Physiology",
-      "question_type": "mcq",
-      "prompt": "In an adult man, RAP is zero. Cardiac output equals?",
-      "options": [
-        "10 L",
-        "5 L",
-        "3 L",
-        "15 L"
-      ],
-      "answer": "5 L",
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q17",
-      "section": "Physiology",
-      "question_type": "mcq",
-      "prompt": "In varicose veins, blood pools in the veins because:",
-      "options": [
-        "Incompetence of valves"
-      ],
-      "answer": "Incompetence of valves",
-      "complete_in_source": false,
-      "notes": "Only one visible option in source."
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q18",
-      "section": "Physiology",
-      "question_type": "mcq",
-      "prompt": "What is the role of skeletal muscle in venous return?",
-      "options": [
-        "External venous compression leading to decreased venous capacity"
-      ],
-      "answer": "External venous compression leading to decreased venous capacity",
-      "complete_in_source": false,
-      "notes": "Only one visible option in source."
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q19",
-      "section": "Physiology",
-      "question_type": "mcq",
-      "prompt": "Which hemodynamic change is expected in mitral stenosis?",
-      "options": [
-        "Decreased left atrial volume",
-        "Decreased left ventricle EDV",
-        "Decreased pulmonary venous pressure",
-        "Increased aortic pressure",
-        "Increased left atrial pressure"
-      ],
-      "answer": "Increased left atrial pressure",
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q20",
-      "section": "Physiology",
-      "question_type": "short_answer",
-      "prompt": "The difference between resting cardiac output and the maximum volume of blood the heart can pump per minute is known as what?",
-      "options": [],
-      "answer": "Cardiac reserve",
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q21",
-      "section": "Physiology",
-      "question_type": "mcq",
-      "prompt": "A 37-year-old woman has the abdominal aorta constricted to one-half of its resting diameter. Resistance to blood flow through the vessel would be:",
-      "options": [
-        "Decreased in half",
-        "Decreased 16-fold",
-        "Increased by 50%",
-        "Doubled",
-        "Increased 16-fold"
-      ],
-      "answer": "Increased 16-fold",
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q22",
-      "section": "Physiology",
-      "question_type": "image_based",
-      "prompt": "Which of the following ECG tracings is AV block?",
-      "options": [],
-      "answer": "The second tracing",
-      "complete_in_source": false,
-      "notes": "Image-based tracing options."
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q23",
-      "section": "Physiology",
-      "question_type": "image_based",
-      "prompt": "Question based on image note: decrease arterial compliance.",
-      "options": [],
-      "answer": null,
-      "complete_in_source": false,
-      "notes": "Only image annotation available."
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q24",
-      "section": "Physiology",
-      "question_type": "image_based",
-      "prompt": "Question based on graph about sympathetic stimulation with SA node pacemaker activity.",
-      "options": [],
-      "answer": null,
-      "complete_in_source": false,
-      "notes": "Image-based; full stem not present in text."
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q25",
-      "section": "Physiology",
-      "question_type": "image_based",
-      "prompt": "Question based on slide about stroke volume regulation: afterload.",
-      "options": [],
-      "answer": null,
-      "complete_in_source": false,
-      "notes": "Image-based; full stem not present in text."
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q26",
-      "section": "Physiology",
-      "question_type": "image_based",
-      "prompt": "Write the pressure at points 1-5 in the capillary fluid exchange diagram.",
-      "options": [],
-      "answer": null,
-      "complete_in_source": false,
-      "notes": "Image-based values."
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q27",
-      "section": "Anatomy",
-      "question_type": "mcq",
-      "prompt": "Long case about descending rectal bleeding with no history of hematemesis: which artery gives off a direct branch to the affected structure?",
-      "options": [
-        "Abdominal aorta",
-        "External iliac",
-        "Superior mesenteric artery",
-        "Inferior mesenteric artery"
-      ],
-      "answer": "Inferior mesenteric artery",
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q28",
-      "section": "Embryology",
-      "question_type": "mcq",
-      "prompt": "A male baby with Down syndrome has ASD and a common atrium (cor trioculare biventriculare). What embryonic structures normally fuse to form this septum?",
-      "options": [
-        "Septum secundum and septum primum",
-        "Septum secundum and the fused endocardial cushions",
-        "Septum primum and the fused endocardial cushions",
-        "Septum primum and the septum spurium",
-        "Left inferior and right superior truncus swellings"
-      ],
-      "answer": "Septum secundum and septum primum",
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q29",
-      "section": "Embryology",
-      "question_type": "mcq",
-      "prompt": "Heart tube origin?",
-      "options": [
-        "Splanchnic mesoderm",
-        "Paraxial somites",
-        "Splanchnic endoderm"
-      ],
-      "answer": "Splanchnic mesoderm",
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q30",
-      "section": "Embryology",
-      "question_type": "short_answer",
-      "prompt": "The smooth part of the left atrium is originated from what?",
-      "options": [],
-      "answer": "Pulmonary veins",
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q34",
-      "section": "Embryology",
-      "question_type": "mcq",
-      "prompt": "The smooth part of both ventricles?",
-      "options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E"
-      ],
-      "answer": "D",
-      "complete_in_source": false,
-      "notes": "Options are placeholders in source; actual labels/diagram missing."
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q35",
-      "section": "Embryology",
-      "question_type": "short_answer",
-      "prompt": "Case of Fallot tube?",
-      "options": [],
-      "answer": "IV septal defect",
-      "complete_in_source": false,
-      "notes": "Stem wording preserved as in source."
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q36",
-      "section": "Anatomy",
-      "question_type": "short_answer",
-      "prompt": "A man suffers injury to his medial thigh. Which artery is most likely injured?",
-      "options": [],
-      "answer": "Obturator artery",
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q37",
-      "section": "Anatomy",
-      "question_type": "mcq",
-      "prompt": "A 30-year-old has a mass tumor in her pelvis. The mass can spread through which artery?",
-      "options": [
-        "Lateral sacral artery"
-      ],
-      "answer": "Lateral sacral artery",
-      "complete_in_source": false,
-      "notes": "Only one visible option in source."
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q38",
-      "section": "Embryology",
-      "question_type": "mcq",
-      "prompt": "A fetus has preductal coarctation of the aorta. Which of the following can aggravate this case after birth?",
-      "options": [
-        "Closure of ductus arteriosus",
-        "Patent ductus arteriosus"
-      ],
-      "answer": "Closure of ductus arteriosus",
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q39",
-      "section": "Embryology",
-      "question_type": "mcq",
-      "prompt": "Double IVC anomaly is due to:",
-      "options": [
-        "Persistence of left anterior cardinal vein",
-        "Persistence of left sacrocardinal vein",
-        "Disappearance......"
-      ],
-      "answer": "Persistence of left sacrocardinal vein",
-      "complete_in_source": false,
-      "notes": "Option C incomplete in source."
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q40",
-      "section": "Embryology",
-      "question_type": "mcq",
-      "prompt": "A neonate has abnormal origin of the right subclavian artery. Which abnormality is the cause?",
-      "options": [
-        "Regression of right 4th aortic arch",
-        "Regression of left 4th aortic arch"
-      ],
-      "answer": "Regression of right 4th aortic arch",
-      "complete_in_source": false,
-      "notes": "Other options missing in source."
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q41",
-      "section": "Community",
-      "question_type": "mcq",
-      "prompt": "DASH diet includes:",
-      "options": [
-        "Decrease fatty meals whereas no reduction in sodium",
-        "Increase fruits and grains"
-      ],
-      "answer": "Increase fruits and grains",
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q42",
-      "section": "Community",
-      "question_type": "mcq",
-      "prompt": "Who is prioritized in screening for hyperlipidemia?",
-      "options": [
-        "A 20-year-old male with family history of hyperlipidemia with no symptom",
-        "A smoker male with family history of MI / obese older male (source unclear)",
-        "A female",
-        "A female"
-      ],
-      "answer": "A smoker male with family history of MI / obese older male (source unclear)",
-      "complete_in_source": false,
-      "notes": "Option B wording is ambiguous in source."
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q43",
-      "section": "Community",
-      "question_type": "mcq",
-      "prompt": "Which of the following is considered a primary strategy for cholesterol evaluation?",
-      "options": [
-        "Prevalence of .....",
-        "Get all the elderly persons vaccination",
-        "Encourage the society to start healthy life style",
-        "Prescribe cholesterol medications"
-      ],
-      "answer": "Encourage the society to start healthy life style",
-      "complete_in_source": false,
-      "notes": "Stem and option A truncated in source."
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q44",
-      "section": "Community",
-      "question_type": "short_answer",
-      "prompt": "Community question 44 is missing in source.",
-      "options": [],
-      "answer": null,
-      "complete_in_source": false,
-      "notes": "Source explicitly says question missing."
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q45",
-      "section": "Radiology",
-      "question_type": "mcq",
-      "prompt": "The circle indicates:",
-      "options": [
-        "Right cardiophrenic angle",
-        "Right costocardiac angle"
-      ],
-      "answer": "Right cardiophrenic angle",
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q46",
-      "section": "Radiology",
-      "question_type": "mcq",
-      "prompt": "Which number indicates the right ventricle?",
-      "options": [
-        "1",
-        "2",
-        "3"
-      ],
-      "answer": "2",
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q47",
-      "section": "Radiology",
-      "question_type": "identify",
-      "prompt": "Identify the radiology image.",
-      "options": [],
-      "answer": "Pulmonary edema",
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q48",
-      "section": "Radiology",
-      "question_type": "identify",
-      "prompt": "According to the image, what is the most likely diagnosis?",
-      "options": [],
-      "answer": "Aortic aneurysm",
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q49",
-      "section": "SAQ",
-      "question_type": "saq",
-      "prompt": "Mention the fate of anterior cardinal vein.",
-      "options": [],
-      "answer": null,
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q50",
-      "section": "SAQ",
-      "question_type": "saq",
-      "prompt": "Case about a patient who has ulcer in his stomach: A) the origin of the affected artery. B) mention its vertebral level.",
-      "options": [],
-      "answer": null,
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q51",
-      "section": "SAQ",
-      "question_type": "saq",
-      "prompt": "Mention the structure supplied by right coronary artery.",
-      "options": [],
-      "answer": null,
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q52",
-      "section": "SAQ",
-      "question_type": "saq",
-      "prompt": "Mention branches of descending thoracic aorta.",
-      "options": [],
-      "answer": null,
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q53",
-      "section": "SAQ",
-      "question_type": "saq",
-      "prompt": "Histo: Mention one criterion about tunica media in bending area.",
-      "options": [],
-      "answer": null,
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q54",
-      "section": "SAQ",
-      "question_type": "saq",
-      "prompt": "Histo: Mention one criterion about tunica media in the roots of great vessels.",
-      "options": [],
-      "answer": null,
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q55",
-      "section": "SAQ",
-      "question_type": "saq",
-      "prompt": "Physio: Mention the changes that happened during the rapid filling phase: AV valves, volume of ventricle, heart sound, ECG.",
-      "options": [],
-      "answer": null,
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q56",
-      "section": "SAQ",
-      "question_type": "saq",
-      "prompt": "Briefly discuss why the endocardium is the first/most suspected part for myocardial ischemia.",
-      "options": [],
-      "answer": null,
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q57",
-      "section": "SAQ",
-      "question_type": "saq",
-      "prompt": "Case of aortic stenosis: what type of murmur can be heard during auscultation?",
-      "options": [],
-      "answer": null,
-      "complete_in_source": true,
-      "notes": null
-    },
-    {
-      "source_file": "CVS final (2).pdf",
-      "original_number": "Q58",
-      "section": "SAQ",
-      "question_type": "saq",
-      "prompt": "Case about a patient with blood loss: discuss the distribution of blood flow to body organs.",
-      "options": [],
-      "answer": null,
-      "complete_in_source": true,
-      "notes": null
-    }
-  ]
-}
+[
+  {
+    "id": 1,
+    "source": "1.pdf",
+    "batch": "Batch 11",
+    "topic": "Pathology",
+    "original_no": "1",
+    "question": "A 37-year-old woman died in her sleep. There is no apparent trauma. Microscopy of the left circumflex artery is shown. Which underlying condition is she most likely to have?",
+    "options": [
+      "Acute myelogenous leukemia",
+      "Chronic alcoholism",
+      "Diabetes mellitus",
+      "Marfan syndrome",
+      "Polyarteritis nodosa"
+    ],
+    "answer": "Diabetes mellitus"
+  },
+  {
+    "id": 2,
+    "source": "1.pdf",
+    "batch": "Batch 11",
+    "topic": "Pathology",
+    "original_no": "2",
+    "question": "A 72-year-old woman dies of congestive heart failure. The aortic valve is examined at autopsy. What is the most likely cause of aortic stenosis in this patient?",
+    "options": [
+      "Acute bacterial endocarditis",
+      "Aging-related degeneration",
+      "Chronic rheumatic valvulitis",
+      "Congenital bicuspid valve"
+    ],
+    "answer": "Aging-related degeneration"
+  },
+  {
+    "id": 3,
+    "source": "1.pdf",
+    "batch": "Batch 11",
+    "topic": "Pathology",
+    "original_no": "3",
+    "question": "A 30-year-old woman has a heart murmur, recurrent arthritis, skin rash, glomerulonephritis, negative blood cultures, positive ANA, and positive anti-dsDNA. What is the most likely cause of the murmur?",
+    "options": [
+      "Libman-Sacks endocarditis",
+      "Mitral valve prolapse",
+      "Myocardial infarct",
+      "Mitral valve prolapse",
+      "Rheumatic fever"
+    ],
+    "answer": "Libman-Sacks endocarditis"
+  },
+  {
+    "id": 4,
+    "source": "1.pdf",
+    "batch": "Batch 11",
+    "topic": "Pathology",
+    "original_no": "4",
+    "question": "A 16-year-old girl from Africa presents with chest pain, respiratory distress, pansystolic murmur, S3, marked cardiomegaly, and myocardial mononuclear cells around central eosinophilic collagen. What is the diagnosis?",
+    "options": [
+      "Acute bacterial endocarditis",
+      "Rheumatic heart disease",
+      "Subacute bacterial endocarditis",
+      "Systemic lupus erythematosus",
+      "Viral myocarditis"
+    ],
+    "answer": "Rheumatic heart disease"
+  },
+  {
+    "id": 5,
+    "source": "1.pdf",
+    "batch": "Batch 11",
+    "topic": "Pathology",
+    "original_no": "5",
+    "question": "A 60-year-old man has increasing girth, fatigue, peripheral edema, ascites, hepatomegaly, normal LFTs, enlarged right heart, and interstitial pink amorphous deposits between cardiac myocytes. What is the diagnosis?",
+    "options": [
+      "Carcinoid heart disease",
+      "Cardiac amyloidosis",
+      "Dilated cardiomyopathy",
+      "Hypertrophic cardiomyopathy",
+      "Rheumatic heart disease"
+    ],
+    "answer": "Cardiac amyloidosis"
+  },
+  {
+    "id": 6,
+    "source": "1.pdf",
+    "batch": "Batch 11",
+    "topic": "Pathology",
+    "original_no": "6",
+    "question": "A 72-year-old man has dyspnea, orthopnea requiring three pillows, BP 180/100, obesity, bilateral pitting edema, hepatosplenomegaly, basal rales, mild cardiomegaly, pleural effusion, and LVH without valve defects. What is the most likely diagnosis?",
+    "options": [
+      "Acute cor pulmonale",
+      "Constrictive pericarditis",
+      "Dilated cardiomyopathy",
+      "Hypertensive heart disease"
+    ],
+    "answer": "Hypertensive heart disease"
+  },
+  {
+    "id": 7,
+    "source": "1.pdf",
+    "batch": "Batch 11",
+    "topic": "Pathology",
+    "original_no": "7",
+    "question": "A 60-year-old woman with a 30-pack-year smoking history and emphysema dies of CHF with no CAD or valvular disease. What is the most likely cause of right ventricular hypertrophy?",
+    "options": [
+      "Essential hypertension",
+      "Pulmonary hypertension",
+      "Pulmonary stenosis",
+      "Systemic hypertension",
+      "Endocardial fibroelastosis"
+    ],
+    "answer": "Pulmonary hypertension"
+  },
+  {
+    "id": 8,
+    "source": "1.pdf",
+    "batch": "Batch 11",
+    "topic": "Pathology",
+    "original_no": "8",
+    "question": "What would confirm that a patient had rheumatic fever during childhood?",
+    "options": [
+      "Thickening of the mitral valve and short fused chordae"
+    ],
+    "answer": "Thickening of the mitral valve and short fused chordae"
+  },
+  {
+    "id": 9,
+    "source": "1.pdf",
+    "batch": "Batch 11",
+    "topic": "Pathology",
+    "original_no": "9",
+    "question": "A 35-year-old woman has repeated blood pressure readings around 150/92-152/97 after having normal BP at age 18. What change may have occurred?",
+    "options": [
+      "Increased wall thickness of the right ventricle",
+      "Volume-mediated dilation of the right ventricle",
+      "Increased wall thickness of the left ventricle",
+      "Volume-mediated dilation of the left ventricle"
+    ],
+    "answer": "Increased wall thickness of the left ventricle"
+  },
+  {
+    "id": 10,
+    "source": "1.pdf",
+    "batch": "Batch 11",
+    "topic": "Pathology",
+    "original_no": "10",
+    "question": "A 78-year-old man with recurrent syncope undergoes surgery for a hard, markedly deformed aortic valve and dies during surgery. What is the diagnosis?",
+    "options": [
+      "Bicuspid aortic valve",
+      "Bacterial endocarditis",
+      "Calcific aortic stenosis",
+      "Hypertrophic subaortic stenosis",
+      "Marantic endocarditis"
+    ],
+    "answer": "Calcific aortic stenosis"
+  },
+  {
+    "id": 11,
+    "source": "1.pdf",
+    "batch": "Batch 11",
+    "topic": "Pathology",
+    "original_no": "11",
+    "question": "Which disease has an LV ejection fraction of 50-80% and is associated with Friedreich ataxia?",
+    "options": [
+      "Hypertrophic cardiomyopathy"
+    ],
+    "answer": "Hypertrophic cardiomyopathy"
+  },
+  {
+    "id": 12,
+    "source": "1.pdf",
+    "batch": "Batch 11",
+    "topic": "Pathology",
+    "original_no": "12",
+    "question": "A heart tissue sample from a patient with dilated cardiomyopathy is shown. What is the most likely substance seen?",
+    "options": [
+      "Melanin",
+      "Lipofuscin",
+      "Hemosiderin",
+      "Glycogen",
+      "Calcium"
+    ],
+    "answer": "Lipofuscin"
+  },
+  {
+    "id": 13,
+    "source": "1.pdf",
+    "batch": "Batch 11",
+    "topic": "Pathology",
+    "original_no": "13",
+    "question": "A 21-year-old man has fever, chest pain worse when lying down and improved sitting up, shortness of breath, low-grade fever, tachycardia, mildly reduced EF, and suspected viral myocarditis. Which virus is the most likely cause?",
+    "options": [
+      "Cytomegalovirus (CMV)",
+      "Adenovirus",
+      "Coxsackievirus B",
+      "Epstein-Barr virus (EBV)"
+    ],
+    "answer": "Coxsackievirus B"
+  },
+  {
+    "id": 14,
+    "source": "1.pdf",
+    "batch": "Batch 11",
+    "topic": "Pathology",
+    "original_no": "14",
+    "question": "Which type of cells is the target of the initial pathogenesis of atheromatous plaque?",
+    "options": [
+      "Smooth muscle cells",
+      "Satellite cells",
+      "Fibroblastic cells",
+      "Platelets"
+    ],
+    "answer": ""
+  },
+  {
+    "id": 15,
+    "source": "1.pdf",
+    "batch": "Batch 11",
+    "topic": "Pharmacology",
+    "original_no": "1",
+    "question": "A woman is given scopolamine to prevent motion sickness on a cruise. This agent works through which pathway?",
+    "options": [
+      "Blockade of beta-1 receptors",
+      "Blockade of beta-2 receptors",
+      "Blockade of H1 receptors",
+      "Blockade of muscarinic receptors",
+      "Stimulation of CTZ receptors"
+    ],
+    "answer": "Blockade of muscarinic receptors"
+  },
+  {
+    "id": 16,
+    "source": "1.pdf",
+    "batch": "Batch 11",
+    "topic": "Pharmacology",
+    "original_no": "2",
+    "question": "A 32-year-old pregnant woman at 28 weeks has BP 155/95 without proteinuria or preeclampsia signs. Which medication is safe and appropriate?",
+    "options": [
+      "ACE inhibitor",
+      "Alpha-1 blocker",
+      "Calcium channel blocker (CCB)",
+      "Thiazide diuretic",
+      "Organic nitrates"
+    ],
+    "answer": "Calcium channel blocker (CCB)"
+  },
+  {
+    "id": 17,
+    "source": "1.pdf",
+    "batch": "Batch 11",
+    "topic": "Pharmacology",
+    "original_no": "3",
+    "question": "A patient is taking an ACE inhibitor. Which statement best describes a beneficial effect of ACE inhibitors?",
+    "options": [
+      "Prevent cardiac remodeling",
+      "Positive inotropic effect",
+      "Decrease preload alone",
+      "Decrease afterload and cause natriuresis"
+    ],
+    "answer": "Prevent cardiac remodeling"
+  },
+  {
+    "id": 18,
+    "source": "1.pdf",
+    "batch": "Batch 11",
+    "topic": "Pharmacology",
+    "original_no": "4",
+    "question": "A 38-year-old pregnant woman at 40 weeks needs cervical ripening before labor induction. Which agent is most appropriate?",
+    "options": [
+      "PGF",
+      "PGE1"
+    ],
+    "answer": "PGE1"
+  },
+  {
+    "id": 19,
+    "source": "1.pdf",
+    "batch": "Batch 11",
+    "topic": "Pharmacology",
+    "original_no": "5",
+    "question": "Which antihistamine has the least antimuscarinic effect?",
+    "options": [
+      "Diphenhydramine",
+      "Hydroxyzine",
+      "Promethazine",
+      "Cyclizine"
+    ],
+    "answer": ""
+  },
+  {
+    "id": 20,
+    "source": "1.pdf",
+    "batch": "Batch 11",
+    "topic": "Pharmacology",
+    "original_no": "6",
+    "question": "A woman with familial combined hyperlipidemia starts low-fat diet and cholestyramine. Which compound is reduced the most?",
+    "options": [
+      "VLDL",
+      "HDL",
+      "LDL",
+      "Chylomicrons"
+    ],
+    "answer": "LDL"
+  },
+  {
+    "id": 21,
+    "source": "1.pdf",
+    "batch": "Batch 11",
+    "topic": "Pharmacology",
+    "original_no": "7",
+    "question": "A man has a 5-month dry cough after MI and medications. Which medication most likely caused it?",
+    "options": [
+      "Lisinopril",
+      "Nitroglycerin",
+      "Lovastatin",
+      "Digoxin",
+      "Quinidine"
+    ],
+    "answer": "Lisinopril"
+  },
+  {
+    "id": 22,
+    "source": "1.pdf",
+    "batch": "Batch 11",
+    "topic": "Pharmacology",
+    "original_no": "8",
+    "question": "Which cholinergic drug has the shortest duration?",
+    "options": [
+      "Physostigmine",
+      "Edrophonium",
+      "Neostigmine"
+    ],
+    "answer": "Edrophonium"
+  },
+  {
+    "id": 23,
+    "source": "1.pdf",
+    "batch": "Batch 11",
+    "topic": "Pharmacology",
+    "original_no": "9",
+    "question": "A hypertensive woman has pedal edema and constipation. Which drug causes these presentations?",
+    "options": [
+      "Amlodipine",
+      "Captopril"
+    ],
+    "answer": "Amlodipine"
+  },
+  {
+    "id": 24,
+    "source": "1.pdf",
+    "batch": "Batch 11",
+    "topic": "Pharmacology",
+    "original_no": "10",
+    "question": "A bus driver needs to take an antihistamine but cannot take a day off. Which is recommended?",
+    "options": [
+      "Cyclizine",
+      "Promethazine",
+      "Fexofenadine",
+      "Diphenhydramine",
+      "Hydroxyzine"
+    ],
+    "answer": "Fexofenadine"
+  },
+  {
+    "id": 25,
+    "source": "1.pdf",
+    "batch": "Batch 11",
+    "topic": "Pharmacology",
+    "original_no": "11",
+    "question": "A man with familial combined hyperlipidemia starts lovastatin and gemfibrozil and is at increased risk of myopathy. Which enzyme should be measured every 2 weeks?",
+    "options": [
+      "HMG-CoA",
+      "Aminotransferase",
+      "Alkaline phosphatase",
+      "Cyclooxygenase",
+      "Creatine kinase"
+    ],
+    "answer": "Creatine kinase"
+  },
+  {
+    "id": 26,
+    "source": "1.pdf",
+    "batch": "Batch 11",
+    "topic": "Pharmacology",
+    "original_no": "12",
+    "question": "A patient with prostatic hyperplasia is taking tamsulosin. Which adverse effect can occur?",
+    "options": [
+      "Postural hypotension"
+    ],
+    "answer": "Postural hypotension"
+  },
+  {
+    "id": 27,
+    "source": "1.pdf",
+    "batch": "Batch 11",
+    "topic": "Pharmacology",
+    "original_no": "13",
+    "question": "A man with MI develops ventricular fibrillation and receives IV epinephrine during CPR. Which receptor action explains the rationale?",
+    "options": [
+      "Alpha-1 receptor-mediated vasoconstriction",
+      "Beta-2 receptor-mediated vasodilation",
+      "Beta-1 receptor-mediated increase in cardiac contractility",
+      "Beta-1 receptor-mediated increase in renin secretion",
+      "Beta-2 receptor-mediated bronchodilation"
+    ],
+    "answer": "Alpha-1 receptor-mediated vasoconstriction"
+  },
+  {
+    "id": 28,
+    "source": "1.pdf",
+    "batch": "Batch 11",
+    "topic": "Pharmacology",
+    "original_no": "14",
+    "question": "A woman with myasthenia gravis likely overdosed on neostigmine. Which finding is likely?",
+    "options": [
+      "Bronchodilation",
+      "Constipation",
+      "Dizziness",
+      "Hypotension",
+      "Xerostomia"
+    ],
+    "answer": "Hypotension"
+  },
+  {
+    "id": 29,
+    "source": "1.pdf",
+    "batch": "Batch 11",
+    "topic": "Pharmacology",
+    "original_no": "15",
+    "question": "A child has atropine poisoning with hyperthermia. Which molecular action most likely contributed to hyperthermia?",
+    "options": [
+      "Skin vasoconstriction",
+      "Blockade of prostaglandin synthesis in the hypothalamus",
+      "Uncoupling oxidative phosphorylation in skeletal muscle",
+      "Blockade of muscarinic receptors in the hypothalamus",
+      "Blockade of muscarinic receptors of sweat glands"
+    ],
+    "answer": "Blockade of muscarinic receptors of sweat glands"
+  },
+  {
+    "id": 30,
+    "source": "1.pdf",
+    "batch": "Batch 11",
+    "topic": "Pharmacology",
+    "original_no": "16",
+    "question": "A heavy smoker taking oral nicotine and clonidine stops clonidine and develops pounding headache. What is the explanation?",
+    "options": [
+      "Development of portal hypotension",
+      "Development of subclinical diabetes",
+      "Development of rebound hypertension",
+      "Development of receptor hypersensitivity"
+    ],
+    "answer": "Development of rebound hypertension"
+  },
+  {
+    "id": 31,
+    "source": "1.pdf",
+    "batch": "Batch 11",
+    "topic": "Pharmacology",
+    "original_no": "17",
+    "question": "A man has shortness of breath, orthopnea, and bilateral basal crepitations. Which medication is most appropriate to relieve symptoms?",
+    "options": [
+      "Enalapril",
+      "Furosemide",
+      "Nesiritide",
+      "Digoxin"
+    ],
+    "answer": "Furosemide"
+  },
+  {
+    "id": 32,
+    "source": "1.pdf",
+    "batch": "Batch 11",
+    "topic": "Pharmacology",
+    "original_no": "18",
+    "question": "In patients with osteoarthritis taking COX inhibitors, what compound is produced in response to increased COX enzyme activity?",
+    "options": [
+      "TXA2",
+      "PGE",
+      "PGI"
+    ],
+    "answer": ""
+  },
+  {
+    "id": 33,
+    "source": "1.pdf",
+    "batch": "Batch 11",
+    "topic": "Pharmacology",
+    "original_no": "19",
+    "question": "Which vasodilator is produced by endothelial cells?",
+    "options": [
+      "Acetylcholine",
+      "Nitric oxide",
+      "Histamine"
+    ],
+    "answer": "Nitric oxide"
+  },
+  {
+    "id": 34,
+    "source": "1.pdf",
+    "batch": "Batch 11",
+    "topic": "Pharmacology",
+    "original_no": "20",
+    "question": "Dicyclomine primarily exerts its effects by acting on which receptor?",
+    "options": [
+      "Beta-adrenergic receptors",
+      "M3 receptor",
+      "Alpha-adrenergic receptors"
+    ],
+    "answer": "M3 receptor"
+  },
+  {
+    "id": 35,
+    "source": "1.pdf",
+    "batch": "Batch 11",
+    "topic": "Pharmacology",
+    "original_no": "21",
+    "question": "A patient with open-angle glaucoma receives carbachol drops before canaloplasty. What is the primary site of action?",
+    "options": [
+      "Ganglionic neurons",
+      "Ciliary muscle",
+      "Lens",
+      "Radial muscle of the iris"
+    ],
+    "answer": "Ciliary muscle"
+  },
+  {
+    "id": 36,
+    "source": "1.pdf",
+    "batch": "Batch 11",
+    "topic": "Pharmacology",
+    "original_no": "22",
+    "question": "Which drug is known to increase HDL levels?",
+    "options": [
+      "Atorvastatin",
+      "Fenofibrate",
+      "Niacin",
+      "Simvastatin"
+    ],
+    "answer": "Niacin"
+  },
+  {
+    "id": 37,
+    "source": "1.pdf",
+    "batch": "Batch 11",
+    "topic": "Pharmacology",
+    "original_no": "23",
+    "question": "Drug X changes BP/HR from 120/80, 73 bpm to 140/90, 62 bpm. Which receptor is activated?",
+    "options": [
+      "Alpha-1",
+      "Alpha-2",
+      "Beta-1",
+      "Beta-2"
+    ],
+    "answer": "Alpha-1"
+  },
+  {
+    "id": 38,
+    "source": "1.pdf",
+    "batch": "Batch 11",
+    "topic": "Microbiology",
+    "original_no": "1",
+    "question": "A 17-year-old has fever, new heart murmur, migratory polyarthritis, untreated sore throat 3 weeks ago, creatinine 14 U/mL, and ASO 80. What is the next step?",
+    "options": [
+      "Confirm rheumatic fever based on clinical findings only",
+      "Suspect rheumatic fever and perform echocardiography",
+      "Rule out rheumatic fever due to low ASO titer",
+      "Strong evidence against rheumatic fever; do more investigation"
+    ],
+    "answer": "Suspect rheumatic fever and perform echocardiography"
+  },
+  {
+    "id": 39,
+    "source": "1.pdf",
+    "batch": "Batch 11",
+    "topic": "Microbiology",
+    "original_no": "2",
+    "question": "A patient with carditis and joint pain had sore throat one month ago. ASOT was ordered. Which laboratory statement is true?",
+    "options": [
+      "If the titer is high it confirms the diagnosis",
+      "If the titer is low it excludes the diagnosis",
+      "High titer may indicate previous streptococcal infection"
+    ],
+    "answer": "High titer may indicate previous streptococcal infection"
+  },
+  {
+    "id": 40,
+    "source": "1.pdf",
+    "batch": "Batch 11",
+    "topic": "Microbiology",
+    "original_no": "3",
+    "question": "A patient has fever, subcutaneous nodules, polyarthritis, and a Streptococcus pyogenes sore throat one month ago. What should be in the differential diagnosis?",
+    "options": [
+      "Acute rheumatic fever",
+      "Recurrent rheumatic fever",
+      "Chronic rheumatic disease",
+      "Endocarditis"
+    ],
+    "answer": "Acute rheumatic fever"
+  },
+  {
+    "id": 41,
+    "source": "1.pdf",
+    "batch": "Batch 11",
+    "topic": "Microbiology",
+    "original_no": "4",
+    "question": "Which finding confirms rheumatic fever diagnosis based on Jones criteria?",
+    "options": [
+      "Carditis and polyarthralgia",
+      "Carditis and polyarthritis"
+    ],
+    "answer": "Carditis and polyarthritis"
+  },
+  {
+    "id": 42,
+    "source": "2.pdf",
+    "batch": "Batch 10",
+    "topic": "Pathology",
+    "original_no": "1",
+    "question": "A 63-year-old man with insulin-dependent diabetes for over two decades, HbA1c 10.1%, and postprandial abdominal pain has no masses or tenderness. Which pathologic finding is most likely?",
+    "options": [
+      "Hepatic infarction",
+      "Mesenteric artery occlusion",
+      "Acute pancreatitis",
+      "Chronic renal failure"
+    ],
+    "answer": "Mesenteric artery occlusion"
+  },
+  {
+    "id": 43,
+    "source": "2.pdf",
+    "batch": "Batch 10",
+    "topic": "Pathology",
+    "original_no": "2",
+    "question": "Which is most likely to be the first visible gross evidence for formation of an atheroma?",
+    "options": [
+      "Thrombus",
+      "Fatty streak",
+      "Calcification",
+      "Hemorrhage"
+    ],
+    "answer": "Fatty streak"
+  },
+  {
+    "id": 44,
+    "source": "2.pdf",
+    "batch": "Batch 10",
+    "topic": "Pathology",
+    "original_no": "3",
+    "question": "Atheromas form at muscular arterial branch points. Which arterial event most likely initiates atherogenesis?",
+    "options": [
+      "Collagen synthesis",
+      "Endothelial dysfunction",
+      "Cholesterol breakdown",
+      "Hypoxemia"
+    ],
+    "answer": "Endothelial dysfunction"
+  },
+  {
+    "id": 45,
+    "source": "2.pdf",
+    "batch": "Batch 10",
+    "topic": "Pathology",
+    "original_no": "4",
+    "question": "A 56-year-old smoker with exertional chest pain, hypertension, obesity, high cholesterol, and low HDL. Which vascular abnormality is most likely?",
+    "options": [
+      "Hyperplastic arteriolosclerosis",
+      "Medial calcific sclerosis",
+      "Atherosclerosis"
+    ],
+    "answer": "Atherosclerosis"
+  },
+  {
+    "id": 46,
+    "source": "2.pdf",
+    "batch": "Batch 10",
+    "topic": "Pathology",
+    "original_no": "5",
+    "question": "A 66-year-old woman with stroke, diabetes, and long smoking history has MCA branch occlusion. Which blood lipid component is most important in her disease?",
+    "options": [
+      "Chylomicrons",
+      "LPL",
+      "VLDL",
+      "HDL",
+      "Oxidized LDL"
+    ],
+    "answer": "Oxidized LDL"
+  },
+  {
+    "id": 47,
+    "source": "2.pdf",
+    "batch": "Batch 10",
+    "topic": "Pathology",
+    "original_no": "6",
+    "question": "A woman with smoking and emphysema dies of CHF without CAD or valvular disease. What is the cause of right ventricular hypertrophy?",
+    "options": [
+      "Endocardial fibroelastosis",
+      "Essential hypertension",
+      "Pulmonary hypertension",
+      "Pulmonary stenosis",
+      "Systemic hypertension"
+    ],
+    "answer": "Pulmonary hypertension"
+  },
+  {
+    "id": 48,
+    "source": "2.pdf",
+    "batch": "Batch 10",
+    "topic": "Pathology",
+    "original_no": "7",
+    "question": "A 72-year-old man has orthopnea, BP 180/100, obesity, edema, hepatosplenomegaly, rales, mild cardiomegaly, pleural effusion, and LVH without valve defects. Diagnosis?",
+    "options": [
+      "Acute cor pulmonale",
+      "Constrictive pericarditis",
+      "Dilated cardiomyopathy",
+      "Hypertensive heart disease",
+      "Renal failure"
+    ],
+    "answer": "Hypertensive heart disease"
+  },
+  {
+    "id": 49,
+    "source": "2.pdf",
+    "batch": "Batch 10",
+    "topic": "Pathology",
+    "original_no": "8",
+    "question": "A woman with murmur, arthritis, rash, glomerulonephritis, negative blood cultures, positive ANA and anti-dsDNA. What causes the murmur?",
+    "options": [
+      "Libman-Sacks endocarditis",
+      "Mitral valve prolapse",
+      "Myocardial infarct",
+      "Mitral valve prolapse",
+      "Rheumatic fever"
+    ],
+    "answer": "Libman-Sacks endocarditis"
+  },
+  {
+    "id": 50,
+    "source": "2.pdf",
+    "batch": "Batch 10",
+    "topic": "Pathology",
+    "original_no": "9",
+    "question": "A boy with URI develops malaise, fever, joint swelling, rash, recurrent pharyngitis, and later a heart murmur. Exposure to which pathogen caused it?",
+    "options": [
+      "Beta-hemolytic streptococcus",
+      "Candida albicans",
+      "Epstein-Barr virus",
+      "Staphylococcus aureus",
+      "Streptococcus viridans"
+    ],
+    "answer": "Beta-hemolytic streptococcus"
+  },
+  {
+    "id": 51,
+    "source": "2.pdf",
+    "batch": "Batch 10",
+    "topic": "Pathology",
+    "original_no": "10",
+    "question": "For the patient with rheumatic valvular heart disease, what is the most common life-threatening complication?",
+    "options": [
+      "Congestive heart failure",
+      "Dissecting aneurysm",
+      "Hemolytic anemia",
+      "Myocardial infarction",
+      "Pulmonary thromboembolism"
+    ],
+    "answer": "Congestive heart failure"
+  },
+  {
+    "id": 52,
+    "source": "2.pdf",
+    "batch": "Batch 10",
+    "topic": "Pathology",
+    "original_no": "11",
+    "question": "An IV drug user with fever, harsh systolic murmur, and stroke has a right frontal lobe infarct. What is the most likely cause of stroke?",
+    "options": [
+      "Bacterial endocarditis"
+    ],
+    "answer": "Bacterial endocarditis"
+  },
+  {
+    "id": 53,
+    "source": "2.pdf",
+    "batch": "Batch 10",
+    "topic": "Pathology",
+    "original_no": "12",
+    "question": "A woman with metastatic breast cancer dies with enlarged heart; myocardium compared to normal. Which condition most likely caused the findings?",
+    "options": [
+      "Amyloidosis",
+      "Chemotherapy",
+      "Hypertension",
+      "Inflammation",
+      "Ischemia"
+    ],
+    "answer": "Hypertension"
+  },
+  {
+    "id": 54,
+    "source": "2.pdf",
+    "batch": "Batch 10",
+    "topic": "Pathology",
+    "original_no": "13",
+    "question": "A man has enlarged right heart, ascites, edema, hepatomegaly, and interstitial pink amorphous deposits between cardiac myocytes. Diagnosis?",
+    "options": [
+      "Carcinoid heart disease",
+      "Cardiac amyloidosis",
+      "Dilated cardiomyopathy",
+      "Hypertrophic cardiomyopathy",
+      "Rheumatic heart disease"
+    ],
+    "answer": "Cardiac amyloidosis"
+  },
+  {
+    "id": 55,
+    "source": "2.pdf",
+    "batch": "Batch 10",
+    "topic": "Pathology",
+    "original_no": "14",
+    "question": "A woman has fever, fatigue, weight loss, petechiae, clubbing, mental status changes, massive stroke, and mitral valve lesion at autopsy. Diagnosis?",
+    "options": [
+      "Bacterial endocarditis",
+      "Carcinoid heart disease",
+      "Libman-Sacks endocarditis",
+      "Marantic endocarditis",
+      "Mitral valve prolapse"
+    ],
+    "answer": "Bacterial endocarditis"
+  },
+  {
+    "id": 56,
+    "source": "2.pdf",
+    "batch": "Batch 10",
+    "topic": "Pathology",
+    "original_no": "15",
+    "question": "A 72-year-old woman dies of CHF; aortic valve shows stenosis. What is the most likely cause?",
+    "options": [
+      "Acute bacterial endocarditis",
+      "Aging-related degeneration",
+      "Chronic rheumatic valvulitis",
+      "Congenital bicuspid valve"
+    ],
+    "answer": "Chronic rheumatic valvulitis"
+  },
+  {
+    "id": 57,
+    "source": "2.pdf",
+    "batch": "Batch 10",
+    "topic": "Pathology",
+    "original_no": "16",
+    "question": "A man 7 days after transmural MI develops hypotension, JVD, muffled heart sounds, and pulsus paradoxus. What process produced these findings?",
+    "options": [
+      "Autoimmune acute pericarditis",
+      "Acute MR due to papillary muscle rupture",
+      "Suppurative bacterial pericarditis",
+      "Blood accumulation in pericardium due to ventricular wall rupture",
+      "Serous fluid due to CHF"
+    ],
+    "answer": "Blood accumulation in pericardium due to ventricular wall rupture"
+  },
+  {
+    "id": 58,
+    "source": "2.pdf",
+    "batch": "Batch 10",
+    "topic": "Pathology",
+    "original_no": "17",
+    "question": "A patient has chest discomfort and a left atrial mass with the shown pathology. Diagnosis?",
+    "options": [
+      "Lipoma",
+      "Rhabdomyoma",
+      "Myxoma"
+    ],
+    "answer": "Myxoma"
+  },
+  {
+    "id": 59,
+    "source": "2.pdf",
+    "batch": "Batch 10",
+    "topic": "Pathology",
+    "original_no": "18",
+    "question": "What confirms a patient had rheumatic fever during childhood?",
+    "options": [
+      "Thickening of the mitral valve and short fused chordae"
+    ],
+    "answer": "Thickening of the mitral valve and short fused chordae"
+  },
+  {
+    "id": 60,
+    "source": "2.pdf",
+    "batch": "Batch 10",
+    "topic": "Pathology",
+    "original_no": "19",
+    "question": "An older man has lethargy, weakness, hypertension, friction rub, and gross heart appearance shown. Which lab finding is most likely?",
+    "options": [
+      "Elevated ASO titer",
+      "Elevated plasma renin level",
+      "Increased blood urea nitrogen level",
+      "Increased serum CK-MB level",
+      "Positive ANA with rim pattern",
+      "Positive viral serology"
+    ],
+    "answer": "Increased blood urea nitrogen level"
+  },
+  {
+    "id": 61,
+    "source": "2.pdf",
+    "batch": "Batch 10",
+    "topic": "Pathology",
+    "original_no": "20",
+    "question": "A woman with chronic cough, upper lung crackles, water-bottle heart, bloody pericardial fluid. Which organism is most likely?",
+    "options": [
+      "Candida albicans",
+      "Coxsackievirus B",
+      "Group A streptococcus",
+      "Mycobacterium tuberculosis",
+      "Staphylococcus aureus"
+    ],
+    "answer": "Mycobacterium tuberculosis"
+  },
+  {
+    "id": 62,
+    "source": "2.pdf",
+    "batch": "Batch 10",
+    "topic": "Pathology",
+    "original_no": "21",
+    "question": "A 16-year-old girl from Africa with respiratory distress, pansystolic murmur, S3, cardiomegaly, and myocardial Aschoff-like bodies. Diagnosis?",
+    "options": [
+      "Acute bacterial endocarditis",
+      "Rheumatic heart disease",
+      "Subacute bacterial endocarditis",
+      "Systemic lupus erythematosus",
+      "Viral myocarditis"
+    ],
+    "answer": "Rheumatic heart disease"
+  },
+  {
+    "id": 63,
+    "source": "2.pdf",
+    "batch": "Batch 10",
+    "topic": "Pathology",
+    "original_no": "22",
+    "question": "A 37-year-old woman dies in her sleep with microscopic left circumflex artery changes. Which underlying condition is most likely?",
+    "options": [
+      "Acute myelogenous leukemia",
+      "Chronic alcoholism",
+      "Diabetes mellitus",
+      "Marfan syndrome",
+      "Polyarteritis nodosa"
+    ],
+    "answer": "Diabetes mellitus"
+  },
+  {
+    "id": 64,
+    "source": "2.pdf",
+    "batch": "Batch 10",
+    "topic": "Pharmacology",
+    "original_no": "1",
+    "question": "A man in cardiogenic shock after MI receives an IV adrenergic drug with both direct and indirect actions. Which drug fits this profile?",
+    "options": [
+      "Dopamine",
+      "Norepinephrine",
+      "Isoproterenol",
+      "Dobutamine",
+      "Phenylephrine"
+    ],
+    "answer": "Dopamine"
+  },
+  {
+    "id": 65,
+    "source": "2.pdf",
+    "batch": "Batch 10",
+    "topic": "Pharmacology",
+    "original_no": "2",
+    "question": "A patient with pheochromocytoma receives a drug that decreases norepinephrine and epinephrine by blocking the rate-limiting step in catecholamine synthesis. Which enzyme is inhibited?",
+    "options": [
+      "Aromatic L-amino acid decarboxylase",
+      "Dopamine-beta-hydroxylase",
+      "Tyrosine hydroxylase",
+      "Phenylethanolamine methyltransferase",
+      "Monoamine oxidase"
+    ],
+    "answer": "Tyrosine hydroxylase"
+  },
+  {
+    "id": 66,
+    "source": "2.pdf",
+    "batch": "Batch 10",
+    "topic": "Pharmacology",
+    "original_no": "3",
+    "question": "What is a side effect of phenylephrine?",
+    "options": [
+      "Constipation",
+      "Diarrhea",
+      "Epistaxis/unknown option",
+      "Hypertension",
+      "Tinnitus"
+    ],
+    "answer": "Hypertension"
+  },
+  {
+    "id": 67,
+    "source": "2.pdf",
+    "batch": "Batch 10",
+    "topic": "Pharmacology",
+    "original_no": "4",
+    "question": "A woman with familial combined hyperlipidemia starts cholestyramine. Which compound is most reduced?",
+    "options": [
+      "VLDL",
+      "HDL",
+      "LDL",
+      "Chylomicrons"
+    ],
+    "answer": "LDL"
+  },
+  {
+    "id": 68,
+    "source": "2.pdf",
+    "batch": "Batch 10",
+    "topic": "Pharmacology",
+    "original_no": "5",
+    "question": "A woman receiving mexiletine for sustained ventricular tachycardia. In abnormal pacemaker cells, what parameter is decreased?",
+    "options": [
+      "Refractoriness",
+      "Slope of phase 4",
+      "Action potential duration",
+      "Length of phase 2",
+      "Diastolic interval"
+    ],
+    "answer": "Action potential duration"
+  },
+  {
+    "id": 69,
+    "source": "2.pdf",
+    "batch": "Batch 10",
+    "topic": "Pharmacology",
+    "original_no": "6",
+    "question": "A man with WPW receives an antiarrhythmic and develops joint pains and masklike rash that resolve after stopping. Which drug?",
+    "options": [
+      "Quinidine",
+      "Lidocaine",
+      "Amiodarone",
+      "Adenosine",
+      "Procainamide",
+      "Ibutilide"
+    ],
+    "answer": "Procainamide"
+  },
+  {
+    "id": 70,
+    "source": "2.pdf",
+    "batch": "Batch 10",
+    "topic": "Pharmacology",
+    "original_no": "7",
+    "question": "A patient with high cholesterol despite lovastatin adds ezetimibe. Which cells are the main site of action?",
+    "options": [
+      "Adipocytes",
+      "Capillary endothelial cells",
+      "Platelets",
+      "Hepatocytes",
+      "Intestinal epithelial cells"
+    ],
+    "answer": "Intestinal epithelial cells"
+  },
+  {
+    "id": 71,
+    "source": "2.pdf",
+    "batch": "Batch 10",
+    "topic": "Pharmacology",
+    "original_no": "8",
+    "question": "A patient with BPH takes tamsulosin. What is an adverse effect?",
+    "options": [
+      "Postural hypotension"
+    ],
+    "answer": "Postural hypotension"
+  },
+  {
+    "id": 72,
+    "source": "2.pdf",
+    "batch": "Batch 10",
+    "topic": "Pharmacology",
+    "original_no": "9",
+    "question": "A patient has gout and hypertension. Which drug is contraindicated?",
+    "options": [
+      "Hydrochlorothiazide"
+    ],
+    "answer": "Hydrochlorothiazide"
+  },
+  {
+    "id": 73,
+    "source": "2.pdf",
+    "batch": "Batch 10",
+    "topic": "Pharmacology",
+    "original_no": "10",
+    "question": "Which potassium-sparing diuretic blocks aldosterone?",
+    "options": [
+      "Spironolactone"
+    ],
+    "answer": "Spironolactone"
+  },
+  {
+    "id": 74,
+    "source": "2.pdf",
+    "batch": "Batch 10",
+    "topic": "Pharmacology",
+    "original_no": "11",
+    "question": "A man with dry cough after recent MI medications likely has which drug side effect?",
+    "options": [
+      "Lisinopril",
+      "Nitroglycerin",
+      "Lovastatin",
+      "Digoxin",
+      "Quinidine"
+    ],
+    "answer": "Lisinopril"
+  },
+  {
+    "id": 75,
+    "source": "2.pdf",
+    "batch": "Batch 10",
+    "topic": "Pharmacology",
+    "original_no": "12",
+    "question": "A patient taking a drug for atrial fibrillation has QT prolongation and risk of torsades. What drug is she taking?",
+    "options": [
+      "Quinidine"
+    ],
+    "answer": "Quinidine"
+  },
+  {
+    "id": 76,
+    "source": "2.pdf",
+    "batch": "Batch 10",
+    "topic": "Pharmacology",
+    "original_no": "13",
+    "question": "An elderly patient has sudden BP drop 2 hours after adding a new antihypertensive. Which drug likely caused it?",
+    "options": [
+      "Atenolol",
+      "Methyldopa"
+    ],
+    "answer": "Methyldopa"
+  },
+  {
+    "id": 77,
+    "source": "2.pdf",
+    "batch": "Batch 10",
+    "topic": "Pharmacology",
+    "original_no": "14",
+    "question": "Which beta blocker is used in hypertensive emergency and has a short half-life?",
+    "options": [
+      "Esmolol"
+    ],
+    "answer": "Esmolol"
+  },
+  {
+    "id": 78,
+    "source": "2.pdf",
+    "batch": "Batch 10",
+    "topic": "Pharmacology",
+    "original_no": "15",
+    "question": "A patient has paroxysmal supraventricular tachycardia. What is the drug of choice?",
+    "options": [
+      "Adenosine"
+    ],
+    "answer": "Adenosine"
+  },
+  {
+    "id": 79,
+    "source": "2.pdf",
+    "batch": "Batch 10",
+    "topic": "Pharmacology",
+    "original_no": "16",
+    "question": "A hypertensive man on hydrochlorothiazide and captopril adds a third drug and develops palpitations, sweating, and flushing. Which drug was likely added?",
+    "options": [
+      "Hydralazine",
+      "Propranolol",
+      "Verapamil",
+      "Clonidine",
+      "Nitroprusside"
+    ],
+    "answer": "Hydralazine"
+  },
+  {
+    "id": 80,
+    "source": "2.pdf",
+    "batch": "Batch 10",
+    "topic": "Pharmacology",
+    "original_no": "17",
+    "question": "A woman is 2 weeks pregnant with hypertension. Which antihypertensive drug class is absolutely contraindicated?",
+    "options": [
+      "Potassium channel openers",
+      "ACE inhibitors",
+      "Calcium channel blockers",
+      "Alpha-1 blockers",
+      "Central sympatholytics"
+    ],
+    "answer": "ACE inhibitors"
+  },
+  {
+    "id": 81,
+    "source": "2.pdf",
+    "batch": "Batch 10",
+    "topic": "Pharmacology",
+    "original_no": "18",
+    "question": "A child allergic to bee stings improves after epinephrine stimulates beta-2 receptors in bronchiolar smooth muscle. Which drug also stimulates these receptors?",
+    "options": [
+      "Acebutolol",
+      "Phenylephrine",
+      "Prazosin",
+      "Salmeterol",
+      "Timolol"
+    ],
+    "answer": "Salmeterol"
+  },
+  {
+    "id": 82,
+    "source": "2.pdf",
+    "batch": "Batch 10",
+    "topic": "Pharmacology",
+    "original_no": "19",
+    "question": "A patient with hypokalemia is given a drug to increase potassium. What is the drug?",
+    "options": [
+      "Amiloride"
+    ],
+    "answer": "Amiloride"
+  },
+  {
+    "id": 83,
+    "source": "3.pdf",
+    "batch": "Batch 9",
+    "topic": "Pathology",
+    "original_no": "1",
+    "question": "A 60-year-old man has an aortic aneurysm in his abdomen. What is the most likely cause?",
+    "options": [
+      "Atherosclerosis"
+    ],
+    "answer": "Atherosclerosis"
+  },
+  {
+    "id": 84,
+    "source": "3.pdf",
+    "batch": "Batch 9",
+    "topic": "Pathology",
+    "original_no": "2",
+    "question": "A 10-year-old boy after URI develops malaise, fever, joint swelling, diffuse rash, recurrent pharyngitis, and later a heart murmur. Which pathogen caused it?",
+    "options": [
+      "Beta-hemolytic streptococcus",
+      "Candida albicans",
+      "Epstein-Barr virus",
+      "Staphylococcus aureus",
+      "Streptococcus viridans"
+    ],
+    "answer": "Beta-hemolytic streptococcus"
+  },
+  {
+    "id": 85,
+    "source": "3.pdf",
+    "batch": "Batch 9",
+    "topic": "Pathology",
+    "original_no": "3",
+    "question": "A 16-year-old girl from Africa has chest pain, respiratory distress, pansystolic murmur, S3, cardiomegaly, and myocardial mononuclear cells around eosinophilic collagen. Diagnosis?",
+    "options": [
+      "Acute bacterial endocarditis",
+      "Rheumatic heart disease",
+      "Subacute bacterial endocarditis",
+      "Systemic lupus erythematosus",
+      "Viral myocarditis"
+    ],
+    "answer": "Rheumatic heart disease"
+  },
+  {
+    "id": 86,
+    "source": "3.pdf",
+    "batch": "Batch 9",
+    "topic": "Pathology",
+    "original_no": "4",
+    "question": "A 30-year-old woman with arthritis, skin rash, glomerulonephritis, negative cultures, positive ANA and anti-dsDNA has a heart murmur. Cause?",
+    "options": [
+      "Libman-Sacks endocarditis",
+      "Mitral valve prolapse",
+      "Myocardial infarct",
+      "Mitral valve prolapse",
+      "Rheumatic fever"
+    ],
+    "answer": "Libman-Sacks endocarditis"
+  },
+  {
+    "id": 87,
+    "source": "3.pdf",
+    "batch": "Batch 9",
+    "topic": "Pathology",
+    "original_no": "5",
+    "question": "A 34-year-old IV drug user with fever, harsh systolic murmur, and right frontal lobe infarct. Cause of stroke?",
+    "options": [
+      "Atrial myxoma",
+      "Bacterial endocarditis",
+      "Dissecting aortic aneurysm",
+      "Myocardial infarction",
+      "Paradoxical embolus"
+    ],
+    "answer": "Bacterial endocarditis"
+  },
+  {
+    "id": 88,
+    "source": "3.pdf",
+    "batch": "Batch 9",
+    "topic": "Pathology",
+    "original_no": "6",
+    "question": "A 72-year-old woman dies of CHF and has aortic stenosis at autopsy. Most likely cause?",
+    "options": [
+      "Acute bacterial endocarditis",
+      "Aging-related degeneration",
+      "Chronic rheumatic valvulitis",
+      "Congenital bicuspid valve",
+      "Hypertrophic cardiomyopathy"
+    ],
+    "answer": "Chronic rheumatic valvulitis"
+  },
+  {
+    "id": 89,
+    "source": "3.pdf",
+    "batch": "Batch 9",
+    "topic": "Pathology",
+    "original_no": "7",
+    "question": "A 58-year-old woman has chest pain at rest and microscopic LAD artery changes. Which lab finding is most likely involved in the pathogenesis?",
+    "options": [
+      "Elevated platelet count",
+      "Low HDL cholesterol",
+      "Low Lp(a)",
+      "Low plasma homocysteine",
+      "Positive VDRL"
+    ],
+    "answer": "Low HDL cholesterol"
+  },
+  {
+    "id": 90,
+    "source": "3.pdf",
+    "batch": "Batch 9",
+    "topic": "Pathology",
+    "original_no": "8",
+    "question": "A 66-year-old man has chronic cough, worsening dyspnea, dullness at bases, edema, hepatomegaly, JVD, and signs of right heart disease. What most likely caused the heart disease?",
+    "options": [
+      "Atrial myxoma",
+      "Essential hypertension",
+      "Hyperlipidemia",
+      "Rheumatic fever",
+      "Lung disease"
+    ],
+    "answer": "Lung disease"
+  },
+  {
+    "id": 91,
+    "source": "3.pdf",
+    "batch": "Batch 9",
+    "topic": "Pathology",
+    "original_no": "9",
+    "question": "A woman with chronic cough, upper lung crackles, water-bottle heart, and bloody pericardial effusion. Which organism caused it?",
+    "options": [
+      "Candida albicans",
+      "Coxsackievirus B",
+      "Group A streptococcus",
+      "Mycobacterium tuberculosis",
+      "Staphylococcus aureus"
+    ],
+    "answer": "Mycobacterium tuberculosis"
+  },
+  {
+    "id": 92,
+    "source": "3.pdf",
+    "batch": "Batch 9",
+    "topic": "Pathology",
+    "original_no": "10",
+    "question": "A man has edema, ascites, hepatomegaly, enlarged right heart, and pink amorphous deposits between cardiac myocytes. Diagnosis?",
+    "options": [
+      "Carcinoid heart disease",
+      "Cardiac amyloidosis",
+      "Dilated cardiomyopathy",
+      "Hypertrophic cardiomyopathy",
+      "Rheumatic heart disease"
+    ],
+    "answer": "Cardiac amyloidosis"
+  },
+  {
+    "id": 93,
+    "source": "3.pdf",
+    "batch": "Batch 9",
+    "topic": "Pathology",
+    "original_no": "11",
+    "question": "A patient with chest discomfort has a left atrial mass. What is the diagnosis?",
+    "options": [
+      "Lipoma",
+      "Rhabdomyoma",
+      "Myxoma"
+    ],
+    "answer": "Myxoma"
+  },
+  {
+    "id": 94,
+    "source": "3.pdf",
+    "batch": "Batch 9",
+    "topic": "Pathology",
+    "original_no": "12",
+    "question": "A 35-year-old woman has repeated hypertension readings. What may have happened to her heart?",
+    "options": [
+      "Increased wall thickness of the right ventricle",
+      "Volume-mediated dilation of the right ventricle",
+      "Increased wall thickness of the left ventricle",
+      "Volume-mediated dilation of the left ventricle"
+    ],
+    "answer": "Increased wall thickness of the left ventricle"
+  },
+  {
+    "id": 95,
+    "source": "3.pdf",
+    "batch": "Batch 9",
+    "topic": "Pathology",
+    "original_no": "13",
+    "question": "A 62-year-old man with uncontrolled hypertension, smoking, type 2 diabetes, dyspnea, orthopnea, interstitial edema, and LV hypertrophy has heart failure. Main risk factor?",
+    "options": [
+      "Obesity",
+      "Uncontrolled hypertension",
+      "Diabetes mellitus",
+      "Smoking"
+    ],
+    "answer": "Uncontrolled hypertension"
+  },
+  {
+    "id": 96,
+    "source": "3.pdf",
+    "batch": "Batch 9",
+    "topic": "Pathology",
+    "original_no": "14",
+    "question": "Which cells are the initial target in the pathogenesis of atheromatous plaque?",
+    "options": [
+      "Endothelial cells"
+    ],
+    "answer": "Endothelial cells"
+  },
+  {
+    "id": 97,
+    "source": "3.pdf",
+    "batch": "Batch 9",
+    "topic": "Pathology",
+    "original_no": "15",
+    "question": "A 56-year-old woman after MI develops hypotension and 13 mmHg inspiratory systolic BP drop after 7 days. What is the underlying cause?",
+    "options": [
+      "Blood in pericardium due to myocardial wall rupture",
+      "Acute inflammation due to immune reaction",
+      "Suppurative bacterial infection",
+      "Serous fluid due to CHF",
+      "Mitral regurgitation due to papillary muscle rupture"
+    ],
+    "answer": "Blood in pericardium due to myocardial wall rupture"
+  },
+  {
+    "id": 98,
+    "source": "3.pdf",
+    "batch": "Batch 9",
+    "topic": "Pharmacology",
+    "original_no": "16",
+    "question": "A 67-year-old patient with hypertension and diabetes has triglycerides 230, LDL 150, HDL 50. What is the drug of choice?",
+    "options": [
+      "Gemfibrozil"
+    ],
+    "answer": "Gemfibrozil"
+  },
+  {
+    "id": 99,
+    "source": "3.pdf",
+    "batch": "Batch 9",
+    "topic": "Pharmacology",
+    "original_no": "17",
+    "question": "An old patient has high LDL despite statin, ezetimibe, and niacin, so alirocumab is added. What is its mechanism?",
+    "options": [
+      "Inhibits LDL receptor breakdown"
+    ],
+    "answer": "Inhibits LDL receptor breakdown"
+  },
+  {
+    "id": 100,
+    "source": "3.pdf",
+    "batch": "Batch 9",
+    "topic": "Pharmacology",
+    "original_no": "18",
+    "question": "A 26-year-old woman with hyperlipidemia plans pregnancy. Which drug is FDA pregnancy category X?",
+    "options": [
+      "Atorvastatin"
+    ],
+    "answer": "Atorvastatin"
+  },
+  {
+    "id": 101,
+    "source": "3.pdf",
+    "batch": "Batch 9",
+    "topic": "Pharmacology",
+    "original_no": "19",
+    "question": "In which age group is the apparent volume of distribution of digoxin most likely smallest?",
+    "options": [
+      "60-70 years"
+    ],
+    "answer": "60-70 years"
+  },
+  {
+    "id": 102,
+    "source": "3.pdf",
+    "batch": "Batch 9",
+    "topic": "Pharmacology",
+    "original_no": "20",
+    "question": "A woman with pulmonary hypertension is given epoprostenol. How does it relax pulmonary arteries?",
+    "options": [
+      "Activating specific PGI2 receptors"
+    ],
+    "answer": "Activating specific PGI2 receptors"
+  },
+  {
+    "id": 103,
+    "source": "3.pdf",
+    "batch": "Batch 9",
+    "topic": "Pharmacology",
+    "original_no": "21",
+    "question": "A patient on cyproheptadine develops dry mouth, urinary retention, constipation, and increased appetite. Which receptors does it block?",
+    "options": [
+      "Muscarinic and serotonergic"
+    ],
+    "answer": "Muscarinic and serotonergic"
+  },
+  {
+    "id": 104,
+    "source": "3.pdf",
+    "batch": "Batch 9",
+    "topic": "Pharmacology",
+    "original_no": "22",
+    "question": "A patient with high lipid profile is given ezetimibe. Which cells does the drug act on?",
+    "options": [
+      "Hepatic cells",
+      "Endothelial cells",
+      "Intestinal cells"
+    ],
+    "answer": "Intestinal cells"
+  },
+  {
+    "id": 105,
+    "source": "3.pdf",
+    "batch": "Batch 9",
+    "topic": "Pharmacology",
+    "original_no": "23",
+    "question": "A patient with MI and hypertension receives IV epinephrine after CPR failed. What is the rationale?",
+    "options": [
+      "Alpha-1 mediated vasoconstriction",
+      "Beta-1 mediated increased renin release",
+      "Beta-2 mediated bronchodilation",
+      "Beta-2 mediated increased contractility",
+      "Beta-2 mediated vasodilation"
+    ],
+    "answer": "Alpha-1 mediated vasoconstriction"
+  },
+  {
+    "id": 106,
+    "source": "3.pdf",
+    "batch": "Batch 9",
+    "topic": "Pharmacology",
+    "original_no": "24",
+    "question": "A Caucasian man develops an isoniazid adverse effect. What could be the cause?",
+    "options": [
+      "N-acetyltransferase deficiency",
+      "Allergic reaction"
+    ],
+    "answer": "N-acetyltransferase deficiency"
+  },
+  {
+    "id": 107,
+    "source": "3.pdf",
+    "batch": "Batch 9",
+    "topic": "Pharmacology",
+    "original_no": "25",
+    "question": "A patient has prolonged succinylcholine duration despite its short action. What type of reaction is this?",
+    "options": [
+      "Overdose toxicity",
+      "Idiosyncratic reaction"
+    ],
+    "answer": "Idiosyncratic reaction"
+  },
+  {
+    "id": 108,
+    "source": "3.pdf",
+    "batch": "Batch 9",
+    "topic": "Pharmacology",
+    "original_no": "26",
+    "question": "Some drugs mimic acetylcholine and activate endothelial cells to reduce BP. What substance is released?",
+    "options": [
+      "Nitric oxide"
+    ],
+    "answer": "Nitric oxide"
+  },
+  {
+    "id": 109,
+    "source": "3.pdf",
+    "batch": "Batch 9",
+    "topic": "Pharmacology",
+    "original_no": "27",
+    "question": "A man takes prazosin. What adverse effect can occur?",
+    "options": [
+      "Pale skin",
+      "Postural hypotension"
+    ],
+    "answer": "Postural hypotension"
+  },
+  {
+    "id": 110,
+    "source": "3.pdf",
+    "batch": "Batch 9",
+    "topic": "Pharmacology",
+    "original_no": "28",
+    "question": "A 59-year-old man with gout and hypertension: which antilipidemic drug is contraindicated?",
+    "options": [
+      "Cholestyramine",
+      "Ezetimibe",
+      "Lovastatin",
+      "Niacin"
+    ],
+    "answer": "Lovastatin"
+  },
+  {
+    "id": 111,
+    "source": "3.pdf",
+    "batch": "Batch 9",
+    "topic": "Pharmacology",
+    "original_no": "29",
+    "question": "A patient has high cholesterol but normal triacylglycerol. Which receptor has a defect?",
+    "options": [
+      "HDL",
+      "Chylomicron remnant",
+      "LDL",
+      "Lipoprotein lipase",
+      "Apolipoprotein C-II"
+    ],
+    "answer": "LDL"
+  },
+  {
+    "id": 112,
+    "source": "3.pdf",
+    "batch": "Batch 9",
+    "topic": "Pharmacology",
+    "original_no": "30",
+    "question": "The main action of cholestyramine is reduction of which compound?",
+    "options": [
+      "LDL",
+      "HDL",
+      "Triacylglycerol"
+    ],
+    "answer": "LDL"
+  },
+  {
+    "id": 113,
+    "source": "3.pdf",
+    "batch": "Batch 9",
+    "topic": "Pharmacology",
+    "original_no": "31",
+    "question": "A drug changes BP/HR from 125/80, 70 HR to 135/85, 60 HR. Which receptor does it act on?",
+    "options": [
+      "Alpha-1 adrenergic",
+      "Alpha-2 adrenergic",
+      "Beta-1 adrenergic",
+      "Beta-2 adrenergic"
+    ],
+    "answer": "Alpha-1 adrenergic"
+  },
+  {
+    "id": 114,
+    "source": "3.pdf",
+    "batch": "Batch 9",
+    "topic": "Pharmacology",
+    "original_no": "32",
+    "question": "A 42-year-old woman with coronary heart disease complains of migraine. Which drug is contraindicated?",
+    "options": [
+      "Aspirin",
+      "Sumatriptan",
+      "Ibuprofen"
+    ],
+    "answer": "Sumatriptan"
+  },
+  {
+    "id": 115,
+    "source": "3.pdf",
+    "batch": "Batch 9",
+    "topic": "Microbiology",
+    "original_no": "33",
+    "question": "A 9-year-old girl has acute rheumatic fever symptoms and history of streptococcal infection. Based on Jones criteria, what confirms diagnosis?",
+    "options": [
+      "Fever and polyarthritis",
+      "Carditis and polyarthritis",
+      "PR prolongation and subcutaneous nodules",
+      "Carditis and monoarthritis"
+    ],
+    "answer": "Carditis and polyarthritis"
+  },
+  {
+    "id": 116,
+    "source": "3.pdf",
+    "batch": "Batch 9",
+    "topic": "Microbiology",
+    "original_no": "34",
+    "question": "A patient with carditis and joint pain had sore throat one month ago. ASOT was ordered. Which statement is true?",
+    "options": [
+      "High titer confirms diagnosis",
+      "Low titer excludes diagnosis",
+      "High titer may indicate previous streptococcal infection"
+    ],
+    "answer": "High titer may indicate previous streptococcal infection"
+  },
+  {
+    "id": 117,
+    "source": "3.pdf",
+    "batch": "Batch 9",
+    "topic": "Microbiology",
+    "original_no": "35",
+    "question": "A patient has fever, subcutaneous nodules, polyarthritis, and sore throat from Streptococcus pyogenes one month ago. What is in the differential diagnosis?",
+    "options": [
+      "Rheumatic fever"
+    ],
+    "answer": "Rheumatic fever"
+  }
+]
