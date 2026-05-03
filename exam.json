@@ -1,392 +1,301 @@
 [
   {
     "id": 50,
-    "topic": "VPC & Subnets",
-    "question": "You have production and test workloads. Production VMs need to be in a different subnet than test VMs, but both must reach each other over Internal IP without additional routes. Which configuration meets this?",
-    "options": {
-      "A": "Create a single custom VPC with 2 subnets. Create each subnet in a different region and with a different CIDR range.",
-      "B": "Create a single custom VPC with 2 subnets. Create each subnet in the same region and with the same CIDR range.",
-      "C": "Create 2 custom VPCs, each with a single subnet.",
-      "D": "Create 2 custom VPCs with the same CIDR."
-    },
-    "answer": "A",
-    "explanation": "Internal communication is default within the same VPC even across regions, provided CIDR ranges don't overlap[cite: 1]."
+    "topic": "Networking - VPC",
+    "question": "You have production and test workloads on Compute Engine. Production VMs need a different subnet than test VMs, but both must reach each other over Internal IP without additional routes. Which configuration meets this?",
+    "options": [
+      "Create a single custom VPC with 2 subnets in different regions with different CIDR ranges.",
+      "Create a single custom VPC with 2 subnets in the same region with the same CIDR range.",
+      "Create 2 custom VPCs, each with a single subnet and different CIDR ranges.",
+      "Create 2 custom VPCs in the same region with the same CIDR range."
+    ],
+    "answer": "Create a single custom VPC with 2 subnets in different regions with different CIDR ranges.",
+    "explanation": "Internal communication is default within the same VPC even across regions, provided CIDR ranges don't overlap."
   },
   {
     "id": 149,
-    "topic": "GKE Expansion",
-    "question": "IPs for nodes are exhausted in a VPC-native GKE cluster. How to ensure clusters can grow?",
-    "options": {
-      "A": "Create a new subnet in the same region.",
-      "B": "Add an alias IP range to the subnet.",
-      "C": "Create a new VPC and peer it.",
-      "D": "Expand the CIDR range of the relevant subnet."
-    },
-    "answer": "D",
-    "explanation": "Expanding the primary CIDR range of a subnet is the standard way to provide more IPs for nodes[cite: 1]."
+    "topic": "GKE - Subnet Expansion",
+    "question": "IPs for nodes are exhausted in a VPC-native GKE cluster. How do you ensure clusters can grow in nodes when needed?",
+    "options": [
+      "Create a new subnet in the same region as the current subnet.",
+      "Add an alias IP range to the subnet used by the GKE clusters.",
+      "Create a new VPC and set up VPC peering with the existing VPC.",
+      "Expand the CIDR range of the relevant subnet for the cluster."
+    ],
+    "answer": "Expand the CIDR range of the relevant subnet for the cluster.",
+    "explanation": "Expanding the primary CIDR range of a subnet is the standard way to provide more IPs for nodes without downtime."
   },
   {
     "id": 199,
-    "topic": "Global Databases",
-    "question": "Multi-player gaming app needs consistent performance for global users with minimal complexity.",
-    "options": {
-      "A": "Cloud SQL with cross-region replication.",
-      "B": "Use Cloud Spanner to store user data.",
-      "C": "Use BigQuery with Redis.",
-      "D": "Bigtable partitioned by username."
-    },
-    "answer": "B",
-    "explanation": "Cloud Spanner offers global scale and strong consistency with low management overhead[cite: 1]."
+    "topic": "Databases - Global Performance",
+    "question": "You need to ensure optimal gaming performance for global users without increasing management complexity for a multi-player app database.",
+    "options": [
+      "Use Cloud SQL with cross-region replication in EU, US, and APAC.",
+      "Use Cloud Spanner to store user data mapped to game statistics.",
+      "Use BigQuery with a Redis on Memorystore front-end.",
+      "Store game statistics in a Bigtable database partitioned by username."
+    ],
+    "answer": "Use Cloud Spanner to store user data mapped to game statistics.",
+    "explanation": "Cloud Spanner offers global scale, strong consistency, and high availability with minimal management."
   },
   {
     "id": 202,
-    "topic": "Private Access",
-    "question": "VMs with only internal IPs need to access a Cloud Storage bucket without internet access.",
-    "options": {
-      "A": "Enable Private Service Access on the Bucket.",
-      "B": "Add storage.googleapis.com to VPC Service Controls.",
-      "C": "Enable Private Google Access on the subnet.",
-      "D": "Deploy a Cloud NAT instance."
-    },
-    "answer": "C",
-    "explanation": "Private Google Access allows internal-IP-only VMs to reach Google services[cite: 1]."
+    "topic": "Networking - Private Access",
+    "question": "VMs have only internal IPs and no internet access. How can they access a file in a Cloud Storage bucket within your project?",
+    "options": [
+      "Enable Private Service Access on the Cloud Storage Bucket.",
+      "Add storage.googleapis.com to VPC Service Controls.",
+      "Enable Private Google Access on the subnet within the custom VPC.",
+      "Deploy a Cloud NAT instance and route traffic to the bucket."
+    ],
+    "answer": "Enable Private Google Access on the subnet within the custom VPC.",
+    "explanation": "Private Google Access allows internal-IP-only VMs to reach Google APIs and services like GCS[cite: 1]."
   },
   {
     "id": 203,
-    "topic": "Organization Migration",
-    "question": "Need to move a startup project into your organization and update billing with minimal effort.",
-    "options": {
-      "A": "Use the projects.move method and update the billing account.",
-      "B": "Use Resource Manager to drag and drop.",
-      "C": "Create a Private Catalog.",
-      "D": "Use Terraform to redeploy and delete old."
-    },
-    "answer": "A",
-    "explanation": "The projects.move API is the most efficient way to transfer projects between organizations[cite: 1]."
+    "topic": "Organization - Migration",
+    "question": "You need to move a startup's production project into your organization and update billing with minimal effort.",
+    "options": [
+      "Use the projects.move method and update the project's billing account.",
+      "Navigate to Resource Manager and drag the project to the new organization.",
+      "Create a Private Catalog and upload resources to the marketplace.",
+      "Use Terraform to redeploy all resources into a new project."
+    ],
+    "answer": "Use the projects.move method and update the project's billing account.",
+    "explanation": "The projects.move API is the most efficient and recommended way to transfer projects[cite: 1]."
   },
   {
     "id": 211,
-    "topic": "IAM Best Practices",
-    "question": "External member needs 'list access' to images and disks. What to grant?",
-    "options": {
-      "A": "Create a custom role with compute.disks.list and compute.images.list and grant it at project level.",
-      "B": "Grant Compute Image User role with extra permissions.",
-      "C": "Grant Compute Storage Admin and exclude permissions.",
-      "D": "Grant Compute Storage Admin directly."
-    },
-    "answer": "A",
-    "explanation": "Creating a custom role with only the required permissions follows the 'Least Privilege' principle[cite: 1]."
+    "topic": "IAM - Least Privilege",
+    "question": "An external member needs list access to compute images and disks. What should you do to follow Google-recommended practices?",
+    "options": [
+      "Create a custom role with compute.disks.list and compute.images.list at project level.",
+      "Create a custom role based on Compute Image User with disks.list added.",
+      "Create a custom role based on Compute Storage Admin and exclude unnecessary permissions.",
+      "Grant the predefined Compute Storage Admin role at the project level."
+    ],
+    "answer": "Create a custom role with compute.disks.list and compute.images.list at project level.",
+    "explanation": "Custom roles with specific permissions ensure the 'Least Privilege' principle is followed[cite: 1]."
   },
   {
     "id": 252,
-    "topic": "GKE Cost Optimization",
-    "question": "App has critical parts and fault-tolerant parts. How to optimize for cost?",
-    "options": {
-      "A": "Single pool Standard VMs.",
-      "B": "Single pool Spot VMs.",
-      "C": "Critical on Spot, fault-tolerant on Standard.",
-      "D": "Critical on Standard node pool, fault-tolerant on Spot node pool."
-    },
-    "answer": "D",
-    "explanation": "Critical tasks need reliability (Standard), while fault-tolerant tasks save money on Spot VMs[cite: 1]."
+    "topic": "GKE - Cost Optimization",
+    "question": "How should you configure GKE node pools for an app with both fault-tolerant and critical deployments to optimize costs?",
+    "options": [
+      "Use a single node pool with Standard VMs for all deployments.",
+      "Use a single node pool with Spot VMs for all deployments.",
+      "Deploy critical on Spot VMs and fault-tolerant on Standard VMs.",
+      "Deploy critical on Standard VMs and fault-tolerant on Spot VMs."
+    ],
+    "answer": "Deploy critical on Standard VMs and fault-tolerant on Spot VMs.",
+    "explanation": "Critical tasks need the reliability of Standard VMs, while fault-tolerant tasks save money on Spot VMs[cite: 1]."
   },
   {
     "id": 270,
-    "topic": "Multi-Project Networking",
-    "question": "Enable communication between frontend (vpc-a) and backend (vpc-b) in different projects cost-effectively.",
-    "options": {
-      "A": "OpenVPN connection.",
-      "B": "Create VPC Network Peering.",
-      "C": "Cloud Router in both VPCs.",
-      "D": "Cloud Interconnect."
-    },
-    "answer": "B",
-    "explanation": "VPC Peering is the most efficient and cost-effective way to connect VPCs internally[cite: 1]."
+    "topic": "Networking - Project Connectivity",
+    "question": "How to efficiently and cost-effectively enable communication between frontend (Project A) and backend (Project B) VPCs?",
+    "options": [
+      "Create an OpenVPN connection between both VPCs.",
+      "Create VPC Network Peering between both VPCs.",
+      "Configure a Cloud Router in each VPC.",
+      "Configure a Cloud Interconnect connection between both VPCs."
+    ],
+    "answer": "Create VPC Network Peering between both VPCs.",
+    "explanation": "VPC Peering is the most efficient and cost-effective internal connection method[cite: 1]."
   },
   {
     "id": 273,
-    "topic": "Organization Policy",
-    "question": "Configure policies/log sinks that project users cannot remove, different for each department.",
-    "options": {
-      "A": "Standard naming convention for projects.",
-      "B": "Configure policies on projects directly.",
-      "C": "Organize projects under folders for each department and configure policies on folders.",
-      "D": "Configure on organization level only."
-    },
-    "answer": "C",
-    "explanation": "Folder-level configuration allows for department-specific policies that project owners cannot override[cite: 1]."
+    "topic": "Governance - Folders",
+    "question": "How to configure organization policies and log sinks that cannot be removed by Project Owners, tailored for each department?",
+    "options": [
+      "Use standard naming conventions for all projects.",
+      "Configure both policies and sinks directly on each project.",
+      "Organize projects under department folders and configure policies/sinks on folders.",
+      "Configure organization policies at the root and log sinks on projects."
+    ],
+    "answer": "Organize projects under department folders and configure policies/sinks on folders.",
+    "explanation": "Folder-level configurations are inherited and cannot be overridden by lower-level Project Owners[cite: 1]."
   },
   {
     "id": 278,
-    "topic": "Cloud Run & Cloud SQL",
-    "question": "API quota errors in Cloud SQL logs during traffic spikes on Cloud Run. How to mitigate?",
-    "options": {
-      "A": "Modify the minimum number of Cloud Run instances.",
-      "B": "Use traffic splitting.",
-      "C": "Modify the maximum number of instances.",
-      "D": "Set minimum concurrent requests."
-    },
-    "answer": "A",
-    "explanation": "Increasing minimum instances keeps connections 'warm', reducing the need for repeated API calls for new instances[cite: 1]."
+    "topic": "Cloud Run - Scaling",
+    "question": "Cloud Run service shows API quota errors in Cloud SQL during traffic spikes. How can you mitigate this?",
+    "options": [
+      "Modify the minimum number of Cloud Run instances.",
+      "Use traffic splitting between two versions.",
+      "Modify the maximum number of Cloud Run instances.",
+      "Set a minimum concurrent requests environment variable."
+    ],
+    "answer": "Modify the minimum number of Cloud Run instances.",
+    "explanation": "Setting a minimum number of instances keeps connections 'warm', reducing the overhead of spinning up new instances[cite: 1]."
   },
   {
     "id": 279,
-    "topic": "Serverless Networking",
-    "question": "Stateless app must be reachable from internal IP in VPC and on-premises with minimal infrastructure management.",
-    "options": {
-      "A": "GKE Standard with internal ingress.",
-      "B": "Cloud Run with Private Google Access.",
-      "C": "Cloud Run with Private Service Connect.",
-      "D": "GKE Autopilot with Private Google Access."
-    },
-    "answer": "C",
-    "explanation": "Private Service Connect allows Cloud Run services to be reached via internal IP addresses[cite: 1]."
+    "topic": "Cloud Run - Internal Access",
+    "question": "Stateless app with multiple endpoints must be reachable internally from a private VPC and on-premises with minimal infrastructure management.",
+    "options": [
+      "Deploy on GKE Standard with an internal ingress.",
+      "Deploy on Cloud Run with Private Google Access configured.",
+      "Deploy on Cloud Run with Private Service Connect configured.",
+      "Deploy to GKE Autopilot with Private Google Access configured."
+    ],
+    "answer": "Deploy on Cloud Run with Private Service Connect configured.",
+    "explanation": "Private Service Connect allows serverless apps to be exposed via internal IPs[cite: 1]."
   },
   {
     "id": 282,
-    "topic": "Internal Static IP",
-    "question": "VM needs a fixed IP for other services in the same VPC to communicate with it, minimizing cost.",
-    "options": {
-      "A": "Promote to static external IP.",
-      "B": "Promote the existing IP to a static internal IP.",
-      "C": "Reserve static external IPv6.",
-      "D": "Reserve new static external IP."
-    },
-    "answer": "B",
-    "explanation": "Static internal IPs are cost-effective and allow reliable communication within a VPC[cite: 1]."
+    "topic": "Networking - Static IP",
+    "question": "VM needs a fixed IP address for internal VPC communication while minimizing cost. What should you do?",
+    "options": [
+      "Promote the existing IP to a static external IP address.",
+      "Promote the existing IP to a static internal IP address.",
+      "Reserve a new static external IPv6 address.",
+      "Reserve a new static external IP address."
+    ],
+    "answer": "Promote the existing IP to a static internal IP address.",
+    "explanation": "Internal static IPs are free in GCP and ensure consistent internal communication[cite: 1]."
   },
   {
     "id": 284,
-    "topic": "Security & Impersonation",
-    "question": "Test service account permissions from a local machine securely.",
-    "options": {
-      "A": "Generate a SA key.",
-      "B": "Grant SA BigQuery Administrator role.",
-      "C": "Configure gcloud CLI to use service account impersonation.",
-      "D": "Use Application Default Credentials with user account."
-    },
-    "answer": "C",
-    "explanation": "Impersonation is more secure than using service account keys[cite: 1]."
-  },
-  {
-    "id": 285,
-    "topic": "Access Control",
-    "question": "Ensure only company-issued accounts access GCP and users stay within their department resources.",
-    "options": {
-      "A": "Remove non-company accounts periodically.",
-      "B": "Use Google Groups for IAM and organization policies to block non-company emails.",
-      "C": "Grant Folder Admin to users on their department folder.",
-      "D": "Grant Folder Admin to all users at organization level."
-    },
-    "answer": "B",
-    "explanation": "Organization policies provide strict enforcement against unauthorized domains[cite: 1]."
+    "topic": "Security - Testing",
+    "question": "How to securely test service account permissions for BigQuery from a local machine following best practices?",
+    "options": [
+      "Generate a service account key and use it with gcloud CLI.",
+      "Grant the service account the BigQuery Administrator role.",
+      "Configure gcloud CLI to use service account impersonation.",
+      "Configure gcloud CLI with Application Default Credentials via user account."
+    ],
+    "answer": "Configure gcloud CLI to use service account impersonation.",
+    "explanation": "Impersonation avoids the risks associated with long-lived service account keys[cite: 1]."
   },
   {
     "id": 286,
-    "topic": "Cloud Run to GKE",
-    "question": "Cloud Run service needs to reach GKE API privately.",
-    "options": {
-      "A": "Expose GKE via internet and use Cloud Armor.",
-      "B": "Create ingress firewall rule for 0.0.0.0/0.",
-      "C": "Create egress firewall rule for 0.0.0.0/0.",
-      "D": "Internal ALB on GKE, Cloud DNS, and Serverless VPC Access connector on Cloud Run."
-    },
-    "answer": "D",
-    "explanation": "Serverless VPC Access allows serverless products to reach internal VPC resources like an Internal ALB[cite: 1]."
+    "topic": "Cloud Run - GKE Connectivity",
+    "question": "How can a Cloud Run service privately reach an API running on a GKE cluster following best practices?",
+    "options": [
+      "Expose GKE via public ingress and filter via Cloud Armor.",
+      "Create an ingress firewall rule on the VPC allowing 0.0.0.0/0.",
+      "Create an egress firewall rule on the VPC allowing 0.0.0.0/0.",
+      "Use an internal Application Load Balancer for GKE and a Serverless VPC Access connector for Cloud Run."
+    ],
+    "answer": "Use an internal Application Load Balancer for GKE and a Serverless VPC Access connector for Cloud Run.",
+    "explanation": "Serverless VPC Access allows Cloud Run to connect to internal VPC resources like an Internal ALB[cite: 1]."
   },
   {
     "id": 289,
-    "topic": "Storage Monitoring",
-    "question": "Be notified of any modifications to Cloud Storage files with minimal overhead.",
-    "options": {
-      "A": "Filter Admin Activity logs.",
-      "B": "Enable versioning and configure Pub/Sub notifications.",
-      "C": "Custom script scanning versions.",
-      "D": "Object change notifications to Pub/Sub."
-    },
-    "answer": "B",
-    "explanation": "Pub/Sub notifications for Cloud Storage provide an automated way to track object changes[cite: 1]."
+    "topic": "Storage - Monitoring",
+    "question": "You need to be notified of all modifications to files in Cloud Storage with minimal management overhead. What should you do?",
+    "options": [
+      "View Admin Activity logs in Logs Explorer.",
+      "Enable object versioning and configure Pub/Sub notifications.",
+      "Set up a custom script to scan object versions periodically.",
+      "Configure Object change notifications to send events to Pub/Sub."
+    ],
+    "answer": "Enable object versioning and configure Pub/Sub notifications.",
+    "explanation": "Pub/Sub notifications for GCS provide a managed, near real-time alerting system[cite: 1]."
   },
   {
     "id": 296,
-    "topic": "GKE Deployment",
-    "question": "Deploy microservices that cannot be exposed publicly with minimal management overhead.",
-    "options": {
-      "A": "Provision a GKE Autopilot cluster.",
-      "B": "Install Kubernetes on Compute Engine.",
-      "C": "Standard regional GKE cluster.",
-      "D": "Standard zonal GKE cluster."
-    },
-    "answer": "A",
-    "explanation": "Autopilot manages nodes for you, reducing management overhead while keeping services private[cite: 1]."
+    "topic": "Compute - Containers",
+    "question": "You need to deploy refactored microservices that cannot be exposed publicly with minimal management overhead. What should you do?",
+    "options": [
+      "Provision a GKE Autopilot cluster.",
+      "Install Kubernetes manually on Compute Engine instances.",
+      "Provision a Standard regional GKE cluster.",
+      "Provision a Standard zonal GKE cluster."
+    ],
+    "answer": "Provision a GKE Autopilot cluster.",
+    "explanation": "Autopilot reduces management overhead by handling node infrastructure while keeping the cluster private[cite: 1]."
   },
   {
     "id": 301,
-    "topic": "GKE Workload Identity",
-    "question": "Pods need to authenticate to Cloud Storage API without service account keys.",
-    "options": {
-      "A": "Grant node service account bucket access.",
-      "B": "Use Workload Identity Federation to link Kubernetes SA with Google SA.",
-      "C": "Security exception for 24-hour keys.",
-      "D": "Security exception for 8-hour keys."
-    },
-    "answer": "B",
-    "explanation": "Workload Identity is the most secure and recommended way for GKE pods to access Google Cloud services[cite: 1]."
-  },
-  {
-    "id": 306,
-    "topic": "Migration Strategy",
-    "question": "Lift-and-shift migration for apps with hard-coded internal IPs.",
-    "options": {
-      "A": "Migrate DNS first.",
-      "B": "Create non-overlapping VPC and assign new static IPs.",
-      "C": "Create VPC with same CIDR and assign same static internal IPs.",
-      "D": "Single subnet with Cloud NAT."
-    },
-    "answer": "C",
-    "explanation": "Matching the CIDR and IPs avoids the need to change application code during a quick migration[cite: 1]."
+    "topic": "GKE - Workload Identity",
+    "question": "How to configure GKE Pods to authenticate to a private bucket without using service account keys following best practices?",
+    "options": [
+      "Configure the default node service account to access the bucket.",
+      "Use Workload Identity Federation to link a Kubernetes ServiceAccount to a Google Service Account.",
+      "Request a security exception to generate a 24-hour service account key.",
+      "Request a security exception to generate an 8-hour service account key."
+    ],
+    "answer": "Use Workload Identity Federation to link a Kubernetes ServiceAccount to a Google Service Account.",
+    "explanation": "Workload Identity is the recommended secure method for GKE workloads to access GCP services[cite: 1]."
   },
   {
     "id": 302,
-    "topic": "OS Management",
-    "question": "Manage Linux account lifecycle and access for developers.",
-    "options": {
-      "A": "Enable OS Login for all VMs and use IAM roles.",
-      "B": "Custom startup scripts for SSH keys.",
-      "C": "SSH keys as root user.",
-      "D": "OS Login with custom startup scripts."
-    },
-    "answer": "A",
-    "explanation": "OS Login simplifies SSH management by linking it to IAM identities[cite: 1]."
+    "topic": "Compute Engine - OS Login",
+    "question": "How to manage Linux account lifecycle and SSH access for developers provisioning VMs with minimal cost and overhead?",
+    "options": [
+      "Enable OS Login for all VMs and use IAM roles for permissions.",
+      "Require developers to provide public SSH keys and use startup scripts.",
+      "Require developers to create public SSH keys as root users.",
+      "Enable OS Login for all VMs and write custom startup scripts for permissions."
+    ],
+    "answer": "Enable OS Login for all VMs and use IAM roles for permissions.",
+    "explanation": "OS Login links IAM identities to VM login access, simplifying lifecycle management[cite: 1]."
   },
   {
-    "id": 303,
-    "topic": "IAM Roles",
-    "question": "Operations team needs specific permissions on GKE and Cloud SQL using two predefined roles.",
-    "options": {
-      "A": "Combine permissions into one custom role.",
-      "B": "Grant two predefined roles directly.",
-      "C": "Create custom role with ONLY required permissions.",
-      "D": "Grant full Admin roles for both services."
-    },
-    "answer": "C",
-    "explanation": "Custom roles tailored to specific needs follow the principle of least privilege[cite: 1]."
-  },
-  {
-    "id": 304,
-    "topic": "Infrastructure as Code",
-    "question": "Automate provisioning across GCP and two other cloud providers.",
-    "options": {
-      "A": "Config Connector.",
-      "B": "Use Terraform.",
-      "C": "Python and SDKs.",
-      "D": "YAML manifests."
-    },
-    "answer": "B",
-    "explanation": "Terraform is a multi-cloud standard for infrastructure as code[cite: 1]."
-  },
-  {
-    "id": 309,
-    "topic": "Billing Analysis",
-    "question": "Need granular breakdown of Google Cloud costs in BigQuery.",
-    "options": {
-      "A": "Enable Cloud Billing data export to BigQuery.",
-      "B": "Link billing account and view table in BigQuery.",
-      "C": "BigQuery Data Transfer Service API.",
-      "D": "Enable BigQuery API and select data location."
-    },
-    "answer": "A",
-    "explanation": "Exporting billing data to BigQuery is the standard way to perform detailed cost analysis[cite: 1]."
+    "id": 306,
+    "topic": "Migration - Lift and Shift",
+    "question": "How to migrate workloads with hard-coded internal IP addresses quickly without modifying application code?",
+    "options": [
+      "Migrate the DNS server first and use forwarding zones.",
+      "Create a VPC with non-overlapping ranges and assign new static IPs.",
+      "Create a VPC with the same CIDR ranges and assign the same static internal IPs.",
+      "Migrate to a single subnet and use a Cloud NAT gateway."
+    ],
+    "answer": "Create a VPC with the same CIDR ranges and assign the same static internal IPs.",
+    "explanation": "Maintaining the same network structure avoids the need to update hard-coded application configs[cite: 1]."
   },
   {
     "id": 315,
-    "topic": "Serverless Selection",
-    "question": "Static website and asynchronous HTTP background job. Need zero cost when not in use.",
-    "options": {
-      "A": "GKE for site, Cloud Functions for job.",
-      "B": "Compute Engine for both.",
-      "C": "Move both to Cloud Run.",
-      "D": "GKE for site, Compute Engine for job."
-    },
-    "answer": "C",
-    "explanation": "Cloud Run can host both and scales to zero, meaning no cost when idle[cite: 1]."
-  },
-  {
-    "id": 317,
-    "topic": "Landing Zone & Firewall",
-    "question": "Allow all production VMs to communicate via private IP and accept connections on specific ports via organization-level rules.",
-    "options": {
-      "A": "Individual VPCs with peering and organization policies.",
-      "B": "Individual VPCs with peering and hierarchical firewall policies.",
-      "C": "Host VPC with service projects and organization policies.",
-      "D": "Host VPC with service projects and hierarchical firewall policies."
-    },
-    "answer": "D",
-    "explanation": "Shared VPC (Host/Service projects) and hierarchical firewall policies provide centralized networking and security management[cite: 1]."
+    "topic": "Serverless - Architecture",
+    "question": "Move a static website and an asynchronous invoice background job to GCP with no costs when not in use. What should you do?",
+    "options": [
+      "GKE for the website and Cloud Functions for the job.",
+      "Compute Engine for both website and background job.",
+      "Cloud Run for both website and background job.",
+      "GKE for the website and Compute Engine for the job."
+    ],
+    "answer": "Cloud Run for both website and background job.",
+    "explanation": "Cloud Run scales to zero and can host both web frontends and asynchronous background tasks[cite: 1]."
   },
   {
     "id": 319,
-    "topic": "Cloud Run Revision",
-    "question": "Deploy new version with no startup time (warm instances).",
-    "options": {
-      "A": "Don't serve immediately; use simulation tool.",
-      "B": "Set service minimum instances to 2.",
-      "C": "Set revision minimum instances to 2.",
-      "D": "Set existing revision minimum instances to 2."
-    },
-    "answer": "C",
-    "explanation": "Minimum instances on the specific revision ensure instances are ready before traffic arrives[cite: 1]."
+    "topic": "Cloud Run - Deployment",
+    "question": "Ensure a new Cloud Run version serves traffic with no startup time by having 2 idle instances ready.",
+    "options": [
+      "Uncheck 'Serve immediately' and use a traffic simulation tool.",
+      "Configure service autoscaling with minimum 2 instances.",
+      "Configure revision autoscaling with minimum 2 instances.",
+      "Configure existing revision autoscaling with minimum 2 instances."
+    ],
+    "answer": "Configure revision autoscaling with minimum 2 instances.",
+    "explanation": "Setting 'min-instances' at the revision level ensures warm instances are ready for new traffic[cite: 1]."
   },
   {
     "id": 320,
-    "topic": "GKE Autoscaling",
-    "question": "Stateful app needs more CPU during peak times.",
-    "options": {
-      "A": "Node auto-provisioning.",
-      "B": "Vertical Pod Autoscaler.",
-      "C": "Horizontal Pod Autoscaler.",
-      "D": "Cluster autoscaling."
-    },
-    "answer": "B",
-    "explanation": "VPA is used for scaling pod resources vertically for stateful applications[cite: 1]."
-  },
-  {
-    "id": 321,
-    "topic": "Cost Visualization",
-    "question": "Visualize cost data in multiple ways on the same dashboard.",
-    "options": {
-      "A": "Cost breakdown report filters.",
-      "B": "Cloud Billing export to BigQuery and Looker Studio.",
-      "C": "Cloud Monitoring dashboards.",
-      "D": "Monitoring metrics to BigQuery and Looker."
-    },
-    "answer": "B",
-    "explanation": "Looker Studio combined with BigQuery billing data allows for complex, multi-view dashboards[cite: 1]."
-  },
-  {
-    "id": 323,
-    "topic": "SSH Access Management",
-    "question": "Simplify SSH access management while maintaining audit compliance.",
-    "options": {
-      "A": "Service account for SSH keys.",
-      "B": "Metadata SSH keys.",
-      "C": "Enable OS Login via organization policy.",
-      "D": "OS Login with 2FA."
-    },
-    "answer": "C",
-    "explanation": "Enforcing OS Login via organization policy centralizes SSH access management[cite: 1]."
+    "topic": "GKE - Vertical Scaling",
+    "question": "A stateful GKE app with one replica needs more CPU during peak times. How should you ensure cost efficiency and sufficient resources?",
+    "options": [
+      "Enable node auto-provisioning on the cluster.",
+      "Configure a Vertical Pod Autoscaler (VPA) on the Deployment.",
+      "Configure a Horizontal Pod Autoscaler (HPA) on the Deployment.",
+      "Enable cluster autoscaling on the GKE cluster."
+    ],
+    "answer": "Configure a Vertical Pod Autoscaler (VPA) on the Deployment.",
+    "explanation": "VPA is ideal for scaling single-replica pods that need vertical resource adjustments[cite: 1]."
   },
   {
     "id": 325,
-    "topic": "Pub/Sub Management",
-    "question": "Fetch and acknowledge waiting messages from a subscription.",
-    "options": {
-      "A": "pubsub subscriptions seek.",
-      "B": "pubsub topics describe.",
-      "C": "pubsub subscriptions pull --auto-ack.",
-      "D": "pubsub topics list-subscriptions."
-    },
-    "answer": "C",
-    "explanation": "The 'pull' command with '--auto-ack' fetches and confirms receipt of messages[cite: 1]."
+    "topic": "Pub/Sub - Management",
+    "question": "How to fetch and acknowledge waiting messages from a Pub/Sub subscription named 'email-updates' via CLI?",
+    "options": [
+      "Use gcloud pubsub subscriptions seek email-updates.",
+      "Use gcloud pubsub topics describe new-orders.",
+      "Use gcloud pubsub subscriptions pull email-updates --auto-ack.",
+      "Use gcloud pubsub topics list-subscriptions new-orders."
+    ],
+    "answer": "Use gcloud pubsub subscriptions pull email-updates --auto-ack.",
+    "explanation": "The 'pull' command with '--auto-ack' both retrieves and clears messages from the queue[cite: 1]."
   }
 ]
