@@ -10,7 +10,7 @@
       "Create 2 custom VPCs, each with a single subnet in the same region."
     ],
     "answer": "Create a single custom VPC with 2 subnets. Create each subnet in a different region and with a different CIDR range.",
-    "explanation": "Subnets in the same VPC communicate via internal IP by default. Using different regions and non-overlapping CIDR ranges is the standard setup."
+    "explanation": "Subnets in the same VPC communicate via internal IP by default. Using different regions and non-overlapping CIDR ranges is the standard setup[cite: 4]."
   },
   {
     "id": 149,
@@ -56,7 +56,7 @@
     "topic": "Migration",
     "question": "You need to move a production project from an acquired startup into your organization and ensure it is billed correctly with minimal effort.",
     "options": [
-      "Use the projects.move method to move the project and update the billing account.",
+      "Use the projects.move method to move the project to your organization. Update the billing account of the project to that of your organization.",
       "Navigate to Resource Manager and drag the project to your organization.",
       "Create a Private Catalog and upload project resources to it.",
       "Use Terraform to redeploy the template to a new project."
@@ -74,7 +74,7 @@
       "Create a custom role based on Compute Storage Admin and exclude unnecessary permissions.",
       "Grant the predefined Compute Storage Admin role at the project level."
     ],
-    "answer": "Create a custom role, and add all the required compute.disks.list and compute.images.list permissions as included Permissions. Grant the custom role to the user at the project level.",
+    "answer": "Create a custom role with compute.disks.list and compute.images.list permissions at the project level.",
     "explanation": "Custom roles ensure you grant only the necessary permissions (Least Privilege)[cite: 4]."
   },
   {
@@ -87,7 +87,7 @@
       "Deploy critical on Spot VM node pools and fault-tolerant on standard pools.",
       "Deploy critical on standard VM node pools and fault-tolerant on Spot VM pools."
     ],
-    "answer": "Create a cluster with both a Spot VM node pool and a nods pool by using standard VMs. Deploy the critical deployments on the node pool by using standard VMs and the fault-tolerant deployments on the Spot VM node pool.",
+    "answer": "Deploy critical on standard VM node pools and fault-tolerant on Spot VM pools.",
     "explanation": "Critical tasks need Standard VMs for stability; fault-tolerant tasks can use cheaper Spot VMs[cite: 4]."
   },
   {
@@ -100,7 +100,7 @@
       "Configure a Cloud Router in each VPC.",
       "Configure a Cloud Interconnect connection."
     ],
-    "answer": "Create VPC Network Peering between vpc-a and vpc-b.",
+    "answer": "Create VPC Network Peering between the VPCs.",
     "explanation": "VPC Peering provides low-latency, internal IP connectivity between VPCs at a low cost[cite: 4]."
   },
   {
@@ -113,7 +113,7 @@
       "Organize projects under folders for each department and configure policies/sinks on folders.",
       "Configure policies on the organization and log sinks on the projects."
     ],
-    "answer": "Organize projects under folders for each department. Configure both organization policies and log sinks on the folders.",
+    "answer": "Organize projects under folders for each department and configure policies/sinks on folders.",
     "explanation": "Folder-level configurations are inherited by projects and cannot be modified by project-level users[cite: 4]."
   },
   {
@@ -139,7 +139,7 @@
       "Deploy on Cloud Run with Private Service Connect.",
       "Deploy to GKE Autopilot with Private Google Access."
     ],
-    "answer": "Deploy the web application on Cloud Run with Private Service Connect configured.",
+    "answer": "Deploy on Cloud Run with Private Service Connect.",
     "explanation": "Private Service Connect allows Cloud Run services to be accessed internally via VPC endpoints[cite: 4]."
   },
   {
@@ -152,7 +152,7 @@
       "Reserve a new static external IPv6 address.",
       "Reserve a new static external IP address."
     ],
-    "answer": "Promote the existing IP address of the VM to become a static internal IP address.",
+    "answer": "Promote the existing IP to a static internal IP address.",
     "explanation": "Static internal IPs are the most cost-effective way to provide a fixed address within a VPC[cite: 4]."
   },
   {
@@ -165,7 +165,7 @@
       "Configure gcloud CLI to use service account impersonation.",
       "Use Application Default Credentials via your user account."
     ],
-    "answer": "Configure the gcloud CLI to use service account impersonation.",
+    "answer": "Configure gcloud CLI to use service account impersonation.",
     "explanation": "Impersonation is preferred over keys as it uses short-lived credentials[cite: 4]."
   },
   {
@@ -178,7 +178,7 @@
       "Create folders per department and grant users Folder Admin role.",
       "Grant all company users Folder Admin role at the organization level."
     ],
-    "answer": "Assign users to the relevant Google Groups, and provide access to cloud resources through Identity and Access Management (IAM) roles. Use organization policies to block non-company issued emails.",
+    "answer": "Use Google Groups for IAM and organization policies to block non-company emails.",
     "explanation": "Domain restriction organization policies strictly enforce account types[cite: 4]."
   },
   {
@@ -191,7 +191,7 @@
       "Create an egress firewall rule for 0.0.0.0/0.",
       "Deploy an internal Load Balancer for GKE and use a Serverless VPC Access connector."
     ],
-    "answer": "Deploy an internal Application Load Balancer to expose the API on GKE to the VPC. Configure Cloud DNS with the IP address of the internal Application Load Balancer. Deploy a Serverless VPC Access connector to allow the Cloud Run service to call the API through the FQDN on Cloud DNS.",
+    "answer": "Deploy an internal Load Balancer for GKE and use a Serverless VPC Access connector.",
     "explanation": "Serverless VPC Access enables private connectivity from Cloud Run to internal VPC resources[cite: 4]."
   },
   {
@@ -204,7 +204,7 @@
       "Set up a custom script to scan versions periodically.",
       "Configure Object change notifications to send events to Pub/Sub."
     ],
-    "answer": "Enable Cloud Storage object versioning on your bucket. Configure Pub/Sub notifications for your Cloud Storage buckets.",
+    "answer": "Enable object versioning and configure Pub/Sub notifications.",
     "explanation": "Pub/Sub notifications for Storage is the automated, managed solution for object alerts[cite: 4]."
   },
   {
@@ -230,7 +230,7 @@
       "Generate a service account key with a 24-hour expiry.",
       "Generate a service account key with an 8-hour expiry."
     ],
-    "answer": "Create the GKE cluster with Workload Identity Federation. Create a Google service account and a Kubernetes ServiceAccount, and configure both service accounts to use Workload Identity Federation. Attach the Kubernetes ServiceAccount to the application Pods and configure the Google service account to access the bucket with Identity and Access Management (IAM).",
+    "answer": "Use Workload Identity Federation to link Kubernetes and Google service accounts.",
     "explanation": "Workload Identity is the recommended, keyless method for GKE pod authentication[cite: 4]."
   },
   {
@@ -243,7 +243,7 @@
       "Create a VPC with same CIDR ranges and assign same static internal IPs.",
       "Migrate all workloads to a single subnet and use Cloud NAT."
     ],
-    "answer": "Create a VPC with the same CIDR ranges as your on-premises network. When migrating individual workloads, assign each workload the same static internal IP address.",
+    "answer": "Create a VPC with same CIDR ranges and assign same static internal IPs.",
     "explanation": "Matching CIDR and IPs avoids the need to change application code[cite: 4]."
   },
   {
@@ -256,7 +256,7 @@
       "Use public SSH keys and make them root users.",
       "Enable OS Login for all VMs and use startup scripts."
     ],
-    "answer": "Enable OS Login for all VMs. Use IAM roles to grant user permissions.",
+    "answer": "Enable OS Login for all VMs and use IAM roles.",
     "explanation": "OS Login links Linux accounts to IAM identities for automated lifecycle management[cite: 4]."
   },
   {
@@ -269,7 +269,7 @@
       "Create a custom IAM role with only the required permissions.",
       "Grant the team full Admin roles for both services."
     ],
-    "answer": "Create a custom IAM role that includes only the required permissions from the predefined roles.",
+    "answer": "Create a custom IAM role with only the required permissions.",
     "explanation": "Custom roles follow the principle of least privilege[cite: 4]."
   },
   {
@@ -282,7 +282,7 @@
       "Build the solution using Python and SDKs.",
       "Build the solution using YAML manifests."
     ],
-    "answer": "Build the solution by using Terraform, and provision the resources.",
+    "answer": "Build the solution using Terraform.",
     "explanation": "Terraform is the industry standard for multi-cloud infrastructure-as-code[cite: 4]."
   },
   {
@@ -295,7 +295,7 @@
       "Use BigQuery Data Transfer Service API for pricing data.",
       "Enable the BigQuery API and assign BigQuery User role."
     ],
-    "answer": "Enable Cloud Billing data export to BigQuery when you create a Cloud Billing account.",
+    "answer": "Enable Cloud Billing data export to BigQuery.",
     "explanation": "Billing export to BigQuery provides the raw data needed for granular analysis[cite: 4]."
   },
   {
@@ -308,7 +308,7 @@
       "Move both to Cloud Run.",
       "GKE for website and Compute Engine for the job."
     ],
-    "answer": "Move both your website and background job to Cloud Run.",
+    "answer": "Move both to Cloud Run.",
     "explanation": "Cloud Run scales to zero and can host both web front-ends and background tasks[cite: 4]."
   },
   {
@@ -321,7 +321,7 @@
       "Host VPC with service projects and organization policies.",
       "Host VPC with service projects and hierarchical firewall policies."
     ],
-    "answer": "Create a host VPC project with each production project as its service project. Apply hierarchical firewall policies on the organization level.",
+    "answer": "Host VPC with service projects and hierarchical firewall policies.",
     "explanation": "Shared VPC and hierarchical firewall policies provide centralized network security[cite: 4]."
   },
   {
@@ -334,7 +334,7 @@
       "Set revision autoscaling minimum instances to 2.",
       "Set existing revision minimum instances to 2."
     ],
-    "answer": "Configure revision autoscaling for the new revision and set the minimum number of instances to 2.",
+    "answer": "Set revision autoscaling minimum instances to 2.",
     "explanation": "Setting min-instances at the revision level ensures warm instances are ready for traffic[cite: 4]."
   },
   {
@@ -347,7 +347,7 @@
       "Configure a Horizontal Pod Autoscaler.",
       "Enable cluster autoscaling."
     ],
-    "answer": "Configure a Vertical Pod Autoscaler on the Deployment.",
+    "answer": "Configure a Vertical Pod Autoscaler.",
     "explanation": "VPA is used for vertical scaling of pods, ideal for single-replica stateful apps[cite: 4]."
   },
   {
@@ -360,7 +360,7 @@
       "Run queries in Cloud Monitoring dashboards.",
       "Export metrics to BigQuery and use Looker."
     ],
-    "answer": "Enable the Cloud Billing export to BigQuery, and use Looker Studio to visualize the data.",
+    "answer": "Enable Cloud Billing export to BigQuery and use Looker Studio.",
     "explanation": "BigQuery + Looker Studio is the recommended combination for flexible cost dashboards[cite: 4]."
   },
   {
@@ -373,7 +373,7 @@
       "Enable OS Login via organization policy.",
       "Enable OS Login with 2FA for the domain."
     ],
-    "answer": "Enable OS Login by using an organization policy for each Google Cloud project.",
+    "answer": "Enable OS Login via organization policy.",
     "explanation": "Enforcing OS Login at the project/organization level centralizes access and audits[cite: 4]."
   },
   {
@@ -386,7 +386,7 @@
       "gcloud pubsub subscriptions pull --auto-ack.",
       "gcloud pubsub topics list-subscriptions."
     ],
-    "answer": "Use the gcloud pubsub subscriptions pull email-updates --auto-ack command.",
+    "answer": "gcloud pubsub subscriptions pull --auto-ack.",
     "explanation": "The 'pull' command with '--auto-ack' fetches and confirms receipt of messages[cite: 4]."
   },
   {
@@ -399,7 +399,7 @@
       "Migrate projects between organizations and link to billing.",
       "Create a new organization and migrate all projects there."
     ],
-    "answer": "Link the acquired company's projects to your company's billing account.",
+    "answer": "Link the acquired projects to your company's billing account.",
     "explanation": "Directly linking projects to a new billing account is the fastest way to change invoicing[cite: 4]."
   },
   {
@@ -412,7 +412,7 @@
       "Create a new project and share a VPC with the dev project.",
       "Replicate the setup in an existing DIVISION production project."
     ],
-    "answer": "Create a new project, enable the Compute Engine and Cloud SQL APIs in that project, and replicate the setup you have created in the development environment.",
+    "answer": "Create a new project and replicate the setup.",
     "explanation": "Using separate projects is the best practice for isolation and avoiding unwanted routing[cite: 4]."
   },
   {
@@ -425,7 +425,7 @@
       "Verify Org Admin role and click 'Shut down' in the console.",
       "Switch to the project and delete all resources manually."
     ],
-    "answer": "1. Verify that you are assigned the Project Owners IAM role for this project. 2. Locate the project in the GCP console, click Shut down and then enter the project ID.",
+    "answer": "Verify Project Owner role and click 'Shut down' in the console.",
     "explanation": "Shutting down the project is the fastest way to stop all services and costs[cite: 4]."
   },
   {
@@ -438,7 +438,7 @@
       "Grant the SA the BigQuery Data Viewer role in its OWN project.",
       "Grant a different team SA the BigQuery Job User role in your project."
     ],
-    "answer": "Ask the other team to grant your default App Engine Service account the role of BigQuery Data Viewer.",
+    "answer": "Grant the SA the BigQuery Data Viewer role in the data project.",
     "explanation": "The Data Viewer role must be granted on the project or dataset where the data resides[cite: 4]."
   },
   {
@@ -451,7 +451,7 @@
       "Cron job script using 'gsutil' to synchronize storage.",
       "Upload images manually in the Cloud Console."
     ],
-    "answer": "Create a script that uses the gsutil command line interface to synchronize the onpremises storage with Cloud Storage. Schedule the script as a cron job.",
+    "answer": "Cron job script using 'gsutil' to synchronize storage.",
     "explanation": "A scheduled sync script is a common and low-effort way to automate uploads[cite: 4]."
   },
   {
@@ -464,7 +464,7 @@
       "Dual-regional storage with Nearline class.",
       "Dual-regional storage with Standard class."
     ],
-    "answer": "Configure regional storage for the region closest to the users. Configure a Standard storage class.",
+    "answer": "Regional storage with Standard class.",
     "explanation": "Standard storage is for data accessed frequently; Regional is the most cost-effective for localized high-performance[cite: 4]."
   },
   {
@@ -477,7 +477,7 @@
       "Regional persistent disk with snapshot schedule.",
       "Regional persistent disk with immediate attachment in another zone."
     ],
-    "answer": "Store the application data on a regional persistent disk. If an outage occurs, create an instance in another zone with this disk attached.",
+    "answer": "Regional persistent disk with immediate attachment in another zone.",
     "explanation": "Regional persistent disks replicate data across two zones in a region for high availability[cite: 4]."
   },
   {
@@ -490,7 +490,7 @@
       "Cloud Functions on Cloud Scheduler.",
       "Compute Engine VM with instance schedule."
     ],
-    "answer": "Lift and shift to a VM on Compute Engine. Use an instance schedule to start and stop the instance.",
+    "answer": "Compute Engine VM with instance schedule.",
     "explanation": "A direct move to a VM with a schedule is the simplest 'lift and shift' for legacy binaries[cite: 4]."
   },
   {
@@ -503,7 +503,7 @@
       "Retention policy of 30 days with a lock.",
       "Enable versioning and expire non-current versions."
     ],
-    "answer": "Create an object lifecycle on the storage bucket to change the storage class to Archive Storage for objects with an age over 30 days.",
+    "answer": "Lifecycle rule to change class to Archive after 30 days.",
     "explanation": "Object Lifecycle Management is the automated way to move data to cheaper storage tiers[cite: 4]."
   },
   {
@@ -516,7 +516,7 @@
       "Cloud SQL with multiple read replicas.",
       "Bigtable with row key based on event timestamp."
     ],
-    "answer": "Ingest the data into Bigtable. Create a row key based on the event timestamp.",
+    "answer": "Bigtable with row key based on event timestamp.",
     "explanation": "Bigtable is designed for high-throughput time-series data like IoT sensor events[cite: 4]."
   },
   {
@@ -529,7 +529,7 @@
       "Storage Transfer Service for everything.",
       "Cloud Data Fusion, Dataflow, and Storage Transfer Service."
     ],
-    "answer": "Use Transfer Appliance for the videos, BigQuery Data Transfer Service for the data warehouse data, and Storage Transfer Service for the PNG files.",
+    "answer": "Transfer Appliance, BigQuery Data Transfer Service, and Storage Transfer Service.",
     "explanation": "Transfer Appliance is for large-scale physical data moves (200 TB), and Data Transfer Service is for warehouse migrations[cite: 4]."
   },
   {
@@ -542,7 +542,7 @@
       "Logging sink to Cloud Storage.",
       "Cloud Function querying Logging."
     ],
-    "answer": "Create a Cloud Logging sink and configure Pub/Sub as the destination. Configure the SaaS tool to subscribe to the Pub/Sub topic to retrieve the logs.",
+    "answer": "Logging sink to Pub/Sub.",
     "explanation": "Pub/Sub provides a real-time stream for log exports to external tools[cite: 4]."
   },
   {
@@ -555,7 +555,7 @@
       "Filestore move to Coldline after 6 months.",
       "Filestore move to Standard after 6 months."
     ],
-    "answer": "Use Cloud Storage with Object Lifecycle Management to change the object storage class to Coldline after six months.",
+    "answer": "Cloud Storage with Lifecycle to Coldline after 6 months.",
     "explanation": "Moving from Standard (frequent access) to Coldline (rare access) after 6 months minimizes costs[cite: 4]."
   },
   {
@@ -568,7 +568,7 @@
       "Cloud SQL, Archive, Bigtable.",
       "Spanner for everything."
     ],
-    "answer": "Use Cloud SQL for customer data. Cloud Storage (Archive) for historical logs, and Bigtable for sensor data.",
+    "answer": "Cloud SQL, Archive, Bigtable.",
     "explanation": "Archive is cheapest for historical data; Bigtable handles high-velocity writes; Cloud SQL handles structured SQL[cite: 4]."
   },
   {
@@ -581,7 +581,7 @@
       "Google Group with Compute Viewer role.",
       "Google Group with OS Login."
     ],
-    "answer": "Create a Google Group for all engineering team members, and set up OS Login for this group on the project. Manage group membership when engineers join or leave the team.",
+    "answer": "Google Group with OS Login.",
     "explanation": "OS Login with Google Groups automates account creation and removal based on group membership[cite: 4]."
   },
   {
@@ -594,7 +594,7 @@
       "Private nodes with Cloud NAT and dynamic IPs.",
       "Public nodes with Cloud Function IP pulling."
     ],
-    "answer": "Configure your GKE cluster with private nodes. Configure a Cloud NAT instance with static IP addresses. Provide these IP addresses to the vendor to be added to the allowlist.",
+    "answer": "Private nodes with Cloud NAT and static IPs.",
     "explanation": "Cloud NAT with static IPs ensures outbound traffic always comes from a known set of addresses[cite: 4]."
   },
   {
@@ -607,7 +607,7 @@
       "Create single-purpose / Manage as resources.",
       "Delete unused / Use random names."
     ],
-    "answer": "Create single-purpose service accounts / Manage service accounts as resources.",
+    "answer": "Create single-purpose / Manage as resources.",
     "explanation": "Service accounts should be limited in scope and managed as first-class resources for security[cite: 4]."
   },
   {
@@ -620,7 +620,7 @@
       "Partner creates SA in their project and uses it in THEIR project.",
       "Grant the partner project SA access to your dataset."
     ],
-    "answer": "Ask the partner to create a Service Account in their project, and grant their Service Account access to the BigQuery dataset in your project.",
+    "answer": "Grant the partner project SA access to your dataset.",
     "explanation": "Granting the partner's service account permissions in your project is the secure cross-project method[cite: 4]."
   },
   {
@@ -633,7 +633,7 @@
       "SA sa-app and db-server tag with an ingress rule.",
       "Tag app-server and SA sa-db with an egress rule."
     ],
-    "answer": "Create service accounts sa-app and sa-db. Associate service account sa-app with the application servers and the service account sa-db with the database servers. Create an ingress firewall rule to allow network traffic from source service account sa-app to target service account sa-db.",
+    "answer": "SAs sa-app and sa-db with an ingress rule.",
     "explanation": "Service accounts in firewall rules are more secure and resilient than network tags[cite: 4]."
   },
   {
@@ -646,7 +646,7 @@
       "Project-wide public SSH key.",
       "Project-wide private SSH key."
     ],
-    "answer": "Configure Cloud Identity-Aware Proxy for SSH and TCP resources",
+    "answer": "IAP for SSH and TCP.",
     "explanation": "IAP for TCP allows secure tunneling for SSH to instances without public IP addresses[cite: 4]."
   },
   {
@@ -659,7 +659,7 @@
       "Dataflow to Dataprep to Bigtable.",
       "Dataflow to Storage Transfer to BigQuery."
     ],
-    "answer": "Stream data to Pub/Sub, and use Dataflow to send data to Cloud Storage.",
+    "answer": "Pub/Sub to Dataflow to Cloud Storage.",
     "explanation": "Pub/Sub handles ingestion; Dataflow handles processing; Cloud Storage is the target for a resilient data lake[cite: 4]."
   }
 ]
