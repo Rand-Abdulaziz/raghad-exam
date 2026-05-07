@@ -10,7 +10,7 @@
       "Coldline Storage"
     ],
     "answer": "Coldline Storage",
-    "explanation": "Coldline Storage is ideal for data accessed at most once a quarter, making it perfect for disaster recovery backups[cite: 80, 84]."
+    "explanation": "Coldline Storage is ideal for data accessed at most once a quarter, making it perfect for disaster recovery backups."
   },
   {
     "id": "F6_Q8",
@@ -23,7 +23,7 @@
       "Start the licensing server with an automatic ephemeral IP address, and then promote it to a static internal IP address."
     ],
     "answer": "Reserve the IP 10.0.3.21 as a static internal IP address using gcloud and assign it to the licensing server.",
-    "explanation": "Reserving the specific internal IP prevents configuration changes in the application[cite: 103, 107]."
+    "explanation": "Reserving the specific internal IP prevents configuration changes in the application."
   },
   {
     "id": "F6_Q9",
@@ -36,7 +36,7 @@
       "Automatic Scaling with min idle instances set to 3."
     ],
     "answer": "Automatic Scaling with min idle instances set to 3.",
-    "explanation": "Min idle instances ensure a buffer of warm instances are ready to serve traffic immediately[cite: 117, 122]."
+    "explanation": "Min idle instances ensure a buffer of warm instances are ready to serve traffic immediately."
   },
   {
     "id": "F6_Q10",
@@ -49,7 +49,7 @@
       "In the Google Cloud Platform Console, use the 'create role' functionality and select all applicable permissions."
     ],
     "answer": "Use gcloud iam roles copy and specify the production project as the destination project.",
-    "explanation": "The gcloud iam roles copy command is the fastest way to replicate custom roles between projects[cite: 127, 135]."
+    "explanation": "The gcloud iam roles copy command is the fastest way to replicate custom roles between projects."
   },
   {
     "id": "F6_Q13",
@@ -62,7 +62,7 @@
       "Use GCP Marketplace to launch the Jenkins solution."
     ],
     "answer": "Use GCP Marketplace to launch the Jenkins solution.",
-    "explanation": "Marketplace provides pre-configured solutions that can be deployed with minimal effort[cite: 168, 173]."
+    "explanation": "Marketplace provides pre-configured solutions that can be deployed with minimal effort."
   },
   {
     "id": "F6_Q14",
@@ -75,7 +75,7 @@
       "gcloud deployment-manager resources update --config <deployment-config-path>"
     ],
     "answer": "gcloud deployment-manager deployments update <deployment-name> --config <deployment-config-path>",
-    "explanation": "The update command applies configuration changes to an existing deployment[cite: 178, 181]."
+    "explanation": "The update command applies configuration changes to an existing deployment."
   },
   {
     "id": "F6_Q15",
@@ -88,7 +88,7 @@
       "Run a select count(*) to get an idea of how many records your query will look through. Then convert that number of rows to dollars using the Pricing Calculator."
     ],
     "answer": "Use the command line to run a dry run query to estimate the number of bytes read. Then convert that bytes estimate to dollars using the Pricing Calculator.",
-    "explanation": "A dry run in BigQuery estimates the billing volume before the query is actually executed[cite: 187, 196]."
+    "explanation": "A dry run in BigQuery estimates the billing volume before the query is actually executed."
   },
   {
     "id": "F6_Q18",
@@ -101,7 +101,7 @@
       "Use gsutil rewrite and set the Delete action to 365 days."
     ],
     "answer": "Use Cloud Storage Object Lifecycle Management using Age conditions with SetStorageClass and Delete actions. Set the SetStorageClass action to 90 days and the Delete action to 365 days.",
-    "explanation": "Lifecycle actions refer to the object's age since creation[cite: 229, 232]."
+    "explanation": "Lifecycle actions refer to the object's age since creation."
   },
   {
     "id": "F6_Q21",
@@ -114,7 +114,7 @@
       "Activate two configurations using gcloud configurations activate [NAME]. Run gcloud configurations list to start the Compute Engine instances."
     ],
     "answer": "Create two configurations using gcloud config configurations create [NAME]. Run gcloud config configurations activate [NAME] to switch between accounts.",
-    "explanation": "gcloud configurations allow managing different sets of credentials and project defaults[cite: 271, 278]."
+    "explanation": "gcloud configurations allow managing different sets of credentials and project defaults."
   },
   {
     "id": "F6_Q22",
@@ -127,7 +127,7 @@
       "Execute the Deployment Manager template using the --preview option in the same project, and observe the state of interdependent resources."
     ],
     "answer": "Execute the Deployment Manager template using the --preview option in the same project, and observe the state of interdependent resources.",
-    "explanation": "The --preview flag allows validating the deployment without actual resource creation[cite: 285, 290]."
+    "explanation": "The --preview flag allows validating the deployment without actual resource creation."
   },
   {
     "id": "F6_Q23",
@@ -140,7 +140,7 @@
       "Cloud Pub/Sub, Cloud Dataflow, Cloud Bigtable, BigQuery"
     ],
     "answer": "Cloud Pub/Sub, Cloud Dataflow, Cloud Bigtable, BigQuery",
-    "explanation": "Box 3 must be Bigtable because it is optimized for high-throughput time-series storage[cite: 299, 306]."
+    "explanation": "Box 3 must be Bigtable because it is optimized for high-throughput time-series storage."
   },
   {
     "id": "F6_Q25",
@@ -153,7 +153,7 @@
       "Add the auditor user accounts to two new custom IAM roles."
     ],
     "answer": "Add the auditors group to the 'logging.viewer' and 'bigQuery.dataViewer' predefined IAM roles.",
-    "explanation": "Granting roles to a group rather than individuals is a Google-recommended practice[cite: 322, 329]."
+    "explanation": "Granting roles to a group rather than individuals is a Google-recommended practice."
   },
   {
     "id": "F6_Q27",
@@ -166,7 +166,7 @@
       "Create a trace in Stackdriver to view the information."
     ],
     "answer": "Using the GCP Console, filter the Activity log to view the information.",
-    "explanation": "The Activity log provides a high-level view of resource modifications and access[cite: 346, 353]."
+    "explanation": "The Activity log provides a high-level view of resource modifications and access."
   },
   {
     "id": "F6_Q32",
@@ -179,7 +179,7 @@
       "Configure a single Stackdriver account for one of the projects. In Stackdriver, create a Group and add the other projects."
     ],
     "answer": "Configure a single Stackdriver account, and link all projects to the same account.",
-    "explanation": "Stackdriver (Cloud Monitoring) workspaces can include multiple projects[cite: 409, 412]."
+    "explanation": "Stackdriver (Cloud Monitoring) workspaces can include multiple projects."
   },
   {
     "id": "F6_Q33",
@@ -192,7 +192,7 @@
       "Set autoscaling to Off, set the minimum number of instances to 1, and then set the maximum number of instances to 2."
     ],
     "answer": "Set autoscaling to On, set the minimum number of instances to 1, and then set the maximum number of instances to 1.",
-    "explanation": "This configuration ensures that if the instance fails, it is automatically recreated, but never exceeds one instance[cite: 419, 423]."
+    "explanation": "This configuration ensures that if the instance fails, it is automatically recreated, but never exceeds one instance."
   },
   {
     "id": "F6_Q35",
@@ -205,7 +205,7 @@
       "Verify that you are Billing Administrator for the billing account. Update the existing project to link it."
     ],
     "answer": "Verify that you are Project Billing Manager for the GCP project. Create a new billing account and link the new billing account to the existing project.",
-    "explanation": "Project Billing Manager role is required to link or change billing accounts for a project[cite: 442, 451]."
+    "explanation": "Project Billing Manager role is required to link or change billing accounts for a project."
   },
   {
     "id": "F6_Q38",
@@ -218,7 +218,7 @@
       "Run gcloud iam roles describe roles/spanner.viewer -project my-project. Add the users to a new group. Add the group to the role."
     ],
     "answer": "Run gcloud iam roles describe roles/spanner.databaseUser. Add the users to a new group. Add the group to the role.",
-    "explanation": "DatabaseUser role provides both read and write access, and using a group is best practice[cite: 479, 484]."
+    "explanation": "DatabaseUser role provides both read and write access, and using a group is best practice."
   },
   {
     "id": "F6_Q42",
@@ -231,7 +231,7 @@
       "Store the database password in a file inside a Kubernetes persistent volume and use a persistent volume claim."
     ],
     "answer": "Store the database password inside a Secret object. Modify the YAML file to populate the DB_PASSWORD environment variable from the Secret.",
-    "explanation": "Kubernetes Secrets are the standard way to store sensitive information[cite: 550, 553]."
+    "explanation": "Kubernetes Secrets are the standard way to store sensitive information."
   },
   {
     "id": "F6_Q43",
@@ -244,7 +244,7 @@
       "Increase the initial delay of the HTTP health check to 200 seconds."
     ],
     "answer": "Increase the initial delay of the HTTP health check to 200 seconds.",
-    "explanation": "Increasing the delay prevents the autoscaler from thinking instances are failing while they are still booting up[cite: 568, 569]."
+    "explanation": "Increasing the delay prevents the autoscaler from thinking instances are failing while they are still booting up."
   },
   {
     "id": "F6_Q52",
@@ -257,7 +257,7 @@
       "Create a dedicated Google group in Cloud Identity. Add each data scientist to the group. Assign the BigQuery dataViewer user role to the group."
     ],
     "answer": "Create a dedicated Google group in Cloud Identity. Add each data scientist's user account to the group. Assign the BigQuery jobUser role to the group.",
-    "explanation": "jobUser role allows running queries, and groups simplify access management[cite: 679, 686]."
+    "explanation": "jobUser role allows running queries, and groups simplify access management."
   },
   {
     "id": "F6_Q63",
@@ -270,7 +270,7 @@
       "Create a tunnel to a VPC. Use Cloud Router to advertise 199.36.153.4/30. Configure on-premises DNS to resolve *.googleapis.com as a CNAME to restricted.googleapis.com."
     ],
     "answer": "1. Using Cloud VPN or Interconnect, create a tunnel to a VPC in Google Cloud. 2. Use. 2.Cloud Router to create a custom route advertisement for 199.36.153.4/30. Announce that network to your on-premises network through the VPN tunnel. 3. In your on-premises network, configure your DNS server to resolve *.googleapis.com as a CNAME to restricted.googleapis.com.",
-    "explanation": "Private Google Access for on-premises requires specific routing and DNS configuration[cite: 863, 866]."
+    "explanation": "Private Google Access for on-premises requires specific routing and DNS configuration."
   },
   {
     "id": "F6_Q64",
@@ -283,7 +283,7 @@
       "Deploy your application on Cloud Run on GKE. In the same cluster, deploy a container that pulls messages and sends them to the app."
     ],
     "answer": "1. Create a service account. 2. Give the Cloud Run Invoker role to that service account for your Cloud Run application. 3. Create a Cloud Pub/Sub subscription that uses that service account and uses your Cloud Run application as the push endpoint.",
-    "explanation": "Push subscriptions are the native and recommended way for Pub/Sub to trigger Cloud Run[cite: 874, 878]."
+    "explanation": "Push subscriptions are the native and recommended way for Pub/Sub to trigger Cloud Run."
   },
   {
     "id": "F6_Q69",
@@ -296,7 +296,7 @@
       "In the cluster's definition, add metadata with kube-system as key and the DaemonSet manifest as value."
     ],
     "answer": "Add the cluster's API as a new Type Provider in Deployment Manager, and use the new type to create the DaemonSet.",
-    "explanation": "Type Providers allow Deployment Manager to manage resources from any API, including Kubernetes[cite: 930, 936]."
+    "explanation": "Type Providers allow Deployment Manager to manage resources from any API, including Kubernetes."
   },
   {
     "id": "F6_Q72",
@@ -309,7 +309,7 @@
       "View logs of the container in the pending pod and check for warning messages."
     ],
     "answer": "Review details of myapp-deployment-58ddbbb995-Ip86m Pod and check for warning messages.",
-    "explanation": "The 'kubectl describe pod' command shows events that explain why a pod cannot be scheduled[cite: 993, 997]."
+    "explanation": "The 'kubectl describe pod' command shows events that explain why a pod cannot be scheduled."
   },
   {
     "id": "F6_Q81",
@@ -322,7 +322,7 @@
       "Add a new, GPU-enabled, node pool to the GKE cluster. Ask your ML team to add the cloud.google.com/gke -accelerator: nvidia-tesla-p100 node Selector."
     ],
     "answer": "Add a new, GPU-enabled, node pool to the GKE cluster. Ask your ML team to add the cloud.google.com/gke -accelerator: nvidia-tesla-p100 node Selector to their pod specification.",
-    "explanation": "Adding a specific node pool is more cost-effective than enabling GPUs on all nodes[cite: 1096, 1098]."
+    "explanation": "Adding a specific node pool is more cost-effective than enabling GPUs on all nodes."
   },
   {
     "id": "F6_Q83",
@@ -335,7 +335,7 @@
       "In the G Suite console, add the users to a special group cloud-console-users@yourdomain.com."
     ],
     "answer": "Grant them the required IAM roles using their G Suite email address.",
-    "explanation": "G Suite identities are natively recognized as Google accounts in IAM[cite: 1113, 1120]."
+    "explanation": "G Suite identities are natively recognized as Google accounts in IAM."
   },
   {
     "id": "F6_Q90",
@@ -348,7 +348,7 @@
       "Add a bucket lifecycle rule that archives data from regional storage after 30 days to Nearline Storage."
     ],
     "answer": "Add a bucket lifecycle rule that archives data with newer versions after 30 days to Nearline Storage.",
-    "explanation": "Nearline is better than Coldline if the data is accessed monthly[cite: 1182, 1185]."
+    "explanation": "Nearline is better than Coldline if the data is accessed monthly."
   },
   {
     "id": "F6_Q93",
@@ -361,7 +361,7 @@
       "Write a Cloud Dataflow job that loops through all projects and runs a query on INFORMATION_SCHEMA.COLUMNS."
     ],
     "answer": "Go to Data Catalog and search for employee_ssn in the search box.",
-    "explanation": "Data Catalog automatically indexes metadata across projects, making searching extremely efficient[cite: 1210, 1214]."
+    "explanation": "Data Catalog automatically indexes metadata across projects, making searching extremely efficient."
   },
   {
     "id": "F6_Q100",
@@ -374,7 +374,7 @@
       "Add your SREs to a group and then add this group to roles/accessapproval.approver role."
     ],
     "answer": "Add your SREs to a group and then add this group to roles/accessapproval.approver role.",
-    "explanation": "Access Approval role is specific for support request approval, and groups are best practice[cite: 1298, 1299]."
+    "explanation": "Access Approval role is specific for support request approval, and groups are best practice."
   },
   {
     "id": "F6_Q105",
@@ -387,7 +387,7 @@
       "Obtain OAuth 2.0 credentials and set up OAuth 2.0 for Web Server Applications."
     ],
     "answer": "In Cloud Identity, set up SSO with a third-party identity provider with Google as a service provider.",
-    "explanation": "This configuration allows Google to delegate authentication to the company's SSO[cite: 1341, 1344]."
+    "explanation": "This configuration allows Google to delegate authentication to the company's SSO."
   },
   {
     "id": "F6_Q125",
@@ -400,7 +400,7 @@
       "Use Cloud Logging Agent to export logs. Create a Cloud Function to parse log data and calculate costs."
     ],
     "answer": "Export the billing data to BigQuery. Create a Cloud Function that uses BigQuery to sum the egress network costs of the exported billing data for the Apache web server for the current month and sends an email if it is over 100 dollars. Schedule the Cloud Function using Cloud Scheduler to run hourly.",
-    "explanation": "Standard budget alerts are project-wide; granular cost tracking requires BigQuery export[cite: 1582, 1587]."
+    "explanation": "Standard budget alerts are project-wide; granular cost tracking requires BigQuery export."
   },
   {
     "id": "F6_Q145",
@@ -413,7 +413,7 @@
       "Create a new cluster with both n1-standard-2 and n2-highmem-16 nodes. Redeploy pods."
     ],
     "answer": "Create a new Node Pool and specify machine type n23€\"highmem16\"€ . Deploy the new pods.",
-    "explanation": "Node pools allow different machine types within the same cluster[cite: 1789, 1793]."
+    "explanation": "Node pools allow different machine types within the same cluster."
   },
   {
     "id": "F6_Q151",
@@ -426,7 +426,7 @@
       "Set up a high-priority (1000) rule to allow the appropriate ports."
     ],
     "answer": "Set up a low-priority (65534) rule that blocks all egress and a high-priority rule (1000) that allows only the appropriate ports.",
-    "explanation": "High priority rules (lower numbers) override low priority rules (higher numbers)[cite: 1848, 1852]."
+    "explanation": "High priority rules (lower numbers) override low priority rules (higher numbers)."
   },
   {
     "id": "F6_Q159",
@@ -439,7 +439,7 @@
       "B. Use signed URLs / E. Develop a script to loop and delete buckets."
     ],
     "answer": "Build a lifecycle policy to delete Cloud Storage objects after 45 days. / Use signed URLs to allow suppliers limited time access to store their objects.",
-    "explanation": "Signed URLs and Lifecycle policies are managed, low-effort solutions for these requirements[cite: 1951, 1956]."
+    "explanation": "Signed URLs and Lifecycle policies are managed, low-effort solutions for these requirements."
   },
   {
     "id": "F6_Q166",
@@ -452,7 +452,7 @@
       "Create a new revision. Add HTTP Load Balancer in front of both."
     ],
     "answer": "Create a new revision with the new version of the application. Split traffic between this version and the version that is currently running.",
-    "explanation": "Cloud Run traffic splitting is done at the revision level[cite: 2021, 2027]."
+    "explanation": "Cloud Run traffic splitting is done at the revision level."
   },
   {
     "id": "F6_Q171",
@@ -465,7 +465,7 @@
       "Convert automatic backup to export file. Write to Coldline bucket."
     ],
     "answer": "Set up an export job for the first of the month. Write the export file to an Archive class Cloud Storage bucket.",
-    "explanation": "Backups have a limited retention period; exports to GCS Archive are needed for long-term storage[cite: 2079, 2086]."
+    "explanation": "Backups have a limited retention period; exports to GCS Archive are needed for long-term storage."
   },
   {
     "id": "F6_Q187",
@@ -478,6 +478,6 @@
       "Alert at 65% CPU. Identify and rewrite high-CPU queries."
     ],
     "answer": "Create an alert in Cloud Monitoring to alert when the percentage of high priority CPU utilization reaches 65%. If you exceed this threshold, add nodes to your instance.",
-    "explanation": "65% is the recommended utilization threshold for single-region Spanner instances[cite: 2260, 2264]."
+    "explanation": "65% is the recommended utilization threshold for single-region Spanner instances."
   }
 ]
