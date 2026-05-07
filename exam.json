@@ -1,236 +1,483 @@
 [
   {
-    "id": "F5_Q1",
-    "topic": "IAM & Compute Engine",
-    "question": "Every employee of your company has a Google account. Your operational team needs only administrative access to manage a large number of instances on Compute Engine. Your security team wants to ensure that the deployment of credentials is operationally efficient and must be able to determine who accessed a given instance. What should you do?",
+    "id": "F6_Q6",
+    "topic": "Storage",
+    "question": "Your company uses Cloud Storage to store application backup files for disaster recovery purposes. You want to follow Google's recommended practices. Which storage option should you use?",
     "options": [
-      "Generate a new SSH key pair. Give the private key to each member of your team. Configure the public key in the metadata of each instance.",
-      "Ask each member of the team to generate a new SSH key pair and to send you their public key. Use a configuration management tool to deploy those keys on each instance.",
-      "Ask each member of the team to generate a new SSH key pair and to add the public key to their Google account. Grant the compute.osAdminLogin role to the Google group corresponding to this team.",
-      "Generate a new SSH key pair. Give the private key to each member of your team. Configure the public key as a project-wide public SSH key."
+      "Multi-Regional Storage",
+      "Regional Storage",
+      "Nearline Storage",
+      "Coldline Storage"
     ],
-    "answer": "Ask each member of the team to generate a new SSH key pair and to add the public key to their Google account. Grant the compute.osAdminLogin role to the Google group corresponding to this team.",
-    "explanation": "OS Login is the Google-recommended way to manage SSH access. It links access to IAM identities and provides audit logs of who accessed instances."
+    "answer": "Coldline Storage",
+    "explanation": "Coldline Storage is ideal for data accessed at most once a quarter, making it perfect for disaster recovery backups[cite: 80, 84]."
   },
   {
-    "id": "F5_Q3",
-    "topic": "Databases - Cloud SQL",
-    "question": "You want to select and configure a cost-effective solution for relational data on Google Cloud Platform. You are working with a small set of operational data in one geographic location. You need to support point-in-time recovery. What should you do?",
+    "id": "F6_Q8",
+    "topic": "Networking",
+    "question": "You have an application that looks for its licensing server on the IP 10.0.3.21. You need to deploy the licensing server on Compute Engine. You do not want to change the configuration of the application and want the application to be able to reach the licensing server. What should you do?",
     "options": [
-      "Select Cloud SQL (MySQL). Verify that the enable binary logging option is selected.",
-      "Select Cloud SQL (MySQL). Select the create failover replicas option.",
-      "Select Cloud Spanner. Set up your instance with 2 nodes.",
-      "Select Cloud Spanner. Set up your instance as multi-regional."
+      "Reserve the IP 10.0.3.21 as a static internal IP address using gcloud and assign it to the licensing server.",
+      "Reserve the IP 10.0.3.21 as a static public IP address using gcloud and assign it to the licensing server.",
+      "Use the IP 10.0.3.21 as a custom ephemeral IP address and assign it to the licensing server.",
+      "Start the licensing server with an automatic ephemeral IP address, and then promote it to a static internal IP address."
     ],
-    "answer": "Select Cloud SQL (MySQL). Verify that the enable binary logging option is selected.",
-    "explanation": "Binary logging is required for point-in-time recovery in Cloud SQL for MySQL."
+    "answer": "Reserve the IP 10.0.3.21 as a static internal IP address using gcloud and assign it to the licensing server.",
+    "explanation": "Reserving the specific internal IP prevents configuration changes in the application[cite: 103, 107]."
   },
   {
-    "id": "F5_Q4",
-    "topic": "Compute Engine - Autohealing",
-    "question": "You want to configure autohealing for network load balancing for a group of Compute Engine instances in multiple zones using the fewest possible steps. You need to configure re-creation of VMs if they are unresponsive after 3 attempts of 10 seconds each. What should you do?",
+    "id": "F6_Q9",
+    "topic": "App Engine",
+    "question": "You are deploying an application to App Engine. You want the number of instances to scale based on request rate. You need at least 3 unoccupied instances at all times. Which scaling type should you use?",
     "options": [
-      "Create an HTTP load balancer with a backend configuration that references an existing instance group. Set the health check to healthy (HTTP)",
-      "Create an HTTP load balancer with a backend configuration that references an existing instance group. Define a balancing mode and set the maximum RPS to 10.",
-      "Create a managed instance group. Set the Autohealing health check to healthy (HTTP)",
-      "Create a managed instance group. Verify that the autoscaling setting is on."
+      "Manual Scaling with 3 instances.",
+      "Basic Scaling with min instances set to 3.",
+      "Basic Scaling with max instances set to 3.",
+      "Automatic Scaling with min idle instances set to 3."
     ],
-    "answer": "Create a managed instance group. Set the Autohealing health check to healthy (HTTP)",
-    "explanation": "Managed Instance Groups (MIGs) handle autohealing by recreating VMs that fail health checks."
+    "answer": "Automatic Scaling with min idle instances set to 3.",
+    "explanation": "Min idle instances ensure a buffer of warm instances are ready to serve traffic immediately[cite: 117, 122]."
   },
   {
-    "id": "F5_Q5",
-    "topic": "Operations - gcloud",
-    "question": "You are using multiple configurations for gcloud. You want to review the configured Kubernetes Engine cluster of an inactive configuration using the fewest possible steps. What should you do?",
+    "id": "F6_Q10",
+    "topic": "IAM",
+    "question": "You have a development project with appropriate IAM roles defined. You are creating a production project and want to have the same IAM roles on the new project, using the fewest possible steps. What should you do?",
     "options": [
-      "Use gcloud config configurations describe to review the output.",
-      "Use gcloud config configurations activate and gcloud config list to review the output.",
-      "Use kubectl config get-contexts to review the output.",
-      "Use kubectl config use-context and kubectl config view to review the output."
+      "Use gcloud iam roles copy and specify the production project as the destination project.",
+      "Use gcloud iam roles copy and specify your organization as the destination organization.",
+      "In the Google Cloud Platform Console, use the 'create role from role' functionality.",
+      "In the Google Cloud Platform Console, use the 'create role' functionality and select all applicable permissions."
     ],
-    "answer": "Use kubectl config use-context and kubectl config view to review the output.",
-    "explanation": "To view the details of a non-active cluster configuration, you use kubectl config commands to switch context and view the settings[cite: 4]."
+    "answer": "Use gcloud iam roles copy and specify the production project as the destination project.",
+    "explanation": "The gcloud iam roles copy command is the fastest way to replicate custom roles between projects[cite: 127, 135]."
   },
   {
-    "id": "F5_Q11",
-    "topic": "Operations - Deployment Manager",
-    "question": "You need a dynamic way of provisioning VMs on Compute Engine. The exact specifications will be in a dedicated configuration file. You want to follow Google's recommended practices. Which method should you use?",
+    "id": "F6_Q13",
+    "topic": "Marketplace",
+    "question": "Your development team needs a new Jenkins server for their project. You need to deploy the server using the fewest steps possible. What should you do?",
     "options": [
-      "Deployment Manager",
-      "Cloud Composer",
-      "Managed Instance Group",
-      "Unmanaged Instance Group"
+      "Download and deploy the Jenkins Java WAR to App Engine Standard.",
+      "Create a new Compute Engine instance and install Jenkins through the command line interface.",
+      "Create a Kubernetes cluster on Compute Engine and create a deployment with the Jenkins Docker image.",
+      "Use GCP Marketplace to launch the Jenkins solution."
     ],
-    "answer": "Deployment Manager",
-    "explanation": "Deployment Manager is the infrastructure-as-code service for GCP that uses configuration files to provision resources[cite: 4]."
+    "answer": "Use GCP Marketplace to launch the Jenkins solution.",
+    "explanation": "Marketplace provides pre-configured solutions that can be deployed with minimal effort[cite: 168, 173]."
   },
   {
-    "id": "F5_Q12",
-    "topic": "GKE - Deployment",
-    "question": "You have a Dockerfile that you need to deploy on Kubernetes Engine. What should you do?",
+    "id": "F6_Q14",
+    "topic": "Deployment Manager",
+    "question": "You need to update a deployment in Deployment Manager without any resource downtime in the deployment. Which command should you use?",
     "options": [
-      "Use kubectl app deploy <dockerfilename>.",
-      "Use gcloud app deploy <dockerfilename>.",
-      "Create a docker image from the Dockerfile and upload it to Container Registry. Create a Deployment YAML file to point to that image. Use kubectl to create the deployment.",
-      "Create a docker image from the Dockerfile and upload it to Cloud Storage. Create a Deployment YAML file to point to that image. Use kubectl to create the deployment."
+      "gcloud deployment-manager deployments create-config <deployment-config-path>",
+      "gcloud deployment-manager deployments update <deployment-name> --config <deployment-config-path>",
+      "gcloud deployment-manager resources create-config <deployment-config-path>",
+      "gcloud deployment-manager resources update --config <deployment-config-path>"
     ],
-    "answer": "Create a docker image from the Dockerfile and upload it to Container Registry. Create a Deployment YAML file to point to that image. Use kubectl to create the deployment.",
-    "explanation": "Standard GKE flow: Build image -> Push to Registry -> Create YAML deployment -> kubectl apply[cite: 4]."
+    "answer": "gcloud deployment-manager deployments update <deployment-name> --config <deployment-config-path>",
+    "explanation": "The update command applies configuration changes to an existing deployment[cite: 178, 181]."
   },
   {
-    "id": "F5_Q31",
-    "topic": "App Engine & Pub/Sub",
-    "question": "You want to send and consume Cloud Pub/Sub messages from your App Engine application. The Cloud Pub/Sub API is currently disabled. You want to make sure your application can use Cloud Pub/Sub. What should you do?",
+    "id": "F6_Q15",
+    "topic": "BigQuery",
+    "question": "You need to run an important query in BigQuery but expect it to return a lot of records. You want to find out how much it will cost to run the query. You are using on-demand pricing. What should you do?",
     "options": [
-      "Enable the Cloud Pub/Sub API in the API Library on the GCP Console.",
-      "Rely on the automatic enablement of the Cloud Pub/Sub API when the Service Account accesses it.",
-      "Use Deployment Manager to deploy your application. Rely on automatic enablement of all APIs.",
-      "Grant the App Engine Default service account the role of Cloud Pub/Sub Admin."
+      "Arrange to switch to Flat-Rate pricing for this query, then move back to on-demand.",
+      "Use the command line to run a dry run query to estimate the number of bytes read. Then convert that bytes estimate to dollars using the Pricing Calculator.",
+      "Use the command line to run a dry run query to estimate the number of bytes returned. Then convert that bytes estimate to dollars using the Pricing Calculator.",
+      "Run a select count(*) to get an idea of how many records your query will look through. Then convert that number of rows to dollars using the Pricing Calculator."
     ],
-    "answer": "Enable the Cloud Pub/Sub API in the API Library on the GCP Console.",
-    "explanation": "APIs must be explicitly enabled in the project before they can be used by services[cite: 4]."
+    "answer": "Use the command line to run a dry run query to estimate the number of bytes read. Then convert that bytes estimate to dollars using the Pricing Calculator.",
+    "explanation": "A dry run in BigQuery estimates the billing volume before the query is actually executed[cite: 187, 196]."
   },
   {
-    "id": "F5_Q40",
-    "topic": "Networking - Load Balancing",
-    "question": "You want a load balancer to terminate the client SSL session for a public web application over HTTPS. You want to follow Google-recommended practices. What should you do?",
+    "id": "F6_Q18",
+    "topic": "Cloud Storage",
+    "question": "You need to set up a policy so that videos stored in a specific Cloud Storage Regional bucket are moved to Coldline after 90 days, and then deleted after one year from their creation. How should you set up the policy?",
     "options": [
-      "Configure an HTTP(S) load balancer.",
-      "Configure an internal TCP load balancer.",
-      "Configure an external SSL proxy load balancer.",
-      "Configure an external TCP proxy load balancer."
+      "Use Cloud Storage Object Lifecycle Management using Age conditions with SetStorageClass and Delete actions. Set the SetStorageClass action to 90 days and the Delete action to 275 days (365-90)",
+      "Use Cloud Storage Object Lifecycle Management using Age conditions with SetStorageClass and Delete actions. Set the SetStorageClass action to 90 days and the Delete action to 365 days.",
+      "Use gsutil rewrite and set the Delete action to 275 days (365-90).",
+      "Use gsutil rewrite and set the Delete action to 365 days."
     ],
-    "answer": "Configure an HTTP(S) load balancer.",
-    "explanation": "For public web applications over HTTPS, the HTTP(S) Load Balancer is the recommended choice for SSL termination[cite: 4]."
+    "answer": "Use Cloud Storage Object Lifecycle Management using Age conditions with SetStorageClass and Delete actions. Set the SetStorageClass action to 90 days and the Delete action to 365 days.",
+    "explanation": "Lifecycle actions refer to the object's age since creation[cite: 229, 232]."
   },
   {
-    "id": "F5_Q41",
-    "topic": "Storage - gsutil",
-    "question": "You have 32 GB of data in a single file to upload to Nearline Storage. The WAN connection is 1 Gbps. You want to transfer the file rapidly. How should you upload the file?",
+    "id": "F6_Q21",
+    "topic": "Compute Engine",
+    "question": "You have one GCP account running in your default region and zone and another account running in a non-default region and zone. You want to start a new Compute Engine instance in these two accounts using the CLI. What should you do?",
     "options": [
-      "Use the GCP Console to transfer the file instead of gsutil.",
-      "Enable parallel composite uploads using gsutil on the file transfer.",
-      "Decrease the TCP window size on the machine initiating the transfer.",
-      "Change the storage class of the bucket from Nearline to Multi-Regional."
+      "Create two configurations using gcloud config configurations create [NAME]. Run gcloud config configurations activate [NAME] to switch between accounts.",
+      "Create two configurations using gcloud config configurations create [NAME]. Run gcloud configurations list to start the Compute Engine instances.",
+      "Activate two configurations using gcloud configurations activate [NAME]. Run gcloud config list to start the Compute Engine instances.",
+      "Activate two configurations using gcloud configurations activate [NAME]. Run gcloud configurations list to start the Compute Engine instances."
     ],
-    "answer": "Enable parallel composite uploads using gsutil on the file transfer.",
-    "explanation": "Parallel composite uploads in gsutil split large files to maximize bandwidth usage[cite: 4]."
+    "answer": "Create two configurations using gcloud config configurations create [NAME]. Run gcloud config configurations activate [NAME] to switch between accounts.",
+    "explanation": "gcloud configurations allow managing different sets of credentials and project defaults[cite: 271, 278]."
   },
   {
-    "id": "F5_Q51",
-    "topic": "Compute Engine - Health Checks",
-    "question": "You need to create an autoscaling managed instance group for an HTTPS web application and make sure unhealthy VMs are recreated. What should you do?",
+    "id": "F6_Q22",
+    "topic": "Deployment Manager",
+    "question": "You significantly changed a complex Deployment Manager template and want to confirm that the dependencies of all defined resources are properly met before committing it. You want the most rapid feedback. What should you do?",
     "options": [
-      "Create a health check on port 443 and use that when creating the Managed Instance Group.",
-      "Select Multi-Zone instead of Single-Zone when creating the Managed Instance Group.",
-      "In the Instance Template, add the label health-check.",
-      "In the Instance Template, add a startup script that sends a heartbeat."
+      "Use granular logging statements within a Deployment Manager template authored in Python.",
+      "Monitor activity of the Deployment Manager execution on the Stackdriver Logging page of the GCP Console.",
+      "Execute the Deployment Manager template against a separate project with the same configuration, and monitor for failures.",
+      "Execute the Deployment Manager template using the --preview option in the same project, and observe the state of interdependent resources."
     ],
-    "answer": "Create a health check on port 443 and use that when creating the Managed Instance Group.",
-    "explanation": "Assigning a health check directly to the MIG enables autohealing[cite: 4]."
+    "answer": "Execute the Deployment Manager template using the --preview option in the same project, and observe the state of interdependent resources.",
+    "explanation": "The --preview flag allows validating the deployment without actual resource creation[cite: 285, 290]."
   },
   {
-    "id": "F5_Q62",
-    "topic": "Caching - Memorystore",
-    "question": "You want to run a caching HTTP reverse proxy that consumes almost no CPU but needs 30-GB in-memory cache. You want to minimize cost. What should you do?",
+    "id": "F6_Q23",
+    "topic": "Architecture",
+    "question": "You are building a pipeline to process time-series data. Which Google Cloud Platform services should you put in boxes 1, 2, 3, and 4 (Ingestion, Processing, Storage, Analytics)?",
     "options": [
-      "Create a Cloud Memorystore for Redis instance with 32-GB capacity.",
-      "Run it on Compute Engine, and choose a custom instance type with 6 vCPUs and 32 GB of memory.",
-      "Package it in a container image and run it on GKE using n1-standard-32 instances.",
-      "Run it on Compute Engine, choose n1-standard-1, and add an SSD persistent disk of 32 GB."
+      "Cloud Pub/Sub, Cloud Dataflow, Cloud Datastore, BigQuery",
+      "Firebase Messages, Cloud Pub/Sub, Cloud Spanner, BigQuery",
+      "Cloud Pub/Sub, Cloud Storage, BigQuery, Cloud Bigtable",
+      "Cloud Pub/Sub, Cloud Dataflow, Cloud Bigtable, BigQuery"
     ],
-    "answer": "Create a Cloud Memorystore for Redis instance with 32-GB capacity.",
-    "explanation": "Cloud Memorystore for Redis is the managed, cost-effective service for in-memory caching[cite: 4]."
+    "answer": "Cloud Pub/Sub, Cloud Dataflow, Cloud Bigtable, BigQuery",
+    "explanation": "Box 3 must be Bigtable because it is optimized for high-throughput time-series storage[cite: 299, 306]."
   },
   {
-    "id": "F5_Q73",
-    "topic": "Compute Engine - Windows RDP",
-    "question": "You are setting up a Windows VM on Compute Engine and want to make sure you can log in via RDP. What should you do?",
+    "id": "F6_Q25",
+    "topic": "IAM",
+    "question": "You need to configure IAM access audit logging in BigQuery for external auditors. You want to follow Google-recommended practices. What should you do?",
     "options": [
-      "After the VM has been created, use your Google Account credentials to log in.",
-      "After the VM has been created, use gcloud compute reset-windows-password to retrieve credentials.",
-      "When creating the VM, add metadata using windows-password as key.",
-      "Download the JSON private key for the default service account."
+      "Add the auditors group to the 'logging.viewer' and 'bigQuery.dataViewer' predefined IAM roles.",
+      "Add the auditors group to two new custom IAM roles.",
+      "Add the auditor user accounts to the 'logging.viewer' and 'bigQuery.dataViewer' predefined IAM roles.",
+      "Add the auditor user accounts to two new custom IAM roles."
     ],
-    "answer": "After the VM has been created, use gcloud compute reset-windows-password to retrieve the login credentials for the VM.",
-    "explanation": "GCP doesn't provide a default password; you must reset/generate it using gcloud or the console[cite: 4]."
+    "answer": "Add the auditors group to the 'logging.viewer' and 'bigQuery.dataViewer' predefined IAM roles.",
+    "explanation": "Granting roles to a group rather than individuals is a Google-recommended practice[cite: 322, 329]."
   },
   {
-    "id": "F5_Q74",
-    "topic": "IAM - Specific Instance Access",
-    "question": "You want dev1 group users to connect via SSH to ONLY one specific instance in a project. What should you do?",
+    "id": "F6_Q27",
+    "topic": "Cloud Storage",
+    "question": "You want to verify activities for a particular user for three Cloud Storage buckets, including metadata label additions and file views, using the fewest steps. What should you do?",
     "options": [
-      "Set metadata enable-oslogin=true for the instance. Grant the dev1 group the compute.osLogin role.",
-      "Set metadata enable-oslogin=true for the instance. Set service account to no service account.",
-      "Enable block project wide keys for the instance. Generate an SSH key for each user.",
-      "Enable block project wide keys for the instance. Generate one SSH key and distribute it."
+      "Using the GCP Console, filter the Activity log to view the information.",
+      "Using the GCP Console, filter the Stackdriver log to view the information.",
+      "View the bucket in the Storage section of the GCP Console.",
+      "Create a trace in Stackdriver to view the information."
     ],
-    "answer": "Set metadata to enable-oslogin=true for the instance. Grant the dev1 group the compute.osLogin role. Direct them to use the Cloud Shell to ssh to that instance.",
-    "explanation": "OS Login allows granular access control at the instance level[cite: 4]."
+    "answer": "Using the GCP Console, filter the Activity log to view the information.",
+    "explanation": "The Activity log provides a high-level view of resource modifications and access[cite: 346, 353]."
   },
   {
-    "id": "F5_Q87",
-    "topic": "Networking - Firewall Rules",
-    "question": "You deployed an LDAP server on Compute Engine reachable via TLS through port 636 using UDP. You want to ensure it is reachable by clients. What should you do?",
+    "id": "F6_Q32",
+    "topic": "Monitoring",
+    "question": "You need to monitor resources distributed over different projects and consolidate reporting under the same Stackdriver Monitoring dashboard. What should you do?",
     "options": [
-      "Add the network tag allow-udp-636 to the VM instance.",
-      "Create a route called allow-udp-636 and set the next hop to the VM.",
-      "Add a network tag to the instance. Create a firewall rule to allow ingress on UDP port 636 for that tag.",
-      "Add a network tag to the instance. Create a firewall rule to allow egress on UDP port 636 for that tag."
+      "Use Shared VPC to connect all projects, and link Stackdriver to one of the projects.",
+      "For each project, create a Stackdriver account. In each project, grant it the role of Stackdriver Account Editor in all other projects.",
+      "Configure a single Stackdriver account, and link all projects to the same account.",
+      "Configure a single Stackdriver account for one of the projects. In Stackdriver, create a Group and add the other projects."
     ],
-    "answer": "Add a network tag of your choice to the instance. Create a firewall rule to allow ingress on UDP port 636 for that network tag.",
-    "explanation": "Ingress firewall rules with network tags are the standard way to allow incoming traffic to specific VMs[cite: 4]."
+    "answer": "Configure a single Stackdriver account, and link all projects to the same account.",
+    "explanation": "Stackdriver (Cloud Monitoring) workspaces can include multiple projects[cite: 409, 412]."
   },
   {
-    "id": "F5_Q97",
-    "topic": "GKE - Pod Isolation",
-    "question": "You run arbitrary code for multiple customers in separate Pods in one GKE cluster. You want to maximize isolation between customer Pods. What should you do?",
+    "id": "F6_Q33",
+    "topic": "Compute Engine",
+    "question": "You are deploying an application to a Compute Engine VM in a managed instance group. It must run at all times, but only a single instance should run per project. How should you configure the group?",
     "options": [
-      "Use Binary Authorization and whitelist only images used by customers.",
-      "Use the Container Analysis API to detect vulnerabilities.",
-      "Create a GKE node pool with a sandbox type configured to gvisor. Add runtimeClassName: gvisor to the Pod spec.",
-      "Use the cos_containerd image for your GKE nodes and add a nodeSelector."
+      "Set autoscaling to On, set the minimum number of instances to 1, and then set the maximum number of instances to 1.",
+      "Set autoscaling to Off, set the minimum number of instances to 1, and then set the maximum number of instances to 1.",
+      "Set autoscaling to On, set the minimum number of instances to 1, and then set the maximum number of instances to 2.",
+      "Set autoscaling to Off, set the minimum number of instances to 1, and then set the maximum number of instances to 2."
     ],
-    "answer": "Create a GKE node pool with a sandbox type configured to gvisor. Add the parameter runtimeClassName: gvisor to the specification of your customers' Pods.",
-    "explanation": "GKE Sandbox (using gVisor) provides an extra layer of kernel isolation for running untrusted code[cite: 4]."
+    "answer": "Set autoscaling to On, set the minimum number of instances to 1, and then set the maximum number of instances to 1.",
+    "explanation": "This configuration ensures that if the instance fails, it is automatically recreated, but never exceeds one instance[cite: 419, 423]."
   },
   {
-    "id": "F5_Q103",
-    "topic": "Operations - Datastore Emulator",
-    "question": "You want to test your application locally on your Ubuntu laptop with Cloud Datastore. What should you do?",
+    "id": "F6_Q35",
+    "topic": "Billing",
+    "question": "You need to create a new billing account and then link it with an existing Google Cloud Platform project. What should you do?",
     "options": [
-      "Export Cloud Datastore data using gcloud datastore export.",
-      "Create a Cloud Datastore index using gcloud datastore indexes create.",
-      "Install the google-cloud-sdk-datastore-emulator component using the apt get install command.",
-      "Install the cloud-datastore-emulator component using the gcloud components install command."
+      "Verify that you are Project Billing Manager for the GCP project. Update the existing project to link it to the existing billing account.",
+      "Verify that you are Project Billing Manager for the GCP project. Create a new billing account and link the new billing account to the existing project.",
+      "Verify that you are Billing Administrator for the billing account. Create a new project and link it.",
+      "Verify that you are Billing Administrator for the billing account. Update the existing project to link it."
     ],
-    "answer": "Install the google-cloud-sdk-datastore-emulator component using the apt get install command.",
-    "explanation": "Since the SDK was installed from the Ubuntu repository (apt), you should use apt-get to install components like the emulator[cite: 4]."
+    "answer": "Verify that you are Project Billing Manager for the GCP project. Create a new billing account and link the new billing account to the existing project.",
+    "explanation": "Project Billing Manager role is required to link or change billing accounts for a project[cite: 442, 451]."
   },
   {
-    "id": "F5_Q108",
-    "topic": "GKE - Cost & GPUs",
-    "question": "Data scientists infrequently need a GKE cluster for long-running GPU jobs. You want to minimize cost. What should you do?",
+    "id": "F6_Q38",
+    "topic": "Cloud Spanner",
+    "question": "You need to grant access for three users so that they can view and edit table data on a Cloud Spanner instance. What should you do?",
     "options": [
-      "Enable node auto-provisioning on the GKE cluster.",
-      "Create a VerticalPodAutoscaler for those workloads.",
-      "Create a node pool with preemptible VMs and GPUs attached.",
-      "Create a node pool with GPUs and enable autoscaling with minimum size 1."
+      "Run gcloud iam roles describe roles/spanner.databaseUser. Add the users to the role.",
+      "Run gcloud iam roles describe roles/spanner.databaseUser. Add the users to a new group. Add the group to the role.",
+      "Run gcloud iam roles describe roles/spanner.viewer -project my-project. Add the users to the role.",
+      "Run gcloud iam roles describe roles/spanner.viewer -project my-project. Add the users to a new group. Add the group to the role."
     ],
-    "answer": "Enable node auto-provisioning on the GKE cluster.",
-    "explanation": "Node auto-provisioning can automatically create and delete GPU-enabled node pools as needed, saving costs when not in use[cite: 4]."
+    "answer": "Run gcloud iam roles describe roles/spanner.databaseUser. Add the users to a new group. Add the group to the role.",
+    "explanation": "DatabaseUser role provides both read and write access, and using a group is best practice[cite: 479, 484]."
   },
   {
-    "id": "F5_Q121",
-    "topic": "Compute Engine - MIG Issues",
-    "question": "Your managed instance group fails to create new instances due to a disk name conflict. You need to maintain application traffic. What should you do?",
+    "id": "F6_Q42",
+    "topic": "GKE",
+    "question": "You need to refactor a GKE deployment so that a database password is not stored in plain text in the YAML file. What should you do?",
     "options": [
-      "Create a template with valid syntax. Delete any persistent disks with the same name as instances.",
-      "Create a template with valid syntax. Verify instance and disk names are not the same in the template.",
-      "Verify the current template. Delete persistent disks with same name as instances. Set disks.autoDelete to true.",
-      "Delete current template and replace it. Verify names are different. Set disks.autoDelete to true."
+      "Store the database password inside the Docker image of the container, not in the YAML file.",
+      "Store the database password inside a Secret object. Modify the YAML file to populate the DB_PASSWORD environment variable from the Secret.",
+      "Store the database password inside a ConfigMap object. Modify the YAML file to populate the DB_PASSWORD environment variable from the ConfigMap.",
+      "Store the database password in a file inside a Kubernetes persistent volume and use a persistent volume claim."
     ],
-    "answer": "Create an instance template that contains valid syntax which will be used by the instance group. Delete any persistent disks with the same name as instance names.",
-    "explanation": "Cleaning up existing conflicting disks and using a valid template allows the MIG to resume provisioning[cite: 4]."
+    "answer": "Store the database password inside a Secret object. Modify the YAML file to populate the DB_PASSWORD environment variable from the Secret.",
+    "explanation": "Kubernetes Secrets are the standard way to store sensitive information[cite: 550, 553]."
+  },
+  {
+    "id": "F6_Q43",
+    "topic": "MIG",
+    "question": "When your MIG autoscales, it adds more instances than necessary because instances take 3 minutes to become available, but the health check delay is only 30 seconds. What should you do?",
+    "options": [
+      "Set the maximum number of instances to 1.",
+      "Decrease the maximum number of instances to 3.",
+      "Use a TCP health check instead of an HTTP health check.",
+      "Increase the initial delay of the HTTP health check to 200 seconds."
+    ],
+    "answer": "Increase the initial delay of the HTTP health check to 200 seconds.",
+    "explanation": "Increasing the delay prevents the autoscaler from thinking instances are failing while they are still booting up[cite: 568, 569]."
+  },
+  {
+    "id": "F6_Q52",
+    "topic": "BigQuery",
+    "question": "Your data science team changes frequently. You need to allow them to perform queries in BigQuery following Google-recommended practices. What should you do?",
+    "options": [
+      "Create an IAM entry for each data scientist's user account. Assign the BigQuery jobUser role to the group.",
+      "Create an IAM entry for each data scientist's user account. Assign the BigQuery dataViewer user role to the group.",
+      "Create a dedicated Google group in Cloud Identity. Add each data scientist to the group. Assign the BigQuery jobUser role to the group.",
+      "Create a dedicated Google group in Cloud Identity. Add each data scientist to the group. Assign the BigQuery dataViewer user role to the group."
+    ],
+    "answer": "Create a dedicated Google group in Cloud Identity. Add each data scientist's user account to the group. Assign the BigQuery jobUser role to the group.",
+    "explanation": "jobUser role allows running queries, and groups simplify access management[cite: 679, 686]."
+  },
+  {
+    "id": "F6_Q63",
+    "topic": "Connectivity",
+    "question": "On-premises servers without public IPs or internet access need Cloud Storage access. What should you do?",
+    "options": [
+      "Negotiate with the security team to give public IPs and only allow egress to storage.googleapis.com.",
+      "Using Cloud VPN, create a VPN tunnel. In this VPC, create a VM and install a Squid proxy server.",
+      "Use Migrate for Compute Engine to migrate those servers to Compute Engine. Create an ILB for storage.",
+      "Create a tunnel to a VPC. Use Cloud Router to advertise 199.36.153.4/30. Configure on-premises DNS to resolve *.googleapis.com as a CNAME to restricted.googleapis.com."
+    ],
+    "answer": "1. Using Cloud VPN or Interconnect, create a tunnel to a VPC in Google Cloud. 2. Use. 2.Cloud Router to create a custom route advertisement for 199.36.153.4/30. Announce that network to your on-premises network through the VPN tunnel. 3. In your on-premises network, configure your DNS server to resolve *.googleapis.com as a CNAME to restricted.googleapis.com.",
+    "explanation": "Private Google Access for on-premises requires specific routing and DNS configuration[cite: 863, 866]."
+  },
+  {
+    "id": "F6_Q64",
+    "topic": "Cloud Run",
+    "question": "You want to deploy an application on Cloud Run that processes messages from a Cloud Pub/Sub topic following Google-recommended practices. What should you do?",
+    "options": [
+      "Create a Cloud Function that uses a Cloud Pub/Sub trigger. Call your Cloud Run application from the Cloud Function.",
+      "Grant the Pub/Sub Subscriber role to the service account used by Cloud Run. Make your application pull messages.",
+      "Create a service account. Give the Cloud Run Invoker role to that service account. Create a Pub/Sub subscription that uses that service account and the Cloud Run app as a push endpoint.",
+      "Deploy your application on Cloud Run on GKE. In the same cluster, deploy a container that pulls messages and sends them to the app."
+    ],
+    "answer": "1. Create a service account. 2. Give the Cloud Run Invoker role to that service account for your Cloud Run application. 3. Create a Cloud Pub/Sub subscription that uses that service account and uses your Cloud Run application as the push endpoint.",
+    "explanation": "Push subscriptions are the native and recommended way for Pub/Sub to trigger Cloud Run[cite: 874, 878]."
+  },
+  {
+    "id": "F6_Q69",
+    "topic": "Deployment Manager",
+    "question": "Using Deployment Manager, you want to create a GKE cluster and a DaemonSet in its kube-system namespace. Use the fewest possible services. What should you do?",
+    "options": [
+      "Add the cluster's API as a new Type Provider in Deployment Manager, and use the new type to create the DaemonSet.",
+      "Use the Deployment Manager Runtime Configurator to create a new Config resource.",
+      "With Deployment Manager, create a Compute Engine instance with a startup script using kubectl.",
+      "In the cluster's definition, add metadata with kube-system as key and the DaemonSet manifest as value."
+    ],
+    "answer": "Add the cluster's API as a new Type Provider in Deployment Manager, and use the new type to create the DaemonSet.",
+    "explanation": "Type Providers allow Deployment Manager to manage resources from any API, including Kubernetes[cite: 930, 936]."
+  },
+  {
+    "id": "F6_Q72",
+    "topic": "GKE",
+    "question": "One of your GKE pods is stuck in PENDING status. You want to find out why. What should you do?",
+    "options": [
+      "Review details of the Service object and check for error messages.",
+      "Review details of the Deployment object and check for error messages.",
+      "Review details of the specific Pod and check for warning messages.",
+      "View logs of the container in the pending pod and check for warning messages."
+    ],
+    "answer": "Review details of myapp-deployment-58ddbbb995-Ip86m Pod and check for warning messages.",
+    "explanation": "The 'kubectl describe pod' command shows events that explain why a pod cannot be scheduled[cite: 993, 997]."
+  },
+  {
+    "id": "F6_Q81",
+    "topic": "GKE",
+    "question": "Your ML team needs Nvidia Tesla P100 GPUs in GKE. Minimize effort and cost. What should you do?",
+    "options": [
+      "Ask your ML team to add the accelerator: gpux annotation to their pod specification.",
+      "Recreate all the nodes of the GKE cluster to enable GPUs on all of them.",
+      "Create your own Kubernetes cluster on top of Compute Engine with nodes that have GPUs.",
+      "Add a new, GPU-enabled, node pool to the GKE cluster. Ask your ML team to add the cloud.google.com/gke -accelerator: nvidia-tesla-p100 node Selector."
+    ],
+    "answer": "Add a new, GPU-enabled, node pool to the GKE cluster. Ask your ML team to add the cloud.google.com/gke -accelerator: nvidia-tesla-p100 node Selector to their pod specification.",
+    "explanation": "Adding a specific node pool is more cost-effective than enabling GPUs on all nodes[cite: 1096, 1098]."
+  },
+  {
+    "id": "F6_Q83",
+    "topic": "IAM",
+    "question": "You want to grant some G Suite users access to your Cloud Platform project. What should you do?",
+    "options": [
+      "Enable Cloud Identity in the GCP Console for your domain.",
+      "Grant them the required IAM roles using their G Suite email address.",
+      "Create a CSV sheet with all users' email addresses. Use gcloud to convert them.",
+      "In the G Suite console, add the users to a special group cloud-console-users@yourdomain.com."
+    ],
+    "answer": "Grant them the required IAM roles using their G Suite email address.",
+    "explanation": "G Suite identities are natively recognized as Google accounts in IAM[cite: 1113, 1120]."
+  },
+  {
+    "id": "F6_Q90",
+    "topic": "Storage",
+    "question": "Data with multiple versions should be archived after 30 days. Previous versions are accessed once a month. Archive data is updated occasionally. What should you do?",
+    "options": [
+      "Add a bucket lifecycle rule that archives data with newer versions after 30 days to Coldline Storage.",
+      "Add a bucket lifecycle rule that archives data with newer versions after 30 days to Nearline Storage.",
+      "Add a bucket lifecycle rule that archives data from regional storage after 30 days to Coldline Storage.",
+      "Add a bucket lifecycle rule that archives data from regional storage after 30 days to Nearline Storage."
+    ],
+    "answer": "Add a bucket lifecycle rule that archives data with newer versions after 30 days to Nearline Storage.",
+    "explanation": "Nearline is better than Coldline if the data is accessed monthly[cite: 1182, 1185]."
+  },
+  {
+    "id": "F6_Q93",
+    "topic": "BigQuery",
+    "question": "You need to find tables across 1000+ datasets that contain an 'employee_ssn' column with minimum effort. What should you do?",
+    "options": [
+      "Go to Data Catalog and search for employee_ssn in the search box.",
+      "Write a shell script that uses the bq command line tool to loop through all projects.",
+      "Write a script that loops through all projects and runs a query on INFORMATION_SCHEMA.COLUMNS.",
+      "Write a Cloud Dataflow job that loops through all projects and runs a query on INFORMATION_SCHEMA.COLUMNS."
+    ],
+    "answer": "Go to Data Catalog and search for employee_ssn in the search box.",
+    "explanation": "Data Catalog automatically indexes metadata across projects, making searching extremely efficient[cite: 1210, 1214]."
+  },
+  {
+    "id": "F6_Q100",
+    "topic": "IAM",
+    "question": "You need to enable SREs to approve requests from Google Cloud support following Google-recommended practices. What should you do?",
+    "options": [
+      "Add your SREs to roles/iam.roleAdmin role.",
+      "Add your SREs to roles/accessapproval.approver role.",
+      "Add your SREs to a group and then add this group to roles/iam.roleAdmin.role.",
+      "Add your SREs to a group and then add this group to roles/accessapproval.approver role."
+    ],
+    "answer": "Add your SREs to a group and then add this group to roles/accessapproval.approver role.",
+    "explanation": "Access Approval role is specific for support request approval, and groups are best practice[cite: 1298, 1299]."
+  },
+  {
+    "id": "F6_Q105",
+    "topic": "Cloud Identity",
+    "question": "Your company has a SAML SSO provider. You want Cloud Identity users to authenticate using this provider. What should you do?",
+    "options": [
+      "In Cloud Identity, set up SSO with Google as an identity provider to access custom SAML apps.",
+      "In Cloud Identity, set up SSO with a third-party identity provider with Google as a service provider.",
+      "Obtain OAuth 2.0 credentials and set up OAuth 2.0 for Mobile & Desktop Apps.",
+      "Obtain OAuth 2.0 credentials and set up OAuth 2.0 for Web Server Applications."
+    ],
+    "answer": "In Cloud Identity, set up SSO with a third-party identity provider with Google as a service provider.",
+    "explanation": "This configuration allows Google to delegate authentication to the company's SSO[cite: 1341, 1344]."
+  },
+  {
+    "id": "F6_Q125",
+    "topic": "Billing",
+    "question": "Receive an email when egress network costs for a specific server exceed $100. The project has multiple apps. What should you do?",
+    "options": [
+      "Set up a budget alert on the project with an amount of 100 dollars.",
+      "Set up a budget alert on the billing account with an amount of 100 dollars.",
+      "Export billing data to BigQuery. Create a Cloud Function to sum egress costs and email if over $100. Schedule hourly.",
+      "Use Cloud Logging Agent to export logs. Create a Cloud Function to parse log data and calculate costs."
+    ],
+    "answer": "Export the billing data to BigQuery. Create a Cloud Function that uses BigQuery to sum the egress network costs of the exported billing data for the Apache web server for the current month and sends an email if it is over 100 dollars. Schedule the Cloud Function using Cloud Scheduler to run hourly.",
+    "explanation": "Standard budget alerts are project-wide; granular cost tracking requires BigQuery export[cite: 1582, 1587]."
+  },
+  {
+    "id": "F6_Q145",
+    "topic": "GKE",
+    "question": "You need to deploy additional pods requiring n2-highmem-16 nodes in an existing GKE cluster without downtime. What should you do?",
+    "options": [
+      "Use gcloud container clusters upgrade. Deploy the new services.",
+      "Create a new Node Pool and specify machine type n2-highmem-16. Deploy the new pods.",
+      "Create a new cluster with n2-highmem-16 nodes. Redeploy the pods and delete the old cluster.",
+      "Create a new cluster with both n1-standard-2 and n2-highmem-16 nodes. Redeploy pods."
+    ],
+    "answer": "Create a new Node Pool and specify machine type n23€\"highmem16\"€ . Deploy the new pods.",
+    "explanation": "Node pools allow different machine types within the same cluster[cite: 1789, 1793]."
+  },
+  {
+    "id": "F6_Q151",
+    "topic": "VPC",
+    "question": "You want to configure the fewest open egress ports in a VPC behind a firewall. What should you do?",
+    "options": [
+      "Set up a low-priority (65534) rule that blocks all egress and a high-priority rule (1000) that allows only appropriate ports.",
+      "Set up a high-priority (1000) rule that pairs both ingress and egress ports.",
+      "Set up a high-priority (1000) rule that blocks all egress and a low-priority (65534) rule that allows only appropriate ports.",
+      "Set up a high-priority (1000) rule to allow the appropriate ports."
+    ],
+    "answer": "Set up a low-priority (65534) rule that blocks all egress and a high-priority rule (1000) that allows only the appropriate ports.",
+    "explanation": "High priority rules (lower numbers) override low priority rules (higher numbers)[cite: 1848, 1852]."
+  },
+  {
+    "id": "F6_Q159",
+    "topic": "Storage",
+    "question": "Suppliers upload files. You need to: 1. Restrict access to their own data. 2. Give write access for 30 minutes. 3. Delete data over 45 days old. Which two strategies? (Choose two)",
+    "options": [
+      "A. Build a lifecycle policy to delete objects after 45 days / B. Use signed URLs for 30-minute write access.",
+      "A. Build a lifecycle policy / C. Set up an SFTP server.",
+      "B. Use signed URLs / D. Build a Cloud function timer.",
+      "B. Use signed URLs / E. Develop a script to loop and delete buckets."
+    ],
+    "answer": "Build a lifecycle policy to delete Cloud Storage objects after 45 days. / Use signed URLs to allow suppliers limited time access to store their objects.",
+    "explanation": "Signed URLs and Lifecycle policies are managed, low-effort solutions for these requirements[cite: 1951, 1956]."
+  },
+  {
+    "id": "F6_Q166",
+    "topic": "Cloud Run",
+    "question": "Evaluate an updated version of a Cloud Run for Anthos app with a small percentage of users (canary). What should you do?",
+    "options": [
+      "Create a new service with the new version. Split traffic between services.",
+      "Create a new revision with the new version. Split traffic between revisions.",
+      "Create a new service. Add HTTP Load Balancer in front of both.",
+      "Create a new revision. Add HTTP Load Balancer in front of both."
+    ],
+    "answer": "Create a new revision with the new version of the application. Split traffic between this version and the version that is currently running.",
+    "explanation": "Cloud Run traffic splitting is done at the revision level[cite: 2021, 2027]."
+  },
+  {
+    "id": "F6_Q171",
+    "topic": "Cloud SQL",
+    "question": "Retain a month-end copy of a Cloud SQL database for three years for audit. What should you do?",
+    "options": [
+      "Set up an export job for the first of the month. Write to an Archive bucket.",
+      "Save the automatic first-of-the-month backup for three years in an Archive bucket.",
+      "Set up an on-demand backup for the first of the month in an Archive bucket.",
+      "Convert automatic backup to export file. Write to Coldline bucket."
+    ],
+    "answer": "Set up an export job for the first of the month. Write the export file to an Archive class Cloud Storage bucket.",
+    "explanation": "Backups have a limited retention period; exports to GCS Archive are needed for long-term storage[cite: 2079, 2086]."
+  },
+  {
+    "id": "F6_Q187",
+    "topic": "Cloud Spanner",
+    "question": "Improve Spanner query performance in the shortest time following best practices. What should you do?",
+    "options": [
+      "Alert at 45% CPU. If exceeded, add nodes.",
+      "Alert at 45% CPU. Identify and rewrite high-CPU queries.",
+      "Alert at 65% CPU. If exceeded, add nodes.",
+      "Alert at 65% CPU. Identify and rewrite high-CPU queries."
+    ],
+    "answer": "Create an alert in Cloud Monitoring to alert when the percentage of high priority CPU utilization reaches 65%. If you exceed this threshold, add nodes to your instance.",
+    "explanation": "65% is the recommended utilization threshold for single-region Spanner instances[cite: 2260, 2264]."
   }
 ]
