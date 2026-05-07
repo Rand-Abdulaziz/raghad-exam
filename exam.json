@@ -1,106 +1,236 @@
 [
   {
-    "id": 50,
-    "topic": "Networking",
-    "question": "You have production and test workloads that you want to deploy on Compute Engine. Production VMs need to be in a different subnet than the test VMs. All the VMs must be able to reach each other over Internal IP without creating additional routes. Which configuration meets these requirements?",
+    "id": "F5_Q1",
+    "topic": "IAM & Compute Engine",
+    "question": "Every employee of your company has a Google account. Your operational team needs only administrative access to manage a large number of instances on Compute Engine. Your security team wants to ensure that the deployment of credentials is operationally efficient and must be able to determine who accessed a given instance. What should you do?",
     "options": [
-      "Create a single custom VPC with 2 subnets. Create each subnet in a different region and with a different CIDR range.",
-      "Create a single custom VPC with 2 subnets. Create each subnet in the same region and with the same CIDR range.",
-      "Create 2 custom VPCs, each with a single subnet. Create each subnet in a different region and with a different CIDR range.",
-      "Create 2 custom VPCs, each with a single subnet. Create each subnet in the same region and with the same CIDR range."
+      "Generate a new SSH key pair. Give the private key to each member of your team. Configure the public key in the metadata of each instance.",
+      "Ask each member of the team to generate a new SSH key pair and to send you their public key. Use a configuration management tool to deploy those keys on each instance.",
+      "Ask each member of the team to generate a new SSH key pair and to add the public key to their Google account. Grant the compute.osAdminLogin role to the Google group corresponding to this team.",
+      "Generate a new SSH key pair. Give the private key to each member of your team. Configure the public key as a project-wide public SSH key."
     ],
-    "answer": "Create a single custom VPC with 2 subnets. Create each subnet in a different region and with a different CIDR range.",
-    "explanation": "Subnets in the same VPC communicate via internal IP by default. Using different regions and non-overlapping CIDR ranges is the standard setup."
+    "answer": "Ask each member of the team to generate a new SSH key pair and to add the public key to their Google account. Grant the compute.osAdminLogin role to the Google group corresponding to this team.",
+    "explanation": "OS Login is the Google-recommended way to manage SSH access. It links access to IAM identities and provides audit logs of who accessed instances."
   },
   {
-    "id": 149,
-    "topic": "GKE",
-    "question": "You are running multiple VPC-native Google Kubernetes Engine clusters in the same subnet. The IPs available for the nodes are exhausted, and you want to ensure that the clusters can grow in nodes when needed. What should you do?",
+    "id": "F5_Q3",
+    "topic": "Databases - Cloud SQL",
+    "question": "You want to select and configure a cost-effective solution for relational data on Google Cloud Platform. You are working with a small set of operational data in one geographic location. You need to support point-in-time recovery. What should you do?",
     "options": [
-      "Create a new subnet in the same region as the subnet being used.",
-      "Add an alias IP range to the subnet used by the GKE clusters.",
-      "Create a new VPC, and set up VPC peering with the existing VPC.",
-      "Expand the CIDR range of the relevant subnet for the cluster."
+      "Select Cloud SQL (MySQL). Verify that the enable binary logging option is selected.",
+      "Select Cloud SQL (MySQL). Select the create failover replicas option.",
+      "Select Cloud Spanner. Set up your instance with 2 nodes.",
+      "Select Cloud Spanner. Set up your instance as multi-regional."
     ],
-    "answer": "Expand the CIDR range of the relevant subnet for the cluster.",
-    "explanation": "Expanding the primary CIDR range of a subnet is the recommended way to add more node IPs."
+    "answer": "Select Cloud SQL (MySQL). Verify that the enable binary logging option is selected.",
+    "explanation": "Binary logging is required for point-in-time recovery in Cloud SQL for MySQL."
   },
   {
-    "id": 203,
-    "topic": "Migration",
-    "question": "You need to move a production project from an acquired startup into your organization and ensure it is billed correctly with minimal effort.",
+    "id": "F5_Q4",
+    "topic": "Compute Engine - Autohealing",
+    "question": "You want to configure autohealing for network load balancing for a group of Compute Engine instances in multiple zones using the fewest possible steps. You need to configure re-creation of VMs if they are unresponsive after 3 attempts of 10 seconds each. What should you do?",
     "options": [
-      "Use the projects.move method to move the project to your organization. Update the billing account of the project to that of your organization.",
-      "Navigate to Resource Manager and drag the project to your organization.",
-      "Create a Private Catalog for the Google Cloud Marketplace and upload project resources to it.",
-      "Use Terraform to redeploy the template to a new project in your organization."
+      "Create an HTTP load balancer with a backend configuration that references an existing instance group. Set the health check to healthy (HTTP)",
+      "Create an HTTP load balancer with a backend configuration that references an existing instance group. Define a balancing mode and set the maximum RPS to 10.",
+      "Create a managed instance group. Set the Autohealing health check to healthy (HTTP)",
+      "Create a managed instance group. Verify that the autoscaling setting is on."
     ],
-    "answer": "Use the projects.move method to move the project to your organization. Update the billing account of the project to that of your organization.",
-    "explanation": "The projects.move API is the most efficient and Google-recommended way to transfer project ownership between organizations."
+    "answer": "Create a managed instance group. Set the Autohealing health check to healthy (HTTP)",
+    "explanation": "Managed Instance Groups (MIGs) handle autohealing by recreating VMs that fail health checks."
   },
   {
-    "id": 211,
-    "topic": "IAM",
-    "question": "An external member of your team needs list access to compute images and disks in one of your projects. You want to follow Google-recommended practices when you grant the required permissions to this user. What should you do?",
+    "id": "F5_Q5",
+    "topic": "Operations - gcloud",
+    "question": "You are using multiple configurations for gcloud. You want to review the configured Kubernetes Engine cluster of an inactive configuration using the fewest possible steps. What should you do?",
     "options": [
-      "Create a custom role, and add all the required compute.disks.list and compute.images.list permissions as included Permissions. Grant the custom role to the user at the project level.",
-      "Create a custom role based on the Compute Image User role. Add the compute.disks.list to the included Permissions field. Grant the custom role to the user at the project level.",
-      "Create a custom role based on the Compute Storage Admin role. Exclude unnecessary permissions from the custom role. Grant the custom role to the user at the project level.",
-      "Grant the Compute Storage Admin role at the project level."
+      "Use gcloud config configurations describe to review the output.",
+      "Use gcloud config configurations activate and gcloud config list to review the output.",
+      "Use kubectl config get-contexts to review the output.",
+      "Use kubectl config use-context and kubectl config view to review the output."
     ],
-    "answer": "Create a custom role, and add all the required compute.disks.list and compute.images.list permissions as included Permissions. Grant the custom role to the user at the project level.",
-    "explanation": "Custom roles ensure you grant only the necessary permissions (Least Privilege)[cite: 4]."
+    "answer": "Use kubectl config use-context and kubectl config view to review the output.",
+    "explanation": "To view the details of a non-active cluster configuration, you use kubectl config commands to switch context and view the settings[cite: 4]."
   },
   {
-    "id": 301,
-    "topic": "GKE Security",
-    "question": "You are deploying an application to Google Kubernetes Engine (GKE). The application needs to make API calls to a private Cloud Storage bucket. You need to configure your application Pods to authenticate to the Cloud Storage API, but your organization policy prevents the usage of service account keys. What should you do?",
+    "id": "F5_Q11",
+    "topic": "Operations - Deployment Manager",
+    "question": "You need a dynamic way of provisioning VMs on Compute Engine. The exact specifications will be in a dedicated configuration file. You want to follow Google's recommended practices. Which method should you use?",
     "options": [
-      "Create the GKE cluster with Workload Identity Federation. Configure the default node service account to access the bucket.",
-      "Create the GKE cluster with Workload Identity Federation. Create a Google service account and a Kubernetes ServiceAccount, and configure both service accounts to use Workload Identity Federation.",
-      "Request a security exception to create a Google service account key. Set the constraints/iam.serviceAccountKey Expiry Hours organization policy to 24 hours.",
-      "Request a security exception to create a Google service account key. Set the constraints/iam.serviceAccountKeyExpiry Hours organization policy to 8 hours."
+      "Deployment Manager",
+      "Cloud Composer",
+      "Managed Instance Group",
+      "Unmanaged Instance Group"
     ],
-    "answer": "Create the GKE cluster with Workload Identity Federation. Create a Google service account and a Kubernetes ServiceAccount, and configure both service accounts to use Workload Identity Federation.",
-    "explanation": "Workload Identity is the recommended, keyless method for GKE pod authentication[cite: 4]."
+    "answer": "Deployment Manager",
+    "explanation": "Deployment Manager is the infrastructure-as-code service for GCP that uses configuration files to provision resources[cite: 4]."
   },
   {
-    "id": 315,
-    "topic": "Compute",
-    "question": "You are planning to move your company's website and a specific asynchronous background job to Google Cloud. Your website contains only static HTML content. The background job is started through an HTTP endpoint and generates monthly invoices. You want to have no costs when your workloads are not in use and follow recommended practices. What should you do?",
+    "id": "F5_Q12",
+    "topic": "GKE - Deployment",
+    "question": "You have a Dockerfile that you need to deploy on Kubernetes Engine. What should you do?",
     "options": [
-      "Move website to Google Kubernetes Engine (GKE), and move background job to Cloud Functions.",
-      "Move both your website and background job to Compute Engine.",
-      "Move both your website and background job to Cloud Run.",
-      "Move website to Google Kubernetes Engine (GKE), and move background job to Compute Engine."
+      "Use kubectl app deploy <dockerfilename>.",
+      "Use gcloud app deploy <dockerfilename>.",
+      "Create a docker image from the Dockerfile and upload it to Container Registry. Create a Deployment YAML file to point to that image. Use kubectl to create the deployment.",
+      "Create a docker image from the Dockerfile and upload it to Cloud Storage. Create a Deployment YAML file to point to that image. Use kubectl to create the deployment."
     ],
-    "answer": "Move both your website and background job to Cloud Run.",
-    "explanation": "Cloud Run scales to zero and can host both web front-ends and background tasks[cite: 4]."
+    "answer": "Create a docker image from the Dockerfile and upload it to Container Registry. Create a Deployment YAML file to point to that image. Use kubectl to create the deployment.",
+    "explanation": "Standard GKE flow: Build image -> Push to Registry -> Create YAML deployment -> kubectl apply[cite: 4]."
   },
   {
-    "id": 320,
-    "topic": "VPA",
-    "question": "You are managing a stateful application deployed on Google Kubernetes Engine (GKE) that can only have one replica. You recently discovered that the application becomes unstable at peak times. You have identified that the application needs more CPU than what has been configured in the manifest at these peak times. You want Kubernetes to allocate the application sufficient CPU resources during these peak times, while ensuring cost efficiency during off-peak periods. What should you do?",
+    "id": "F5_Q31",
+    "topic": "App Engine & Pub/Sub",
+    "question": "You want to send and consume Cloud Pub/Sub messages from your App Engine application. The Cloud Pub/Sub API is currently disabled. You want to make sure your application can use Cloud Pub/Sub. What should you do?",
+    "options": [
+      "Enable the Cloud Pub/Sub API in the API Library on the GCP Console.",
+      "Rely on the automatic enablement of the Cloud Pub/Sub API when the Service Account accesses it.",
+      "Use Deployment Manager to deploy your application. Rely on automatic enablement of all APIs.",
+      "Grant the App Engine Default service account the role of Cloud Pub/Sub Admin."
+    ],
+    "answer": "Enable the Cloud Pub/Sub API in the API Library on the GCP Console.",
+    "explanation": "APIs must be explicitly enabled in the project before they can be used by services[cite: 4]."
+  },
+  {
+    "id": "F5_Q40",
+    "topic": "Networking - Load Balancing",
+    "question": "You want a load balancer to terminate the client SSL session for a public web application over HTTPS. You want to follow Google-recommended practices. What should you do?",
+    "options": [
+      "Configure an HTTP(S) load balancer.",
+      "Configure an internal TCP load balancer.",
+      "Configure an external SSL proxy load balancer.",
+      "Configure an external TCP proxy load balancer."
+    ],
+    "answer": "Configure an HTTP(S) load balancer.",
+    "explanation": "For public web applications over HTTPS, the HTTP(S) Load Balancer is the recommended choice for SSL termination[cite: 4]."
+  },
+  {
+    "id": "F5_Q41",
+    "topic": "Storage - gsutil",
+    "question": "You have 32 GB of data in a single file to upload to Nearline Storage. The WAN connection is 1 Gbps. You want to transfer the file rapidly. How should you upload the file?",
+    "options": [
+      "Use the GCP Console to transfer the file instead of gsutil.",
+      "Enable parallel composite uploads using gsutil on the file transfer.",
+      "Decrease the TCP window size on the machine initiating the transfer.",
+      "Change the storage class of the bucket from Nearline to Multi-Regional."
+    ],
+    "answer": "Enable parallel composite uploads using gsutil on the file transfer.",
+    "explanation": "Parallel composite uploads in gsutil split large files to maximize bandwidth usage[cite: 4]."
+  },
+  {
+    "id": "F5_Q51",
+    "topic": "Compute Engine - Health Checks",
+    "question": "You need to create an autoscaling managed instance group for an HTTPS web application and make sure unhealthy VMs are recreated. What should you do?",
+    "options": [
+      "Create a health check on port 443 and use that when creating the Managed Instance Group.",
+      "Select Multi-Zone instead of Single-Zone when creating the Managed Instance Group.",
+      "In the Instance Template, add the label health-check.",
+      "In the Instance Template, add a startup script that sends a heartbeat."
+    ],
+    "answer": "Create a health check on port 443 and use that when creating the Managed Instance Group.",
+    "explanation": "Assigning a health check directly to the MIG enables autohealing[cite: 4]."
+  },
+  {
+    "id": "F5_Q62",
+    "topic": "Caching - Memorystore",
+    "question": "You want to run a caching HTTP reverse proxy that consumes almost no CPU but needs 30-GB in-memory cache. You want to minimize cost. What should you do?",
+    "options": [
+      "Create a Cloud Memorystore for Redis instance with 32-GB capacity.",
+      "Run it on Compute Engine, and choose a custom instance type with 6 vCPUs and 32 GB of memory.",
+      "Package it in a container image and run it on GKE using n1-standard-32 instances.",
+      "Run it on Compute Engine, choose n1-standard-1, and add an SSD persistent disk of 32 GB."
+    ],
+    "answer": "Create a Cloud Memorystore for Redis instance with 32-GB capacity.",
+    "explanation": "Cloud Memorystore for Redis is the managed, cost-effective service for in-memory caching[cite: 4]."
+  },
+  {
+    "id": "F5_Q73",
+    "topic": "Compute Engine - Windows RDP",
+    "question": "You are setting up a Windows VM on Compute Engine and want to make sure you can log in via RDP. What should you do?",
+    "options": [
+      "After the VM has been created, use your Google Account credentials to log in.",
+      "After the VM has been created, use gcloud compute reset-windows-password to retrieve credentials.",
+      "When creating the VM, add metadata using windows-password as key.",
+      "Download the JSON private key for the default service account."
+    ],
+    "answer": "After the VM has been created, use gcloud compute reset-windows-password to retrieve the login credentials for the VM.",
+    "explanation": "GCP doesn't provide a default password; you must reset/generate it using gcloud or the console[cite: 4]."
+  },
+  {
+    "id": "F5_Q74",
+    "topic": "IAM - Specific Instance Access",
+    "question": "You want dev1 group users to connect via SSH to ONLY one specific instance in a project. What should you do?",
+    "options": [
+      "Set metadata enable-oslogin=true for the instance. Grant the dev1 group the compute.osLogin role.",
+      "Set metadata enable-oslogin=true for the instance. Set service account to no service account.",
+      "Enable block project wide keys for the instance. Generate an SSH key for each user.",
+      "Enable block project wide keys for the instance. Generate one SSH key and distribute it."
+    ],
+    "answer": "Set metadata to enable-oslogin=true for the instance. Grant the dev1 group the compute.osLogin role. Direct them to use the Cloud Shell to ssh to that instance.",
+    "explanation": "OS Login allows granular access control at the instance level[cite: 4]."
+  },
+  {
+    "id": "F5_Q87",
+    "topic": "Networking - Firewall Rules",
+    "question": "You deployed an LDAP server on Compute Engine reachable via TLS through port 636 using UDP. You want to ensure it is reachable by clients. What should you do?",
+    "options": [
+      "Add the network tag allow-udp-636 to the VM instance.",
+      "Create a route called allow-udp-636 and set the next hop to the VM.",
+      "Add a network tag to the instance. Create a firewall rule to allow ingress on UDP port 636 for that tag.",
+      "Add a network tag to the instance. Create a firewall rule to allow egress on UDP port 636 for that tag."
+    ],
+    "answer": "Add a network tag of your choice to the instance. Create a firewall rule to allow ingress on UDP port 636 for that network tag.",
+    "explanation": "Ingress firewall rules with network tags are the standard way to allow incoming traffic to specific VMs[cite: 4]."
+  },
+  {
+    "id": "F5_Q97",
+    "topic": "GKE - Pod Isolation",
+    "question": "You run arbitrary code for multiple customers in separate Pods in one GKE cluster. You want to maximize isolation between customer Pods. What should you do?",
+    "options": [
+      "Use Binary Authorization and whitelist only images used by customers.",
+      "Use the Container Analysis API to detect vulnerabilities.",
+      "Create a GKE node pool with a sandbox type configured to gvisor. Add runtimeClassName: gvisor to the Pod spec.",
+      "Use the cos_containerd image for your GKE nodes and add a nodeSelector."
+    ],
+    "answer": "Create a GKE node pool with a sandbox type configured to gvisor. Add the parameter runtimeClassName: gvisor to the specification of your customers' Pods.",
+    "explanation": "GKE Sandbox (using gVisor) provides an extra layer of kernel isolation for running untrusted code[cite: 4]."
+  },
+  {
+    "id": "F5_Q103",
+    "topic": "Operations - Datastore Emulator",
+    "question": "You want to test your application locally on your Ubuntu laptop with Cloud Datastore. What should you do?",
+    "options": [
+      "Export Cloud Datastore data using gcloud datastore export.",
+      "Create a Cloud Datastore index using gcloud datastore indexes create.",
+      "Install the google-cloud-sdk-datastore-emulator component using the apt get install command.",
+      "Install the cloud-datastore-emulator component using the gcloud components install command."
+    ],
+    "answer": "Install the google-cloud-sdk-datastore-emulator component using the apt get install command.",
+    "explanation": "Since the SDK was installed from the Ubuntu repository (apt), you should use apt-get to install components like the emulator[cite: 4]."
+  },
+  {
+    "id": "F5_Q108",
+    "topic": "GKE - Cost & GPUs",
+    "question": "Data scientists infrequently need a GKE cluster for long-running GPU jobs. You want to minimize cost. What should you do?",
     "options": [
       "Enable node auto-provisioning on the GKE cluster.",
-      "Configure a Vertical Pod Autoscaler on the Deployment.",
-      "Configure a Horizontal Pod Autoscaler on the Deployment.",
-      "Enable cluster autoscaling on the GKE cluster."
+      "Create a VerticalPodAutoscaler for those workloads.",
+      "Create a node pool with preemptible VMs and GPUs attached.",
+      "Create a node pool with GPUs and enable autoscaling with minimum size 1."
     ],
-    "answer": "Configure a Vertical Pod Autoscaler on the Deployment.",
-    "explanation": "VPA is used for vertical scaling of pods, ideal for single-replica stateful apps[cite: 4]."
+    "answer": "Enable node auto-provisioning on the GKE cluster.",
+    "explanation": "Node auto-provisioning can automatically create and delete GPU-enabled node pools as needed, saving costs when not in use[cite: 4]."
   },
   {
-    "id": 325,
-    "topic": "Pub/Sub CLI",
-    "question": "Your company uses Pub/Sub for event-driven workloads. You have a subscription named email-updates attached to the new-orders topic. You need to fetch and acknowledge waiting messages from this subscription. What should you do?",
+    "id": "F5_Q121",
+    "topic": "Compute Engine - MIG Issues",
+    "question": "Your managed instance group fails to create new instances due to a disk name conflict. You need to maintain application traffic. What should you do?",
     "options": [
-      "Use the gcloud pubsub subscriptions seek email-updates command.",
-      "Use the gcloud pubsub topics describe new-orders command.",
-      "Use the gcloud pubsub subscriptions pull email-updates --auto-ack command.",
-      "Use the gcloud pubsub topics list-subscriptions new-orders --filter=\"emailupdates\" command."
+      "Create a template with valid syntax. Delete any persistent disks with the same name as instances.",
+      "Create a template with valid syntax. Verify instance and disk names are not the same in the template.",
+      "Verify the current template. Delete persistent disks with same name as instances. Set disks.autoDelete to true.",
+      "Delete current template and replace it. Verify names are different. Set disks.autoDelete to true."
     ],
-    "answer": "Use the gcloud pubsub subscriptions pull email-updates --auto-ack command.",
-    "explanation": "The 'pull' command with '--auto-ack' fetches and confirms receipt of messages[cite: 4]."
+    "answer": "Create an instance template that contains valid syntax which will be used by the instance group. Delete any persistent disks with the same name as instance names.",
+    "explanation": "Cleaning up existing conflicting disks and using a valid template allows the MIG to resume provisioning[cite: 4]."
   }
 ]
