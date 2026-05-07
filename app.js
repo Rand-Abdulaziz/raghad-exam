@@ -1,17 +1,73 @@
 // Application State
 let examData = null;
 const state = {
-    currentScreen: 'start', // 'start', 'exam', 'results'
+    currentScreen: 'start',
     currentQuestionIndex: 0,
-    userAnswers: [], // Array of objects: { answer: string, isCorrect: boolean }
+    userAnswers: [],
     score: 0,
-    timeLeft: 2 * 60 * 60, // 2 hours in seconds
+    timeLeft: 2 * 60 * 60,
     timerInterval: null,
-    hasAnsweredCurrent: false // To track if the user has answered the current question
+    hasAnsweredCurrent: false
 };
 
 // DOM Elements
 const appDiv = document.getElementById('app');
+
+// Helpers
+function normalizeAnswer(value) {
+    return value
+        .toString()
+        .toLowerCase()
+        .replace(/\s+/g, ' ')
+        .replace(/[“”]/g, '"')
+        .replace(/[‘’]/g, "'")
+        .trim();
+}
+
+function getCorrectAnswerText(questionObj) {
+    const rawAnswer = questionObj.answer || questionObj.correct_answer;
+
+    if (!rawAnswer) return null;
+
+    if (questionObj.options && questionObj.options.length > 0) {
+        const answerStr = rawAnswer.toString().trim();
+        const upper = answerStr.toUpperCase();
+
+        // If answer is A/B/C/D
+        if (/^[A-Z]$/.test(upper)) {
+            const index = upper.charCodeAt(0) - 65;
+            if (questionObj.options[index]) {
+                return questionObj.options[index];
+            }
+        }
+
+        // If answer is numeric index: 0,1,2,3 or 1,2,3,4
+        if (/^\d+$/.test(answerStr)) {
+            const num = Number(answerStr);
+
+            if (questionObj.options[num]) {
+                return questionObj.options[num];
+            }
+
+            if (questionObj.options[num - 1]) {
+                return questionObj.options[num - 1];
+            }
+        }
+    }
+
+    return rawAnswer;
+}
+
+function isOptionCorrect(opt, questionObj) {
+    const correctAnswerText = getCorrectAnswerText(questionObj);
+    if (!correctAnswerText) return false;
+
+    return normalizeAnswer(opt) === normalizeAnswer(correctAnswerText);
+}
+
+function isSameAnswer(a, b) {
+    return normalizeAnswer(a) === normalizeAnswer(b);
+}
 
 // App Initialization
 async function initApp() {
@@ -20,6 +76,7 @@ async function initApp() {
         if (!response.ok) {
             throw new Error(`Failed to load exam.json: ${response.status}`);
         }
+
         const loadedData = await response.json();
 
         if (Array.isArray(loadedData)) {
@@ -32,14 +89,11 @@ async function initApp() {
         }
 
         state.userAnswers = new Array(examData.questions.length).fill(null);
-
-
-
         render();
-    } catch (error) {
-        console.error('Error loading exam data (likely CORS due to running statically):', error);
 
-        // Provide a fallback local-file uploader (FileReader) bypasses CORS.
+    } catch (error) {
+        console.error('Error loading exam data:', error);
+
         appDiv.innerHTML = `
             <div class="start-screen" style="max-width: 500px; text-align: center;">
                 <h2>Local Verification Required</h2>
@@ -61,15 +115,28 @@ async function initApp() {
             if (!file) return;
 
             const reader = new FileReader();
+
             reader.onload = (e) => {
                 try {
-                    examData = JSON.parse(e.target.result);
+                    const loadedData = JSON.parse(e.target.result);
+
+                    if (Array.isArray(loadedData)) {
+                        examData = {
+                            exam_title: "PBT Mid Exam",
+                            questions: loadedData
+                        };
+                    } else {
+                        examData = loadedData;
+                    }
+
                     state.userAnswers = new Array(examData.questions.length).fill(null);
                     render();
+
                 } catch (parseError) {
                     alert('Invalid JSON file selected. Please make sure it is the correct exam.json.');
                 }
             };
+
             reader.readAsText(file);
         });
     }
@@ -148,7 +215,6 @@ function renderExamScreen() {
     footer.style.display = 'flex';
     footer.style.justifyContent = 'space-between';
 
-    // Add "End Exam" Button
     const endExamBtn = document.createElement('button');
     endExamBtn.className = 'btn-primary';
     endExamBtn.style.background = 'var(--danger-color)';
@@ -158,10 +224,10 @@ function renderExamScreen() {
 
     const nextBtn = document.createElement('button');
     nextBtn.className = 'btn-primary';
-    nextBtn.style.display = isAnswered ? 'block' : 'none'; // Only show when answered
+    nextBtn.style.display = isAnswered ? 'block' : 'none';
 
     if (state.currentQuestionIndex < examData.questions.length - 1) {
-        nextBtn.textContent = 'Next Question &rarr;';
+        nextBtn.textContent = 'Next Question →';
         nextBtn.onclick = () => {
             state.currentQuestionIndex++;
             state.hasAnsweredCurrent = state.userAnswers[state.currentQuestionIndex] !== null;
@@ -172,35 +238,35 @@ function renderExamScreen() {
         nextBtn.style.background = 'var(--success-color)';
         nextBtn.onclick = finishExam;
     }
-    footer.appendChild(nextBtn);
 
+    footer.appendChild(nextBtn);
     container.appendChild(footer);
     appDiv.appendChild(container);
 
     const optionsContainer = document.getElementById('options-container');
 
-    // Display options or text input
     if (question.options && question.options.length > 0) {
-        // Multiple Choice
         question.options.forEach((opt, index) => {
             const btn = document.createElement('button');
             btn.className = 'option-btn';
 
+            const correctOption = isOptionCorrect(opt, question);
+            const selectedOption = userAnswerData && isSameAnswer(opt, userAnswerData.answer);
+
             if (isAnswered) {
                 btn.disabled = true;
 
-                if (opt === question.answer || opt === question.correct_answer) {
+                if (correctOption) {
                     btn.classList.add('correct');
-                } else if (userAnswerData && opt === userAnswerData.answer && !userAnswerData.isCorrect) {
+                } else if (selectedOption && !userAnswerData.isCorrect) {
                     btn.classList.add('incorrect');
-                } else if (userAnswerData && opt === userAnswerData.answer) {
-                    btn.classList.add('correct');
                 }
             }
 
             const letter = String.fromCharCode(65 + index);
+
             btn.innerHTML = `
-                <span class="option-letter" style="${opt === question.answer || opt === question.correct_answer && isAnswered ? 'color: var(--text-primary);' : ''}">
+                <span class="option-letter" style="${correctOption && isAnswered ? 'color: var(--text-primary);' : ''}">
                     ${letter}.
                 </span>
                 <span>${opt}</span>
@@ -209,8 +275,8 @@ function renderExamScreen() {
             btn.onclick = () => handleAnswerSelect(opt, question);
             optionsContainer.appendChild(btn);
         });
+
     } else {
-        // Text Question
         const inputDiv = document.createElement('div');
         inputDiv.style.display = 'flex';
         inputDiv.style.flexDirection = 'column';
@@ -239,14 +305,15 @@ function renderExamScreen() {
             submitBtn.className = 'btn-primary';
             submitBtn.style.width = 'fit-content';
             submitBtn.textContent = 'Submit Answer';
+
             submitBtn.onclick = () => {
                 if (textInput.value.trim() !== '') {
                     handleAnswerSelect(textInput.value.trim(), question);
                 }
             };
+
             inputDiv.appendChild(submitBtn);
 
-            // Allow pressing Enter
             textInput.addEventListener('keypress', (e) => {
                 if (e.key === 'Enter' && textInput.value.trim() !== '') {
                     handleAnswerSelect(textInput.value.trim(), question);
@@ -257,12 +324,11 @@ function renderExamScreen() {
         optionsContainer.appendChild(inputDiv);
     }
 
-    // Feedback Message
     if (isAnswered) {
         const feedback = document.createElement('div');
         feedback.className = 'feedback-message fade-in';
 
-        const correctAnswer = question.answer || question.correct_answer || 'No specific answer provided';
+        const correctAnswer = getCorrectAnswerText(question) || 'No specific answer provided';
 
         if (userAnswerData && userAnswerData.isCorrect) {
             feedback.innerHTML = `<span style="color: var(--success-color); font-weight: bold;">✓ Correct!</span>`;
@@ -274,6 +340,7 @@ function renderExamScreen() {
                 </span>
             `;
         }
+
         optionsContainer.appendChild(feedback);
     }
 }
@@ -339,14 +406,12 @@ function startExam() {
 }
 
 function handleAnswerSelect(selectedAnswer, questionObj) {
-    const correctAnswer = questionObj.answer || questionObj.correct_answer;
+    const correctAnswer = getCorrectAnswerText(questionObj);
     let isCorrect = false;
 
     if (correctAnswer) {
-        // Simple string comparison (case-insensitive for text questions, exact for mcq usually)
-        isCorrect = selectedAnswer.toString().toLowerCase().trim() === correctAnswer.toString().toLowerCase().trim();
+        isCorrect = normalizeAnswer(selectedAnswer) === normalizeAnswer(correctAnswer);
     } else {
-        // If there's no answer key, we might count it as correct or incorrect. Let's assume text questions without answers are just marked correct for participation
         isCorrect = true;
     }
 
@@ -367,6 +432,8 @@ function finishExam() {
 
 // --- Timer Logic ---
 function startTimer() {
+    stopTimer();
+
     state.timerInterval = setInterval(() => {
         state.timeLeft--;
 
@@ -392,6 +459,7 @@ function formatTime(seconds) {
     const hrs = Math.floor(seconds / 3600);
     const mins = Math.floor((seconds % 3600) / 60);
     const secs = seconds % 60;
+
     return `${hrs.toString().padStart(2, '0')}:${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
 }
 
